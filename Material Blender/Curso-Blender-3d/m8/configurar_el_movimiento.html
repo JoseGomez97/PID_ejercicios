@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Configurar el movimiento | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li id="current-page-parent"><a href="seguir_una_trayectoria.html" class="current-page-parent daddy">Seguir una trayectoria</a><ul>
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li id="active"><a href="configurar_el_movimiento.html" class="active no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="una_triquiuela.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="el_caso_de_la_cmara.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Configurar el movimiento</h1></div>
+<div class="FreeTextIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div id="ta40_1" class="block" style="display:block;position:relative"><p>
+Al seleccionar la curva y acceder a su panel <img alt="curva" height="16" src="camino_05.png" width="16" /> volvemos a la botonera <strong>Animación de recorrido</strong> para determinar en número de fotogramas que necesita el círculo para ser transitado de principio a fin. Por defecto este valor es de <strong>100</strong>. Al igual que ocurría en el modificador <strong>Construir </strong>en el parámetro <strong>Longitud</strong>, a valores altos de <strong>Fotogramas</strong> menor será la velocidad. Nosotros alteramos el valor de Fotogramas a 250 para hacerlo coincidir con el valor por defecto de los fotogramas totales de la animación.
+</p>
+<img alt="camino_09" height="160" src="camino_09.png" width="277" />
+<p>
+El cubo ahora sigue la trayectoria mucho más despacio que antes.
+</p>
+<p>
+Para seguir configurando vamos a la <strong>Restricción</strong> <img height="16" src="restricciones_panel.png" width="18" /> <strong>Seguir camino</strong> que tiene asignada el propio cubo:
+</p>
+<ul>
+	<li>El cubo se está desplazando a lo largo de la trayectoria pero sin girar de acuerdo con ella. Al activar la opción <strong>Seguir curva</strong> la cosa cambia.</li>
+</ul>
+<blockquote>
+	<img alt="camino_11" height="425" src="camino_11.png" width="515" />
+</blockquote>
+<ul>
+	<li>Algo se ha ido al traste. Con esta orden los ejes<strong> Locales</strong> y los <strong>Globales</strong> ya no coinciden y ahora el eje <strong>Y Local</strong> mira hacia adentro de la curva. La solución es cambiar <strong>Adelante</strong> de<strong> Y</strong> a <strong>X</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="camino_12" height="390" src="camino_12.png" width="535" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id81">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta81_25_2" class="block" style="display:block;position:relative"><a href="seguir_camino_configuracion.swf" target="_blank"><img alt="ver_video_seguir_camino_configuracion" height="200" src="ver_video_seguir_camino_configuracion.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id41">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Cambiar el sentido de la curva</h2>
+<div class="iDevice_inner">
+<div id="ta41_31_2" class="block" style="display:block;position:relative"><p>
+Mientras que en una curva abierta este cambio de sentido obedecerá a nuestras expectativas, en una curva cerrada ocurrirá un imprevisto. Este es nuestro ejemplo en <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> y los nodos seleccionados. 
+</p>
+<img alt="camino_13" height="329" src="camino_13.png" width="323" />
+<p>
+Si le decimos a Blender que represente esta curva abierta (<strong>Curva/Alternar Cíclico</strong>) descubriremos cuál es el primer vértice y cuál es el último.
+</p>
+<img alt="camino_14" height="383" src="camino_14.png" width="378" />
+<p>
+Es una sorpresa, sin duda, y que nos explica por qué cuando a la curva cerrada le damos la orden  <strong>Curva/Segmentos/Cambiar dirección</strong> este es el resultado.
+</p>
+<img alt="camino_15" height="336" src="camino_15.png" width="631" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="una_triquiuela.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="el_caso_de_la_cmara.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

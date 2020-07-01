@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Serie | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li id="current-page-parent"><a href="objetos_vinculados.html" class="current-page-parent daddy">Objetos vinculados</a><ul>
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li id="active"><a href="serie.html" class="active no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="simtricos.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_baco.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Serie</h1></div>
+<div class="FreeTextIdevice" id="id71">
+<div class="iDevice emphasis0">
+<div id="ta71_1" class="block" style="display:block;position:relative"><p>
+Una modalidad más en el ámbito de los objetos clonados la encontramos en el modificador <strong>Selección</strong> o <strong>Matriz</strong> <img height="17" src="modificador_array.png" width="17" /> (a partir de ahora <strong>Serie</strong>) cuyas posibilidades son verdaderamente infinitas.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id72">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Un asunto de traducción</h2>
+<div class="iDevice_inner">
+<div id="ta72_23_2" class="block" style="display:block;position:relative"><p>
+Desde el comienzo de la traducción al español a este modificador se le ha llamado <strong>Serie</strong> (una opción acertada para <strong>Array</strong>) pero la llegada de Blender 2.62 traía lo que consideramos un error de traducción y a este modificador lo llama <strong>Selección</strong> (en Linux) o <strong>Matriz</strong> (el Windows). Es por eso que usaremos <strong>Serie</strong> para referirnos a este modificador.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id12">
+<div class="iDevice emphasis0">
+<div id="ta12_1" class="block" style="display:block;position:relative"><p>
+Supongamos el modelado de la mesa escolar que vimos en el apartado anterior. El problema que plantea para la aplicación del modificador <strong>Serie</strong> es que en realidad no se trata de un objeto sino de varios; asi que antes de nada le aplicamos las siguientes ediciones:
+</p>
+<ul>
+	<li>A todos los objetos que tienen asignados modificadores se los aplicamos con el botón correspondiente (recordamos que esto hay que hacerlo desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />).</li>
+</ul>
+<ul>
+	<li>Seleccionamos todos los objetos que conforman la malla y hacemos <strong>Objeto/Unir</strong> (o <strong>&quot;Control_J&quot;</strong>). Con esto se consigue que todos formen parte de una sola malla.</li>
+</ul>
+<p>
+Nosotros para la demostración vamos a contar con un añadido extra: la silla. Por supuesto, todos los objetos de la silla han sido unidos (<strong>Objeto/Unir</strong>) con los de la mesa para que todo el conjunto sea un único objeto.
+</p>
+<img alt="mesa_silla" height="472" src="mesa_silla.png" width="628" />
+<p>
+Puede que el objeto final tenga una malla muy densa (<strong>high-poly</strong> o alta poligonización) y haga que el modificador se comporte de una manera pastosa. Lo ideal sería disponer de un modelado menos denso (<strong>low-poly</strong> o baja poligonización). En cualquier caso nos vale para la práctica.
+</p>
+<a href="mesa_silla.blend"><img alt="descarga_mesa_silla" height="48" src="descarga_mesa_silla.png" width="179" /></a>
+<p>
+Seleccionamos el objeto en cuestión y le aplicamos el modificador <strong>Serie</strong>. El objeto se duplica.
+</p>
+<img alt="array_01" height="424" src="array_01.png" width="640" />
+<p>
+¿Qué ha pasado? Un análisis de las opciones que están influyendo nos dice:
+</p>
+<ul>
+	<li>La serie consta de dos objetos tal y como marca el parámetro <strong>Cantidad</strong>.</li>
+</ul>
+<ul>
+	<li>La serie se desplaza a lo largo del<strong> eje X</strong>.</li>
+</ul>
+<ul>
+	<li>La separación entre los objetos (entre sus orígenes en realidad) es de <strong>1 unidad </strong>relativa (<strong>Desplazamiento relativo </strong>en <strong>X</strong> es <strong>1.000</strong>). Es decir, que el ancho del objeto es lo que Blender toma como unidad.</li>
+</ul>
+<p>
+Aumentamos <strong>Cantidad</strong> a <strong>5</strong> y <strong>Desplazamiento relativo</strong> en <strong>X</strong> a <strong>1.600</strong>.
+</p>
+<img alt="array_02" height="472" src="array_02.png" width="605" />
+<p>
+Para añadir mesas en el eje Y debemos aplicar un <strong>nuevo modificador Serie</strong>:
+</p>
+<ul>
+	<li><strong>Cantidad</strong>: <strong>5</strong>. Para tener 25 mesas.</li>
+</ul>
+<ul>
+	<li><strong>Desplazamiento relativo </strong>de <strong>X</strong> en <strong>0.000</strong>. No queremos desplazamientos en X de los duplicados.</li>
+</ul>
+<ul>
+	<li><strong>Desplazamiento relativo</strong> de <strong>Y</strong> a <strong>2</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="serie_03" height="427" src="serie_03.png" width="613" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id16">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta16_23_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="mesa_silla_serie.blend"><img alt="descargar_mess_silla_serie" height="48" src="descarga_mesa_silla_serie.png" width="219" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id17">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Separa las mallas</h2>
+<div class="iDevice_inner">
+<div id="ta17_21_2" class="block" style="display:block;position:relative"><p>
+Ya le hemos dado el visto bueno a la composición y hemos pulsado <strong>Aplicar</strong> en los dos modificadores <strong>Serie </strong>asignados al objeto <em>mesa_silla</em> . 
+</p>
+<p>
+Lo mejor es seleccionar todos los vértices que conforman la silla para separarla con una sola edición. A los métodos que ya conocemos de selección le vamos a añadir uno nuevo. Como estamos estudiando asuntos relativos a elementos vinculados vamos a decirle a Blender que cuando tengamos un vértice seleccionado de uno de los elementos que conforman la silla, seleccione automáticamente todos los que están conectados con él. El camino corto es el atajo de teclado <strong>&quot;Control_L&quot;</strong>.
+</p>
+<img alt="link_01" height="448" src="linkados_01.png" width="464" /> 
+<p>
+Seleccionamos un vértice de otro de los elementos (con <strong>&quot;Shift&quot; </strong>pulsado para acumular) y repetimos la operación hasta completar la selección de toda la silla.
+</p>
+<img alt="link_02" height="427" src="linkados_02.png" width="332" />
+<p>
+De esta manera cuando hagamos <strong>Malla/Vértices/Separar</strong>, optaremos por <strong>Selección</strong>; la silla se independizará y podremos seleccionarla desde <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" />...
+</p>
+<img alt="link_03" height="435" src="linkados_03.png" width="356" />
+<p>
+...para transformarla a nuestro gusto. 
+</p>
+<img alt="link_04" height="462" src="linkados_04.png" width="499" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id18">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta18_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="mesa_silla_separadas.blend"><img alt="descarga_mesa_silla_separadas" height="48" src="descarga_mesa_silla_separados.png" width="258" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="simtricos.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_baco.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

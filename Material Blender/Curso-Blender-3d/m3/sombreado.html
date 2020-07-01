@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Sombreado | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Conceptos fundamentales (II)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Conceptos fundamentales (II)</a></li><li><a href="centro_de_pivotaje.html" class="no-ch">Centro de pivotaje</a></li>
+<li id="active"><a href="sombreado.html" class="active no-ch">Sombreado</a></li>
+<li><a href="mallas.html" class="daddy">Mallas</a><ul class="other-section">
+<li><a href="opciones.html" class="no-ch">Opciones</a></li>
+<li><a href="sombreado_suave.html" class="no-ch">Sombreado Suave</a></li>
+<li><a href="subdivisin.html" class="no-ch">Subdivisión</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_estructura_molecular.html" class="no-ch">Material didáctico: Estructura molecular</a></li>
+<li><a href="iluminacin_bsica.html" class="no-ch">Iluminación básica</a></li>
+<li><a href="control_de_la_cmara.html" class="daddy">Control de la cámara</a><ul class="other-section">
+<li><a href="encuadre.html" class="no-ch">Encuadre</a></li>
+<li><a href="acercar_y_alejar.html" class="no-ch">Acercar y alejar</a></li>
+<li><a href="distancia_focal.html" class="no-ch">Distancia focal</a></li>
+<li><a href="vista_ortogrfica.html" class="no-ch">Vista ortográfica</a></li>
+</ul>
+</li>
+<li><a href="seleccionar_objetos.html" class="daddy">Seleccionar objetos</a><ul class="other-section">
+<li><a href="seleccin_mltiple.html" class="no-ch">Selección múltiple</a></li>
+</ul>
+</li>
+<li><a href="modo_edicin.html" class="daddy">Modo Edición</a><ul class="other-section">
+<li><a href="vrtices_lados_caras.html" class="no-ch">Vértices, lados, caras</a></li>
+<li><a href="recolocar_el_origen.html" class="no-ch">Recolocar el Origen</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_egipto_y_orin.html" class="no-ch">Material didáctico: Egipto y Orión</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="centro_de_pivotaje.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mallas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Sombreado</h1></div>
+<div class="FreeTextIdevice" id="id26">
+<div class="iDevice emphasis0">
+<div id="ta26_1" class="block" style="display:block;position:relative"><p>
+Nos hemos acostumbrado a ver los objetos representados en el monitor con sensación volumétrica; incluso cuando añadimos colores estos se hacen patentes en <strong>Vista 3D</strong>. Pero hay otros modos de sombreado y que resumimos en este apartado. El tipo de sombreado se escoge justo al lado del <strong>Centro de pivotaje</strong>. En esta ocasión el icono por defecto es una gran bola blanca.
+</p>
+<img alt="n_sombreado" height="177" src="n_sombreado.png" width="331" />
+<ul>
+	<li><strong>Sólido</strong>. Es la opción por defecto y en la que se trabaja la mayor parte del tiempo. Obedece a un tipo de iluminación denominada <strong>OpenGL</strong> por la cual los objetos siempre se nos muestran iluminados frontalmente. Esto hace que el trabajo sea agradable sacrificando la coherencia del claroscuro según las lámparas de la escena. No es recomendable editar esta iluminación pero si nos apetece jugar un rato vamos a <strong>Archivo/Preferencias de usuario</strong> y en la sección<strong> Sistema</strong> apagamos alguna luz o cambiamos colores.</li>
+</ul>
+<blockquote>
+	<img height="244" src="openGL.png" width="392" />
+</blockquote>
+<ul>
+	<li><strong>Alambre</strong>. Sólo nos muestra la geometría que conforma el objeto. No dejamos pasar la ocasión de presentar a Suzanne, mascota de Blender, que se encuentra en <strong>Añadir/Malla/Mono</strong>. Por norma general los software 3D incorporan un objeto más o menos complejo para que podamos hacer pruebas sin tener que invertir tiempo en modelar nosotros mismos.</li>
+</ul>
+<blockquote>
+	<img height="392" src="estructura.png" width="464" />
+</blockquote>
+<ul>
+	<li><strong>Volumen delimitador</strong>. Este concepto ya ha aparecido al hablar del <strong>Centro de pivotaje</strong>. A veces los objetos tienen miles de caras y eso les hace ser muy pesados para ser movidos con fluidez dependiendo de las capacidades de nuestro ordenador.</li>
+</ul>
+<ul>
+	<li><strong>Textura</strong>. Por un lado se mostrarán algunas de las texturas que hayamos añadido a los objetos aunque aún no sabemos hacerlo; y por otro se sacrifica la comodidad del <strong>OpenGL</strong> para que las lámparas de la escena iluminen realmente. Es muy importante cuando hacemos videojuegos y simulaciones porque esa será la iluminación final.</li>
+</ul>
+<blockquote>
+	<img height="342" src="textures.png" width="445" />
+</blockquote>
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="centro_de_pivotaje.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mallas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> El caso de la rodilla | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li id="active"><a href="el_caso_de_la_rodilla.html" class="active no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="la_pata.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mejoras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">El caso de la rodilla</h1></div>
+<div class="FreeTextIdevice" id="id71">
+<div class="iDevice emphasis0">
+<div id="ta71_1" class="block" style="display:block;position:relative"><p>
+El problema de la orientación de la rodilla (y codo si lo hubiera) es un clásico en esto de la animación 3D. Hay que impedir que la rotación de la <strong>tibia</strong> respecto al <strong>fémur </strong>sobrepase cierto ángulo (como en la vida real) dando la sensación de que la articulación se disloca.
+</p>
+<img alt="rod_01" height="416" src="rod_01.png" width="353" />
+<p>
+Seleccionamos desde <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> el hueso entero<em> ik_control.L </em>y aprovechando la <strong>Simetría X</strong> lo <strong>duplicamos</strong> (<strong>&quot;Shift_D&quot;</strong>) y desplazamos para colocarlo enfrentado a la rodilla.
+</p>
+<img alt="ci_14" height="311" src="ci_14.png" width="382" />
+<p>
+Al par de huesos los llamamos<em> rodilla_control.L </em>y <em>rodilla_control.R</em>. Lógicamente &quot;nacen&quot; siendo hijos de <em>posición</em>. 
+</p>
+<img alt="ci_15" height="362" src="ci_15.png" width="459" />
+<p>
+En este punto hay que pasar a <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" />, seleccionar <em>femur.L</em> y crearle una nueva <strong>Restricción de hueso</strong> <img height="18" src="hueso_restricciones.png" width="18" /> del tipo <strong>Cinemática inversa</strong> con <strong>Objetivo:</strong> <em>esqueleto</em>, <strong>Hueso:</strong> <em>rodilla_control.L </em>y <strong>Longitud de cadena: 1</strong>.
+</p>
+<img alt="ci_16" height="337" src="ci_16.png" width="500" />
+<p>
+Aparentemente nada se ha alterado salvo el color del hueso pero el cambio es radical. Ahora si doblamos la pierna con <em>ik_control.L</em>...
+</p>
+<img alt="ci_17" height="397" src="ci_17.png" width="385" />
+<p>
+...después controlamos la orientación de la rodilla con <em>rodilla_control.L</em>.
+</p>
+<img alt="ic_18" height="397" src="ci_18.png" width="385" />
+<p>
+El nuevo hueso hace un gran trabajo porque no sólo se encarga de la orientación de la rodilla sino que además impide que la articulación se disloque. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id121">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta121_24_2" class="block" style="display:block;position:relative"><a href="puntero_para_rodilla.swf" target="_blank"><img alt="ver_video_puntero_para_rodilla" height="200" src="ver_video_un_puntero_para_la_ridilla.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id79">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Poses</h2>
+<div class="iDevice_inner">
+<div id="ta79_26_2" class="block" style="display:block;position:relative"><p>
+Sólo queda utilizar lo aprendido para preparar la rodilla derecha. En ese momento podemos crear la pose que nos apetezca.
+</p>
+<p>
+Usamos para crear poses, exclusivamente:
+</p>
+<ul>
+	<li><em>pivote</em></li>
+</ul>
+<ul>
+	<li><em>ik_control.L y ik_control.R</em></li>
+</ul>
+<ul>
+	<li><em>rodilla_control.L y rodilla_control.R</em></li>
+</ul>
+<ul>
+	<li><em>pie.L y pie.R</em></li>
+</ul>
+<ul>
+	<li><em>ojo.L y ojo.R</em></li>
+</ul>
+<ul>
+	<li><em>posicion</em></li>
+</ul>
+<blockquote>
+	<img alt="ci_19" height="418" src="ci_19.png" width="327" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id102">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta102_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="lapintef_cinematica_indirecta.blend"><img alt="descarga_lapintef_cinematica_inversa" height="48" src="descarga_lapintef_cinematica_inversa.png" width="310" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="la_pata.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mejoras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

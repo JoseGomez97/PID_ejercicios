@@ -1,0 +1,177 @@
+* {
+	padding: 0;
+}
+
+a, a:link, a:visited, a:active {
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+	color:#999;
+	color:#F96;
+	color:#000;
+}
+
+h1, h2, h3, h4, h5, p, ul
+{margin-bottom:1em;}
+
+body {
+    line-height: 150%;
+    background-image: url(../imgs_frames/slash.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    min-width: 940px;}
+
+
+
+@font-face {
+
+    font-family: TituloH1;
+    src: url('gothic_bold.ttf');
+    }
+
+@font-face {
+
+    font-family: TituloH2;
+    src: url('gothic.ttf');
+    }
+
+@font-face {
+
+    font-family: Indice;
+    src: url('gothic.ttf');
+    }
+	
+	
+h1.hidden {
+    visibility: hidden;
+	display:none;
+}
+
+
+#main {
+    width: 970px;
+    min-height: 600px;
+    border: 5px solid #000;
+    background:#fff url(../imgs_frames/indice.png)  no-repeat;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#main_index {
+	width: 970px;
+	height: 500px;
+	border: 5px solid #ffddf;
+	background:#fff url(../imgs_frames/home.jpg);
+	background-position:0px -20px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#main_index.indice
+{height:600px;background:#fff url(../imgs_frames/indice.png)  no-repeat;background-position:-20px -20px;}
+
+#titulo {
+    width:550px;
+margin: 0 auto;
+    height:100px;
+	display:inline-block;
+	line-height:2em;
+}
+	
+#titulo h1
+{	font-family:TituloH1, Arial, Helvetica, sans-serif; color:#7B2C33;margin:0px;
+margin-top:40px;margin-left:40px;
+font-size:2.5em;
+color:#4265a2;
+color:#8d3517;
+}
+
+#titulo h2
+{	font-family:TituloH1, Arial, Helvetica, sans-serif; color:#C60;color:#589a4a;
+margin-top:0.4em;margin-left:40px;
+padding:0px;
+font-size:1.3em;
+}
+
+#titulo.indice
+{height:auto;}
+
+
+
+#titulo.indice h1
+{font-size:1.6em;margin-top:10px;width:700px;}
+
+#indice_main {
+    width: 970px;
+	height:270px;
+
+}
+
+#indice_main.indice {
+    width: 970px;
+	height:auto;
+
+}
+
+#indice_main ul, #indice_main ol
+{margin-left:40px; font-family:TituloH2x, Arial, Helvetica, sans-serif;font-size:1.1em;padding-bottom:1em;line-height:1.4em; }
+
+
+
+#indice_main li {
+    list-style: none;
+    font-weight: bold;
+    text-align: left;
+ padding-left:10px;
+}
+
+
+#indice_main li a:hover{
+	color: #5b7fbd;
+}
+
+
+#logo_me
+{
+	width: 970px;
+	height:120px;
+
+
+}
+
+#logo_me img
+{margin-left:40px;margin-top:20px;}
+
+
+
+
+div.volver {
+	width:970px;
+}
+
+div.volver a:hover {
+	color: #5D8FC0;
+}
+
+
+
+
+}
+
+.pdf
+{font-size:0.8em;
+opacity:0.7;
+filter:alpha(opacity=70);
+padding:0px;
+float:right;
+}
+
+.pdf:hover
+{
+opacity:1;
+filter:alpha(opacity=100);
+}
+

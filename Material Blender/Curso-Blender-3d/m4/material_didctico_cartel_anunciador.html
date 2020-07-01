@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Cartel anunciador | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (I)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (I)</a></li><li><a href="extrusin.html" class="daddy">Extrusión</a><ul class="other-section">
+<li><a href="extrusin_nula.html" class="no-ch">Extrusión nula</a></li>
+</ul>
+</li>
+<li><a href="bucles_de_bordes_y_facetas.html" class="daddy">Bucles de bordes y facetas</a><ul class="other-section">
+<li><a href="aadir_bucles.html" class="no-ch">Añadir bucles</a></li>
+<li><a href="editar_bucles.html" class="no-ch">Editar bucles</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_ensamble_con_espiga.html" class="no-ch">Material didáctico: Ensamble con espiga</a></li>
+<li><a href="adherencias.html" class="daddy">Adherencias</a><ul class="other-section">
+<li><a href="cursor_a_seleccionado.html" class="no-ch">Cursor a seleccionado</a></li>
+<li><a href="seleccin_a_cursor.html" class="no-ch">Selección a Cursor</a></li>
+</ul>
+</li>
+<li><a href="objetos_de_revolucin.html" class="daddy">Objetos de revolución</a><ul class="other-section">
+<li><a href="el_perfil.html" class="no-ch">El perfil</a></li>
+<li><a href="girar.html" class="no-ch">Girar</a></li>
+<li><a href="eliminar_duplicados.html" class="no-ch">Eliminar duplicados</a></li>
+<li><a href="recalculado_de_normales.html" class="no-ch">Recalculado de normales</a></li>
+<li><a href="modificador_solidificar.html" class="no-ch">Modificador Solidificar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cilindro_hidrulico.html" class="no-ch">Material didáctico: Cilindro hidráulico</a></li>
+<li><a href="textos.html" class="daddy">Textos</a><ul class="other-section">
+<li><a href="cambio_de_tipografa.html" class="no-ch">Cambio de tipografía</a></li>
+<li><a href="ediciones_bsicas.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="marcos.html" class="no-ch">Marcos</a></li>
+<li><a href="texto_a_malla.html" class="no-ch">Texto a malla</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_cartel_anunciador.html" class="active no-ch">Material didáctico: Cartel anunciador</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="texto_a_malla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Cartel anunciador</h1></div>
+<div class="FreeTextIdevice" id="id57">
+<div class="iDevice emphasis0">
+<div id="ta57_1" class="block" style="display:block;position:relative"><img alt="promo" height="339" src="actividad_07_promo.png" width="263" />
+<p>
+Llega la Semana Cultural y habrá una exposición con los trabajos que han realizado unos alumnos de 2º de Bachillerato de Artes en la asignatura de Dibujo Artístico.
+</p>
+<p>
+Comenzamos nuestro trabajo determinando el tamaño necesario para que el<em> render</em> se imprima correctamente una vez realizado. Partimos del supuesto de que se imprimirá en una DIN-A3 (210x297mm); no nos ponemos quisquillosos aquí con los márgenes de seguridad, sangrías y asuntos similares. Como Blender no trabaja en milímetros hay que pasar esas medidas a píxeles sabiendo que 90px equivalen a 25.4mm. Por lo tanto escogemos para <strong>Resolución X: 744 </strong>y <strong>Resolución Y: 1052</strong>
+</p>
+<p>
+Sin embargo eso no es suficiente para imprimir porque mientras que en el monitor la resolución es de 90ppp (puntos por pulgada) en la imprenta necesitamos 300ppp; es decir 3.33 veces más. 
+</p>
+<p>
+Los campos en los que se introducen datos en Blender admiten hacer operaciones matemáticas. Accedemos a <strong>Resolución X</strong> con un <strong>clic</strong> y en el interior multiplicamos su valor por 3.33.
+</p>
+<img alt="n_text_09" height="220" src="n_texto_09.png" width="328" />
+<p>
+Hacemos lo mismo con <strong>resolución Y</strong>. Nos quedaran unos valores finales de <strong>Resolución X: 2478</strong> y <strong>Resolución Y: 3503</strong>. Este es un<em> render</em> bastante grande. No olvidaremos bajar el valor del porcentaje del <em>render</em> en las pruebas, pero el render final estará al 100%.
+</p>
+<p>
+Preparamos el encuadre. Nos situamos en el punto de vista desde arriba con <strong>&quot;NumPad 7&quot;</strong> y llevamos la cámara a ese punto de vista con <strong>&quot;Control_Alt_NumPad 0&quot;</strong>.
+</p>
+<img alt="cartel_03" height="368" src="cartel_03.png" width="367" />
+<p>
+Eliminamos el cubo y lo sustituimos por un plano (<strong>Añadir/Malla/Plano</strong>) que escalamos para que sobrepase los límites de la cámara.
+</p>
+<img alt="cartel_04" height="368" src="cartel_04.png" width="367" />
+<p>
+Nos vamos a limitar a usar la fuente <strong>Bfont</strong>. Nosotros proponemos una composición en esta línea en la que tan sólo se han variado los parámetros de <strong>Extrusión</strong> de cada una de las palabras así como el <strong>espacio entre los caracteres</strong> para ayudar a igualar algunos anchos. 
+</p>
+<img alt="cartel_05" height="453" src="cartel_05.png" width="322" />
+<p>
+No olvidaremos, si lo consideramos oportuno, convertir en mallas los objetos de texto y eliminar todos los <strong>puntos dobles</strong>. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id58">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta58_24_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="cartel.blend"><img alt="descarga:cartel" height="48" src="descarga_cartel.png" width="144" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="texto_a_malla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

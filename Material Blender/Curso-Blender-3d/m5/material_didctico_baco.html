@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Ábaco | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_baco.html" class="active no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="serie.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="otros_modificadores.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Ábaco</h1></div>
+<div class="FreeTextIdevice" id="id54">
+<div class="iDevice emphasis0">
+<div id="ta54_1" class="block" style="display:block;position:relative"><img alt="promo" height="339" src="abaco_promo.png" width="263" />
+<p>
+Para comenzar necesitamos dos objetos: un cilindro y una esfera.
+</p>
+<p>
+Aprovechando la localización del <strong>Cursor 3D</strong> sacamos uno de ellos (<strong>Añadir/Malla/UV Esfera</strong>) y acto seguido sin cambiar la localización del <strong>Cursor 3D</strong> añadimos el otro (<strong>Añadir/Malla/Cilindro</strong>). 
+</p>
+<ul>
+	<li>A la esfera le aplicamos un <strong>escalado en el eje X</strong> (<strong>&quot;SX&quot;</strong>)</li>
+</ul>
+<ul>
+	<li>Al cilindro, tras <strong>girarlo 90º en el eje Y</strong> (<strong>&quot;RY90&quot;</strong>), lo escalamos (<strong>&quot;S&quot;</strong>) para que sea muy alargado y simule la varilla.</li>
+</ul>
+<blockquote>
+	<img alt="abaco_01" height="286" src="abaco_01.png" width="447" />
+</blockquote>
+<p>
+<strong>Seleccionamos primero el cilindro</strong> y <strong>después la esfera </strong>para juntarlos (<strong>Objeto/Unir</strong>); así, al aplicarle un modificador <strong>Serie</strong>, se obtienen los clones a la vez y manteniendo las posiciones relativas entre ellos. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id55">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">¿Por qué es importante el orden de selección?</h2>
+<div class="iDevice_inner">
+<div id="ta55_22_2" class="block" style="display:block;position:relative"><p>
+En esta ocasión es importante porque el cilindro ha sido girado en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y por lo tanto sus ejes <strong>Locales</strong> ya no se corresponden con los <strong>Globales</strong>. 
+</p>
+<p>
+En el supuesto de que seleccionáramos primero la esfera y después el cilindro, este último actuaría de <strong>objeto dominante</strong> y por lo tanto la unión final quedaría con los ejes <strong>Locales</strong> y<strong> Globales</strong> no coincidentes. La consecuencia sería que al aplicar el modificador <strong>Serie</strong> nos encontraríamos con algo así (curiosamente es lo que queremos pero no a costa de la incoherencia entre ejes).
+</p>
+<img alt="abaco_02" height="466" src="abaco_02.png" width="621" />
+<p>
+No es nada grave pero conviene acostumbrarse a mantener la coherencia siempre. En realidad es posible decirle a Blender que altere los ejes <strong>Locales </strong>para hacerlos coincidir con los <strong>Globales</strong> pero eso lo analizamos en el apartado <strong>Simetría no interactiva</strong>.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id56">
+<div class="iDevice emphasis0">
+<div id="ta56_1" class="block" style="display:block;position:relative"><p>
+Como al aplicarle el modificador en cuestión, el duplicado se crea en el
+eje X por defecto, cambiamos <strong>Desplazamiento relativo en X = 0.000</strong> y <strong>1.300 en Z</strong>. En el parámetro <strong>Cantidad</strong> optamos por <strong>5</strong>. Una vez creados los clones <strong>aplicamos el modificador</strong>.
+</p>
+<img alt="n_serie_01" height="343" src="n_serie_01.png" width="576" />
+<p>
+Con la aplicación del modificador se ha creado un objeto, pero nosotros lo queremos independizar en diez distintos (cinco bolas y cinco varillas). Así que pasamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y hacemos <strong>Malla/Vértices/Separar </strong>(o tecla <strong>&quot;P&quot;</strong>) y en el menú emergente escogemos <strong>Por partes perdidas</strong>.
+</p>
+<p>
+Sin embargo, para mayor comodidad, desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> seleccionamos ahora todas las varillas y las volvemos a juntar (<strong>&quot;Control_J&quot;</strong>). 
+</p>
+<p>
+Llega el momento de echar mano del modificador <strong>Serie</strong> otra vez, por ejemplo para la bola de arriba.
+</p>
+<img alt="n_serie_02" height="439" src="n_serie_02.png" width="493" />
+<p>
+Debe ocurrir lo mismo con las otras cinco bolas. Sin embargo no es necesario ir una por una asignando el modificador <strong>Serie</strong> sino que lo resolveremos de la siguiente forma:
+</p>
+<ul>
+	<li>En <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> seleccionamos todas las bolas dejando la que ya tiene el modificador <strong>Serie</strong> para el final. De ese modo queda como dominante.</li>
+</ul>
+<ul>
+	<li>Hacemos <strong>Objeto/Crear vínculos/Modificadores</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="abaco_07" height="372" src="abaco_07.png" width="412" />
+</blockquote>
+<p>
+Conseguimos el resultado esperado. En este caso el modificador de cada una de las bolas es independiente; se han copiado pero no se han enlazado. Esto quiere decir que si se aumenta la <strong>Cantidad</strong> de uno, eso no afectará a los demás.
+</p>
+<img alt="abaco_06" height="303" src="abaco_06.png" width="452" />
+<p>
+Antes de seguir asignamos colores a cada bloque de bolas. Estos pueden ser los hexadecimales:
+</p>
+<ul>
+	<li><strong>E7E7E7</strong></li>
+</ul>
+<ul>
+	<li><strong>CF8200</strong></li>
+</ul>
+<ul>
+	<li><strong>AF0000</strong></li>
+</ul>
+<ul>
+	<li><strong>469738</strong></li>
+</ul>
+<ul>
+	<li><strong>005ABD</strong></li>
+</ul>
+<p>
+En render presentan este aspecto.
+</p>
+<img alt="abaco_07" height="300" src="abaco_07.1.png" width="322" />
+<p>
+Debemos pulsar <strong>Aplicar </strong>en todos y cada uno de ellos y después separar todas las bolas para que sean independientes. El camino más corto para esto último es juntar las cinco filas de bolas (<strong>Objeto/Unir</strong>) y luego en <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> separar tal y como hicimos antes.
+</p>
+<p>
+Una última edición importante es seleccionar todas las bolas y recolocarles el <strong>Origen </strong>de forma masiva con un único <strong>Origen/Origen a la geometría</strong> en el cuadro de <strong>Herramientas </strong>(<strong>&quot;T&quot;</strong>).
+</p>
+<img alt="abaco_08" height="361" src="abaco_08.png" width="512" />
+<p>
+En realidad ahora sólo nos queda diseñar la estructura que sujeta las varillas. Usando técnicas que ya conocemos de modelado. Esta es nuestra propuesta.
+</p>
+<img alt="abaco_09" height="449" src="abaco_09.png" width="547" />
+<p>
+Como las cuentas del ábaco son independientes resulta muy fácil crear una composición.
+</p>
+<img alt="abaco_11" height="458" src="abaco_10.png" width="557" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id59">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta59_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="abaco.blend"><img alt="descarga_abaco" height="48" src="descarga_abaco.png" width="146" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="serie.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="otros_modificadores.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

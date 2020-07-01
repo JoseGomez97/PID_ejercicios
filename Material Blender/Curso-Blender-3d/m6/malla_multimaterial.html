@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Malla multi-material | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li id="current-page-parent"><a href="materiales.html" class="current-page-parent daddy">Materiales</a><ul>
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li id="active"><a href="malla_multimaterial.html" class="active no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="materiales_vinculados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_perfil_del_suelo.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Malla multi-material</h1></div>
+<div class="FreeTextIdevice" id="id12">
+<div class="iDevice emphasis0">
+<div id="ta12_1" class="block" style="display:block;position:relative"><p>
+¿Es posible decirle a Blender que considere grupos de caras dentro de una malla para darles un color distinto al de la malla general? La respuesta es sí. 
+</p>
+<img alt="multi_01" height="196" src="multi_01.png" width="553" />
+<p>
+El proceso es sencillo y debemos hacerlo desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y damos por hecho que la malla tiene asignado un primer material. En nuestro caso es de color azul y le hemos dado el nombre <em>bola_azul</em>.
+</p>
+<p>
+Seleccionamos las caras que nos interesen.
+</p>
+<img alt="multi_02" height="348" src="multi_02.png" width="343" />
+<p>
+Al encontrarnos en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> hay una novedad en el panel de los materiales. Se trata de tres botones: <strong>Asignar</strong>, <strong>Seleccionar</strong> y <strong>Deseleccionar</strong>.
+</p>
+<img alt="multi_03" height="184" src="multi_03.png" width="339" />
+<p>
+El protocolo ahora es muy intuitivo:
+</p>
+<ul>
+	<li>Creamos un nuevo material para la malla pulsando el signo &quot;<strong>+</strong>&quot; de la derecha.</li>
+</ul>
+<ul>
+	<li>Pulsamos el botón <strong>Nuevo</strong> (a no ser que lo que queramos sea asignar un material de los que ya se encuentren creados).</li>
+</ul>
+<blockquote>
+	<img alt="linked_04" height="226" src="multi_04.png" width="255" />
+</blockquote>
+<ul>
+	<li>Le ponemos un nombre (buena costumbre). Nosotros lo llamamos <em>bola_naranja</em>.  Al ser el último en ser editado queda seleccionado.</li>
+</ul>
+<blockquote>
+	<img alt="multi_05" height="152" src="multi_05.png" width="282" />
+</blockquote>
+<ul>
+	<li>Como las caras ya las tenemos seleccionadas pulsamos el botón<strong> Asignar</strong> con lo que Blender entiende que esas son las caras destinadas al material seleccionado (en nuestro caso <em>bola_naranja</em>).</li>
+</ul>
+<blockquote>
+	<img alt="linked_06" height="156" src="multi_06.png" width="280" />
+</blockquote>
+<ul>
+	<li>Editamos el nuevo material al gusto.</li>
+</ul>
+<blockquote>
+	<img alt="multi_07" height="344" src="multi_07.png" width="336" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id57">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta57_23_2" class="block" style="display:block;position:relative"><a href="malla_multi_material.swf" target="_blank"><img alt="ver_video_malla_multi_textura" height="200" src="ver_video_malla_multi_material.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id13">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta13_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="malla_multimaterial.blend" target="_blank"><img alt="descarga_malla_multimaterial" height="48" src="descarga_malla_multimaterial.png" width="241" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="materiales_vinculados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_perfil_del_suelo.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

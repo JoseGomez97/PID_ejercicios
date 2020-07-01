@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Duplicados | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li id="current-page-parent"><a href="objetos_vinculados.html" class="current-page-parent daddy">Objetos vinculados</a><ul>
+<li id="active"><a href="duplicados.html" class="active no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="objetos_vinculados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="simtricos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Duplicados</h1></div>
+<div class="FreeTextIdevice" id="id3">
+<div class="iDevice emphasis0">
+<div id="ta3_1" class="block" style="display:block;position:relative"><p>
+Basta cambiar el tipo de duplicado para conseguir clones que heredan las transformaciones. Hasta ahora siempre hemos usado <strong>&quot;Shift_D&quot; </strong>(<strong>Objeto/Duplicar</strong>) pero si utilizamos <strong>&quot;Alt_D&quot;</strong> (<strong>Objeto/Duplicar vinculado</strong>) conseguiremos lo que estamos buscando. Recordamos que el duplicado se genera sobre el original y que hay que desplazarlo.
+</p>
+<img alt="clones_01" height="262" src="clones_01.png" width="402" />
+<p>
+Ahora tendremos en cuenta lo siguiente:
+</p>
+<ul>
+	<li>En <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> no habrá ningún tipo de vinculación por lo que las transformaciones de<strong> escalado</strong>, <strong>rotación</strong>, <strong>desplazamiento</strong> o <strong>borrado</strong> sólo afectarán al objeto editado. Sin embargo es importante este modo de edición porque el objeto que tengamos seleccionado es el que podrá editarse al acceder a <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" />. Por ejemplo en la imagen anterior está seleccionado el toroide de la derecha y es por eso que en la siguiente imagen el <strong>Manipulador 3D</strong> aparece en esa malla.</li>
+</ul>
+<ul>
+	<li>En <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> toda transformación será heredada, desde el desplazamiento de un vértice a un borrado de toda la malla.</li>
+</ul>
+<blockquote>
+	<img alt="clones_02" height="316" src="clones_02.png" width="452" />
+</blockquote>
+<p>
+El hecho de que las transformaciones desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> no se hereden le da a este recurso infinitas posibilidades. Sin embargo tarde o temprano querremos <strong>desvincular</strong> alguno de los duplicados. La solución: en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> seleccionamos el que queremos que se desvincule y seguimos el menú <strong>Objeto/Hacer monousuario/Objeto y datos</strong>. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id4">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Datos vinculados</h2>
+<div class="iDevice_inner">
+<div id="ta4_22_2" class="block" style="display:block;position:relative"><p>
+Se puede comprobar cómo hay varias posibilidades para desvincular. En nuestro ejemplo, si el objeto tuviera un material asignado, este material continuaría vinculado porque en la opción elegida no estaba incluida. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id7">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Ejercitación</h2>
+<div class="iDevice_inner">
+<div id="ta7_25_2" class="block" style="display:block;position:relative"><p>
+Queremos una representación de la<strong> colocación de los jugadores de voleibol</strong> para la recepción.
+</p>
+<p>
+Prepara un plano que simule una cancha y con unos cilindros escalados adecuadamente prepara una red sencilla.
+</p>
+<img alt="clon_04" height="337" src="clones_04.png" width="353" />
+<p>
+Después añade un cubo en la posición de uno de los jugadores.
+</p>
+<img alt="clones_05" height="365" src="clones_05.png" width="441" />
+<p>
+Crea los duplicados vinculados con la distribución adecuada.
+</p>
+<img alt="clones_06" height="424" src="clones_06.png" width="407" />
+<p>
+Selecciona el objeto con el que mejor te resulte trabajar, pasa a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y crea a los jugadores con <strong>extrusiones</strong> (<strong>&quot;E&quot;</strong>), <strong>extrusiones nulas &quot;E+Intro&quot;</strong> y añadiendo bucles (<strong>&quot;Control_R&quot;</strong>). El nivel de detalle depende de ti, lo importante es practicar el trabajo con clones. Nosotros te proponemos unos personajes esquemáticos como estos.
+</p>
+<img alt="clones_07" height="366" src="clones_07.png" width="220" />
+<p>
+Un posible <em>render</em>...
+</p>
+<img alt="clones_08" height="379" src="clones_08.png" width="373" />
+<p>
+La ventaja ahora es que al aumentar el nivel de detalle de uno de los jugadores, todos los demás heredarán esas ediciones.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id86">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Los duplicados clonados ahorran memoria</h2>
+<div class="iDevice_inner">
+<div id="ta86_21_2" class="block" style="display:block;position:relative"><p>
+Aunque no vayamos a usar las propieades de la clonación es muy interesante usar este tipo de duplicados porque ahorran memoria del ordenador al heredar la información de la malla. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id9">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta9_27_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="voleibol.blend"><img alt="descarga_voleibol" height="48" src="descarga_voleibol.png" width="157" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="objetos_vinculados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="simtricos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

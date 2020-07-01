@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Propiedades ópticas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_propiedades_pticas.html" class="active no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="enmascara.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="texturas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Propiedades ópticas</h1></div>
+<div class="FreeTextIdevice" id="id64">
+<div class="iDevice emphasis0">
+<div id="ta64_1" class="block" style="display:block;position:relative"><img alt="promo" height="339" src="promo_trans.png" width="263" />
+<p>
+Vamos a crear una bonita semi-rueda con las tres propiedades ópticas: <strong>opaco</strong>,<strong> transparente</strong> y <strong>translúcido</strong>.
+</p>
+<p>
+Este es el método para obtener la parte geométrica:
+</p>
+<ul>
+	<li>Eliminamos el cubo por defecto y nos aseguramos de que el <strong>Cursor 3D </strong>esté en 0.0.0.</li>
+</ul>
+<ul>
+	<li>Sacamos a escena un plano (<strong>Añadir/Malla/Cubo</strong>), lo <strong>rotamos 90º en X</strong> (<strong>&quot;RX90&quot;</strong>) y lo <strong>escalamos en Z</strong> (<strong>&quot;SZ&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="trans_01" height="263" src="trans_01.png" width="307" />
+</blockquote>
+<ul>
+	<li>Desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> desplazamos en el eje X (rojo).</li>
+</ul>
+<blockquote>
+	<img alt="trns_02" height="330" src="trans_02.png" width="535" />
+</blockquote>
+<ul>
+	<li>Nos colocamos en el punto de vista superior (<strong>&quot;NumPad_7&quot;</strong>) y activamos<strong> Girar</strong> en el cuadro <strong>Herramientas</strong> (<strong>&quot;T&quot;</strong>); acto seguido nos vamos a sus opciones para editar: <strong>Paso: 20</strong> y <strong>Grados: 60</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="trans_03" height="343" src="trans_03.png" width="588" />
+</blockquote>
+<ul>
+	<li>En <strong>Modo Edición</strong> <img src="modo_edicion.png" /> seleccionamos todo los vértices (<strong>&quot;A&quot;</strong>) y les aplicamos otra vez <strong>Girar</strong> (con <strong>Pasos: 2</strong> y <strong>Grados: 120</strong>). No se creará un objeto de revolución a ser una malla cerrada, sino <strong>duplicados radiales</strong>. Es importante que el <strong>Cursor 3D</strong> no se haya movido respecto a la anterior operación.</li>
+</ul>
+<blockquote>
+	<img alt="trans_04" height="304" src="trans_04.png" width="580" />
+</blockquote>
+<ul>
+	<li>Seleccionamos todos los vértices (<strong>&quot;A&quot;</strong>) y hacemos independientes los tres módulos. Para ello pulsamos <strong>&quot;P&quot; </strong>y elegimos <strong>Por partes perdidas</strong>.</li>
+</ul>
+<ul>
+	<li>Para una mejor organización seleccionamos en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> los tres módulos y les aplicamos a la vez la <strong>Herramienta</strong> (<strong>&quot;T&quot;</strong>) <strong>Origen/Origen a la geometría</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="trans_05" height="247" src="trans_05.png" width="424" />
+</blockquote>
+<p>
+Antes de comenzar a asignar materiales completamos la parte geométrica. Sólo hay que sacar un plano (<strong>Añadir/Malla/Plano</strong>) para el suelo y entre los módulos y ese plano colocaremos unos cubos (<strong>Añadir/Malla/Cubo</strong>) sobre los que se apoyarán.
+</p>
+<img alt="trans_06" height="289" src="trans_06.png" width="525" />
+<p>
+Comenzamos con los <strong>Materiales</strong> <img height="16" src="materiales_panel.png" width="16" />. 
+</p>
+<p>
+A los cubos le hemos dado un color <strong>Difuso</strong> oscuro (<strong>4B4B4B</strong>) y les activamos, en la botonera <strong>Sombra</strong>, la opción <strong>Recibir transparencia</strong>. Ya tenemos la cámara en el punto de vista superior (<strong>&quot;NumPad 7&quot;</strong> y después<strong> &quot;Control_Alt_NumPad 0&quot;</strong>) y este es nuestro primer <em>render </em>(tenemos <strong>Iluminación básica</strong>). 
+</p>
+<img alt="trans_07" height="357" src="trans_07.png" width="576" />
+<p>
+Al módulo de arriba le aplicamos una <strong>Transparencia</strong> con <strong>Trazado de rayos</strong> (<strong>Alfa: 0.050</strong> y <strong>IdR: 1.5</strong>). 
+</p>
+<img alt="trans_10" height="454" src="trans_10.png" width="630" />
+<p>
+Al de la derecha le aplicamos también una <strong>Transparencia</strong> pero con estos parámetros:
+</p>
+<img alt="trans_09" height="447" src="trans_09.png" width="625" />
+<ul>
+	<li><strong>Trazado de rayos</strong> activado.</li>
+</ul>
+<ul>
+	<li><strong>Alfa: 0.400</strong>.</li>
+</ul>
+<ul>
+	<li><strong>IdR: 1.500</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Cantidad: 0.900</strong>. Importante para que se desenfoque más la parte baja del cubo que la que está en contacto con el cristal.</li>
+</ul>
+<p>
+Ya está todo preparado para obtener nuestro<em> render </em>final y elaborar una bonita presentación. 
+</p>
+<img alt="trans_11" height="384" src="trans_11.png" width="543" />
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="enmascara.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="texturas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

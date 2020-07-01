@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> La pata | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li id="active"><a href="la_pata.html" class="active no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="cinemtica_inversa.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="el_caso_de_la_rodilla.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">La pata</h1></div>
+<div class="preknowledgeIdevice" id="id75">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Preparativos</h2>
+<div class="iDevice_inner">
+<div id="ta75_22_2" class="block" style="display:block;position:relative"><ul>
+	<li>Lo primero y fundamental es que desactivemos la opción <strong>CI automática</strong> en el caso de haberla dejado activada.</li>
+</ul>
+<blockquote>
+	<img alt="c1_03" height="62" src="ci_03.png" width="196" />
+</blockquote>
+<ul>
+	<li>El hueso <em>ik_control.L</em> no debe ser hijo de <em>tibia.L </em>sino de <em>posición</em> (el padre final). Lo cambiamos en el panel adecuado <img height="17" src="hueso.png" width="17" /> siempre que estemos en <strong>Modo edición</strong> <img height="17" src="modo_edicion.png" width="18" />. En realidad debe ser hijo de un hueso que esté después de <em>femur.L</em> y quedar desconectado.</li>
+</ul>
+<blockquote>
+	<img alt="ci_04" height="263" src="ci_04.png" width="308" />
+</blockquote>
+<ul>
+	<li>Para una mejor organización es importante ir al panel <strong>Objeto</strong> <img height="16" src="objeto_panel.png" width="15" /> y al esqueleto darle un nombre apropiado como puede ser... <em>esqueleto</em>.</li>
+</ul>
+<blockquote>
+	<img alt="ci_05" height="96" src="ci_05.png" width="309" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id76">
+<div class="iDevice emphasis0">
+<div id="ta76_1" class="block" style="display:block;position:relative"><p>
+En <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> a <em>tibia.L</em> le asignamos una <strong>Restricción de hueso</strong> <img height="18" src="hueso_restricciones.png" width="18" /> de tipo<strong> Cinemática inversa </strong>(no confundir con el panel <strong>Restricciones</strong> <img height="16" src="restricciones_panel.png" width="18" /> porque las restricciones de hueso tienen su propio panel <img height="18" src="hueso_restricciones.png" width="18" />).
+</p>
+<img alt="ic_06" height="297" src="ci_06.png" width="581" />
+<p>
+No pasa nada en el <em>rigging</em> salvo una línea punteada que nos 
+informa del comienzo y del final de la cinemática inversa. Comienza en 
+la cola de <em>tibia.L</em> y finaliza en la cabeza de <em>posición</em> (el padre 
+final). ¿Por qué?. Porque esa es la cadena de huesos emparentados: <em>tibia.L - femur.L - cadera.L - pivote - posicion</em> (recordemos que <em>ik_control.L </em>ha quedado fuera).
+</p>
+<p>
+Si movemos <em>tibia.L</em> en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> la cinemática funciona pero de una manera incontrolada porque se extiende hasta <em>posicion</em>. Así que lo primero es decirle a Blender que queremos que no considere la cadena completa sino sólo un tramo de dos huesos (<em>tibia.L</em> y<em> femur.L</em>). Editamos <strong>Longitud de cadena:2</strong>. 
+</p>
+<img alt="ic_07" height="253" src="ci_07.png" width="532" />
+<p>
+La cinemática funciona mucho mejor aunque la rodilla se descontrola de vez en cuando. 
+</p>
+<p>
+Sin embargo no es eso lo que queremos. Lo que buscamos es que la cinemática de <em>tibia.L</em> se active de un modo indirecto mediante el desplazamiento de <em>ik_control.L</em>. 
+</p>
+<ul>
+	<li>En el cuadro de la restricción escogemos como <strong>Objetivo: </strong><em>esqueleto</em> (por eso era importante asignar un nombre apropiado para este objeto). Esto hace que se genere un nuevo campo llamado <strong>Hueso</strong>...</li>
+</ul>
+<blockquote>
+	<img alt="ci_08" height="280" src="ci_08.png" width="301" />
+</blockquote>
+<ul>
+	<li>... en el que seleccionamos <em>ik_control.L</em>.</li>
+</ul>
+<blockquote>
+	<img alt="ci_09" height="280" src="ci_09.png" width="301" />
+</blockquote>
+<p>
+Ahora al desplazar <em>ik_control.L </em>el control de la cinemática inversa es mucho mayor. Además presenta una curiosidad: si desplazamos más abajo de lo que mide la propia pierna el hueso se descuelga.
+</p>
+<img alt="ci_10" height="403" src="ci_10.png" width="339" />
+<p>
+Eso es intrascendente en esta edición pero es la base que justifica lo siguiente. Si seleccionamos<em> pivote</em> en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y desplazamos hacia abajo, el resultado es impresionante al no poder afectar a<em> ik_control.L</em>.
+</p>
+<img alt="ci_11" height="425" src="ci_11.png" width="313" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id120">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta120_23_2" class="block" style="display:block;position:relative"><a href="cinematica_inversa.swf" target="_blank"><img alt="ver_video_cinematica_inversa" height="200" src="ver_video_cinematica_inversa.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id77">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">La segunda pata</h2>
+<div class="iDevice_inner">
+<div id="ta77_24_2" class="block" style="display:block;position:relative"><p>
+Repetimos el mismo proceso para la pata derecha:
+</p>
+<ul>
+	<li>Hacemos que <em>ik_control.R </em>sea hijo de <em>posicion</em>.</li>
+</ul>
+<ul>
+	<li>Le asignamos a <em>tibia.R</em> una restricción de <strong>Cinemática inversa</strong> con una<strong> Longitud de cadena: 2</strong> con <strong>Objetivo:</strong> <em>esqueleto</em> y <strong>Hueso:</strong><em> ik_control.R</em>.</li>
+</ul>
+<p>
+Cuando esté terminada esta segunda pata ya podremos seleccionar el hueso pivote en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y colocar la cadera de Lapintef al gusto, porque las caderas se adaptarán subiendo o bajando según sea necesario.
+</p>
+<img alt="ci_12" height="451" src="ci_12.png" width="317" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id78">
+<div class="iDevice emphasis0">
+<div id="ta78_1" class="block" style="display:block;position:relative"><p>
+Aún así las rodillas a veces (casi siempre) se comportan de un modo descontrolado y es necesario poner solución a ese nuevo problema que, por otra parte, es completamente lógico porque 
+no le hemos dicho nada a Blender respecto a cuáles son las rotaciones permitidas, o no, en la articulación de la rodilla.
+</p>
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="cinemtica_inversa.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="el_caso_de_la_rodilla.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Multi-material con alfa | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li id="current-page-parent"><a href="texturas.html" class="current-page-parent daddy">Texturas</a><ul>
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li id="active"><a href="multimaterial_con_alfa.html" class="active no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="mapeado_de_una_caja.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="iluminacin.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Multi-material con alfa</h1></div>
+<div class="FreeTextIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_1" class="block" style="display:block;position:relative"><p>
+No siempre se quiere mapear toda la malla. Igual que ocurre cuando necesitamos añadir un segundo material a la malla, puede suceder que queramos <strong>pegar una imagen que sólo ocupe unas cuantas caras</strong>.
+</p>
+<p>
+Supongamos un <strong>condensador electrolítico</strong>. Está iluminado con tres puntos de luz y presenta este aspecto en el<em> render</em>.
+</p>
+<img alt="alfa_01" height="432" src="alfa_01.png" width="317" />
+<br />
+<a href="condensador.blend"><img alt="descarga_condensador" height="48" src="descarga_condensador.png" width="193" /></a>
+<p>
+Sobre la superficie azul de plástico que lo recubre vamos a añadir esta imagen en formato PNG con fondo transparente. 
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id42">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Textura para condensador
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.3.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="texto_condensador.png" title="Show  Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show  Image"
+                   src="texto_condensadorThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="texto_condensador.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              &nbsp;
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id43">
+<div class="iDevice emphasis0">
+<div id="ta43_1" class="block" style="display:block;position:relative"><p>
+Cuando mapeamos una malla con modificador <strong>Subdivisión</strong> asignado es muy conveniente activar allí el icono que obliga a mostrar la malla de alambre tal y como quedará al aplicar el modificador.
+</p>
+<img alt="alfa_05" height="460" src="alfa_05.png" width="618" />
+<p>
+Sin duda hay una gran diferencia entre una representación y la otra. 
+</p>
+<p>
+Nos dirigimos al entorno de trabajo <strong>UV Editing</strong> y cargamos en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> la imagen que hemos descargado a nuestro disco duro; luego, en el editor <strong>Vista 3D </strong>seleccionamos las caras de la superficie que se van a mapear tal y como se ve en la imagen anterior.
+</p>
+<p>
+Es el momento de dar la orden<strong> Malla/Desplegar UVs/Desenvolver</strong>. Así se mostrará el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" />.
+</p>
+<img alt="alfa_03" height="179" src="alfa_03.png" width="331" />
+<p>
+Por la posición de la malla ha resultado que las caras están giradas 90º respecto a la imagen. Aprovechando que ya están todos los vértices seleccionado hacemos una rotación (<strong>&quot;R90&quot;</strong>) y recolocamos en la zona central con <strong>&quot;G&quot;</strong>.
+</p>
+<img alt="alfa_04" height="179" src="alfa_04.png" width="331" />
+<p>
+Ahora hacemos los escalados necesarios, bien sean generales <strong>&quot;S&quot;</strong> o restringidos <strong>&quot;SX&quot;</strong> o <strong>&quot;SY&quot;</strong>. Ayudándonos de la <strong>Vista 3D</strong> con sombreado <strong>Textura </strong>activado colocamos la imagen a nuestro gusto. No importa si la malla es mayor que la imagen y en <strong>Vista 3D</strong> se origina un efecto de repetición en mosaico porque después solucionaremos ese problema.
+</p>
+<img alt="alfa_06" height="453" src="alfa_06.png" width="614" />
+<p>
+Regresamos al entorno de trabajo <strong>Default</strong>. 
+</p>
+<p>
+Parece que ahora bastaría ir a los <strong>Materiales</strong> <img alt="materiales" height="16" src="materiales_panel.png" width="16" /> y en la botonera <strong>Opciones</strong> activar <strong>Textura en caras</strong>, pero no es así; el resultado es desastroso, con dos consecuencias en el <em>render</em>:
+</p>
+<ul>
+	<li><strong>El color Difuso</strong> asignado a la malla <strong>desaparece</strong> y es sustituido por un gris neutro. Esto es lógico en realidad, porque la orden <strong>Textura en caras</strong> debe interpretarse por algo así como <strong>Eliminar el color y sustituirlo por la textura</strong>.</li>
+</ul>
+<ul>
+	<li><strong>El mapeado de la imagen es incorrecto</strong>. Algo parece estar fallando por motivo de la transparencia de la imagen en PNG.</li>
+</ul>
+<blockquote>
+	<img alt="alfa_07" height="475" src="alfa_07.png" width="639" />
+</blockquote>
+<p>
+El motivo de los problemas radica en que <strong>las caras que contienen el mapeado deben tener asignado el material correspondiente</strong> dentro de la propia malla; esto quiere decir que la malla debe tener un segundo material. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id45">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Importante</h2>
+<div class="iDevice_inner">
+<div id="ta45_21_2" class="block" style="display:block;position:relative"><p>
+Para continuar adelante <strong>desactivamos </strong>la opción <strong>Textura en caras</strong>. Hemos visto que se originan problemas y el primer paso para evitarlos es <strong>no usar este recurso</strong>. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id44">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">El segundo material</h2>
+<div class="iDevice_inner">
+<div id="ta44_21_2" class="block" style="display:block;position:relative"><p>
+Recordamos esquemáticamente el proceso para que las caras mapeadas tengan un segundo material:
+</p>
+<ul>
+	<li>Seleccionar <img alt="caras" height="16" src="caras.png" width="15" /> las caras en cuestión y mantenerse en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />.</li>
+</ul>
+<ul>
+	<li>Crear un nuevo material con el icono de signo <strong>&quot;+&quot;</strong> de la derecha. Después elegimos entre crear un nuevo material o asignarle uno de los que ya están creados. En nuestro caso le asignamos el mismo material llamado<em> condensador</em>. Esto hace que Blender nos comunique mediante un número <strong>&quot;2&quot;</strong> que ese material esta enlazado.</li>
+</ul>
+<blockquote>
+	<img alt="alfa_08" height="153" src="alfa_08.png" width="370" />
+</blockquote>
+<ul>
+	<li>Pulsar en botón <strong>Asignar</strong> para que realmente las caras seleccionadas reciban el material.</li>
+</ul>
+<blockquote>
+	<img alt="alfa_10" height="152" src="alfa_10.png" width="368" />
+</blockquote>
+<ul>
+	<li>Hemos conseguido que todos los atributos del material <em>condensador</em> se copien en el segundo material pero nosotros no queremos que sigan enlazados; así que pulsamos el número <strong>&quot;2&quot;</strong> y después damos un nombre característico a ese material, como puede ser <em>condensador_mapeado</em>.</li>
+</ul>
+<blockquote>
+	<img alt="alfa_11" height="146" src="alfa_11.png" width="364" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id46">
+<div class="iDevice emphasis0">
+<div id="ta46_1" class="block" style="display:block;position:relative"><p>
+Una vez preparada la malla con los dos materiales es el momento de comenzar a trabajar con el segundo de ellos, el llamado <em>condensador_mapeado</em>. De la parte de <strong>Materiales</strong> <img alt="materiales" height="16" src="materiales_panel.png" width="16" /> no nos interesa alterar nada porque al haber quedado desenlazados dejaría de ser igual a <em>condensador </em>y se rompería la estética de nuestro diseño. Así que, nos aseguramos de seleccionar <em>condensador_mapeado </em>y nos vamos al panel <strong>Texturas</strong> <img alt="testuras" height="16" src="texturas_panel.png" width="16" /> donde le asignamos una de <strong>Tipo: Imagen o película</strong> y en la botonera<strong> Imagen</strong> utilizamos el pequeño icono <img alt="menu" height="19" src="alfa_12.png" width="18" /> para seleccionar la imagen que hemos usado en el mapeado. El <em>render</em> trae buenas noticias:
+</p>
+<ul>
+	<li>El material <em>condensador</em> está actuando bien sobre el cilindro.</li>
+</ul>
+<ul>
+	<li>La textura se intuye en el espacio adecuado. Algo ha salido mal pero todo indica que estamos en el camino correcto.</li>
+</ul>
+<blockquote>
+	<img alt="alfa_13" height="334" src="alfa_13.png" width="295" />
+</blockquote>
+<p>
+Comenzamos a arreglar todo lo que ha salido mal. Lo más importante ahora es informara Blender de que lo que deseamos es que se utilice el sistema de coordenadas definido en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" />. La imagen se puede mapear usando muchos sistemas de coordenadas (punto de vista de la cámara, esquina inferior izquierda de la zona mapeada...). No perdemos más tiempo y vamos a la botonera <strong>Mapeo</strong> para seleccionar <strong>Coordenadas: UV</strong>.
+</p>
+<img alt="alfa_15" height="451" src="alfa_15.png" width="600" />
+<p>
+Ya está la imagen bien colocada y se ve el fondo de color azul determinado por el material <em>concensador_mapeado</em>. 
+</p>
+<p>
+Ahora arreglaremos ese efecto extraño de color blanco que contamina la imagen. La solución: opción <strong>Premultiplicar</strong> en la botonera<strong> Imagen</strong>.
+</p>
+<img alt="alfa_16" height="437" src="alfa_16.png" width="558" />
+<p>
+Y sólo queda el problema de que la imagen tiende a repetirse de una forma modular. Escogemos <strong>Extensión: Recortar </strong>en la botonera <strong>Mapeo de la imagen</strong>. 
+</p>
+<img alt="alfa_17" height="346" src="alfa_17.png" width="475" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id68">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta68_21_2" class="block" style="display:block;position:relative"><a href="multi_material_con_alfa.swf" target="_blank"><img alt="ver_video_multi_material_con_canal_alfa" height="200" src="ver_video_multi_material_con_canal_alfa.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id66">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta66_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="uv_alfa.blend"><img height="48" src="descarga_uv_alfa.png" width="166" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="mapeado_de_una_caja.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="iluminacin.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

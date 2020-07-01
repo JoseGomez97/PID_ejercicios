@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Mejoras | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li id="active"><a href="mejoras.html" class="active no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="el_caso_de_la_rodilla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="estiramientos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Mejoras</h1></div>
+<div class="FreeTextIdevice" id="id80">
+<div class="iDevice emphasis0">
+<div id="ta80_1" class="block" style="display:block;position:relative"><p>
+Dedicamos este apartado a tres cuestiones que nos facilitarán el trabajo al crear poses:
+</p>
+<ul>
+	<li>Un puntero para la mirada.</li>
+</ul>
+<ul>
+	<li>Una forma para el hueso <em>pivote</em>.</li>
+</ul>
+<ul>
+	<li>Ocultar los huesos que no intervienen en la creación de poses.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id81">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Un puntero para la mirada</h2>
+<div class="iDevice_inner">
+<div id="ta81_28_2" class="block" style="display:block;position:relative"><p>
+Nuestro personaje Lapintef tiene mirada bifocal y estaría bien que los dos ojos apuntaran siempre al lugar del enfoque.
+</p>
+<ul>
+	<li>Seleccionamos los dos huesos de los ojos en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y hacemos <strong>Esqueleto/Adherencia/Cursor a seleccionado</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="mej_01" height="325" src="mej_01.png" width="463" />
+</blockquote>
+<ul>
+	<li>Añadimos un nuevo hueso con <strong>&quot;Shift_A&quot;</strong>, lo llamamos <em>mirada</em> y lo desplazamos en el eje Y para alejarlo de los ojos.</li>
+</ul>
+<blockquote>
+	<img alt="mej_02" height="381" src="mej_02.png" width="452" />
+</blockquote>
+<ul>
+	<li>En <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> seleccionamos el hueso <em>ojo.L</em> y le asignamos una <strong>Restricción de hueso</strong> <img height="18" src="hueso_restricciones.png" width="18" /> <strong>Seguir a </strong>con<strong> Objetivo:</strong> <em>esqueleto</em> y <strong>Hueso: </strong><em>mirada</em>. Por la condiciones en las que están colocados los dos huesos no hay que alterar nada más.</li>
+</ul>
+<blockquote>
+	<img alt="mej_03" height="251" src="mej_03.png" width="306" />
+</blockquote>
+<ul>
+	<li>Repetimos lo mismo con el <em>hueso ojo.R</em>.</li>
+</ul>
+<p>
+Ahora al desplazar el hueso mirada es facilísimo controlar los dos ojos a la vez.
+</p>
+<img alt="mej_04" src="mej_04.png" />
+<p>
+Está bien que ese hueso no sea hijo de nadie, así no se ve afectado si desplazamos al personaje entero, que mantendrá la mirada en el mismo enfoque. Pero cuidado no olvidarse de él.  
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id82">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Una forma para el hueso pivote</h2>
+<div class="iDevice_inner">
+<div id="ta82_29_2" class="block" style="display:block;position:relative"><p>
+Existe la posibilidad de sustituir los huesos por formas más apropiadas al elemento que se está moviendo. Solo hay que diseñar la forma y dejarla en una capa que no esté visible.
+</p>
+<p>
+Por ejemplo para nuestro hueso <em>pivote</em>:
+</p>
+<ul>
+	<li>Sacamos un círculo (<strong>Añadir/Malla/Círculo</strong>) al que le seleccionamos todos los vértices (<strong>&quot;A&quot;</strong>) en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y los extruimos para darle al objeto una sensación de grosor. A ese objeto le ponemos por nombre <em>pivote_forma</em>.</li>
+</ul>
+<blockquote>
+	<img alt="mej_05" height="329" src="mej_05.png" width="426" />
+</blockquote>
+<ul>
+	<li>Seleccionamos en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> el hueso <em>pivote</em> y en el panel de <strong>Hueso</strong> <img height="17" src="hueso.png" width="17" /> nos vamos a la botonera <strong>Mostrar</strong> para seleccionar como <strong>Forma personalizada:</strong> <em>pivote_forma</em>. Es importante activar la opción <strong>Alambre </strong>o saldrá en el <em>render</em>.</li>
+</ul>
+<blockquote>
+	<img alt="mej_06" height="411" src="mej_06.png" width="535" />
+</blockquote>
+<ul>
+	<li>Antes de enviar el objeto <em>pivote_forma</em> a otra capa hacemos las ediciones de <strong>rotación</strong> (<strong>&quot;R&quot;</strong>) y <strong>escalado</strong> (<strong>&quot;S&quot;</strong>) para adaptarlo a nuestros fines. Estas transformaciones hay que hacerlas en <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" />.</li>
+</ul>
+<blockquote>
+	<img alt="mej_07" height="311" src="mej_07.png" width="452" />
+</blockquote>
+<ul>
+	<li>En <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> enviamos <em>pivote_forma</em> a otra capa (<strong>Objeto/Mover a capa</strong>) donde permanezca invisible (nosotros lo hemos puesto en la <strong>20</strong>)</li>
+</ul>
+<p>
+Crear poses ahora es mucho más cómodo.
+</p>
+<img alt="mej_08" height="403" src="mej_08.png" width="267" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id83">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ocultar los huesos que no intervienen en la creación de poses</h2>
+<div class="iDevice_inner">
+<div id="ta83_30_2" class="block" style="display:block;position:relative"><p>
+Por último vamos a ocultar todos los huesos que no intervienen en la creación de poses.
+</p>
+<p>
+Seleccionamos los huesos en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y usamos el menú <strong>Pose/Cambiar capas de huesos</strong> y los enviamos a la 2. Estas capas son distintas de las capas donde se guardan las mallas, luces.... para hacerlas visibles/no visibles tenemos que ir al panel <strong>Datos de objeto</strong> <img height="16" src="armadura.png" width="18" /> y gestionarlas como las capas normales.
+</p>
+<img alt="mej_09" height="242" src="mej_09.png" width="307" />
+<p>
+Así luce nuestro personaje con esos huesos ocultos.
+</p>
+<img alt="mej_10" height="379" src="mej_10.png" width="488" />
+<p>
+También es habitual eliminar al final la visibilidad de las líneas que representan las relaciones y restricciones. La opción está en el cuadro <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>).
+</p>
+<img alt="mej_11" height="315" src="mej_11.png" width="210" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id84">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta84_31_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="lapintef_rig_completo.blend"><img alt="descarga_lapintef_completo" height="48" src="descarga_lapintef_completo.png" width="227" /></a>
+<p>
+<strong>NOTA:</strong> Este .blend incluye más formas para huesos. 
+</p>
+<img alt="completo" height="365" src="completo.png" width="406" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="el_caso_de_la_rodilla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="estiramientos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

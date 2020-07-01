@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Madera | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li id="current-page-parent"><a href="texturas.html" class="current-page-parent daddy">Texturas</a><ul>
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li id="active"><a href="madera.html" class="active no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="ediciones_bsicas2.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="ruido.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Madera</h1></div>
+<div class="FreeTextIdevice" id="id19">
+<div class="iDevice emphasis0">
+<div id="ta19_1" class="block" style="display:block;position:relative"><p>
+Crear una textura procedural es realmente muy sencillo a nivel técnico; crearla de una manera convincente a nivel visual y estético es otra cosa muy distinta. Así que vamos paso a paso.
+</p>
+<p>
+Lo primero es asignarle al objeto un <strong>Material</strong> <img alt="panel_meteriales" height="16" src="materiales_panel.png" width="16" /> cuyas principales características son:
+</p>
+<ul>
+	<li>Un color <strong>Difuso</strong> con valor hexadecimal <strong>D4BFA1</strong> (beige).</li>
+</ul>
+<ul>
+	<li>En <strong>Especular</strong> optamos por una <strong>Intensidad</strong> baja (<strong>0.200</strong>, por ejemplo) ya que la madera que estamos creando es casi mate (lo contrario le daría un aire barnizado). Aquí le damos un valor a la <strong>Dureza</strong> muy bajo (<strong>15</strong>) para que no se generen brillos pequeños que le dieran un aspecto plástico.</li>
+</ul>
+<blockquote>
+	<img alt="madera_01" height="188" src="madera_01.png" width="293" />
+</blockquote>
+<p>
+Llega el momento de pasar a la <strong>Textura</strong> <img alt="panel_texturas" height="16" src="texturas_panel.png" width="16" />, crear una nueva, ponerle el nombre <em>madera</em> y optar por una <strong>Tipo: Madera</strong>.
+</p>
+<img alt="madera_02" height="430" src="madera_02.png" width="291" />
+<p>
+Esto nos despliega todo un arsenal de parámetros para comenzar a configurar nuestra textura procedural. Lo primero es cambiar el color secundario de la textura. Blender necesita dos colores para crearla, uno de ellos lo toma del color del material (recordemos el beige que hemos cogido antes) pero ¿cuál es el segundo color?. Blender no puede adivinarlo así que le asigna uno de color estrambótico (fucsia) a la espera de que nosotros lo cambiemos. En el caso de un <em>render </em>nos toparíamos con esto.
+</p>
+<img alt="madera_03" height="306" src="madera_03.png" width="530" />
+<p>
+En la botonera <strong>Influencia</strong> hay un gran rectángulo de color que nos despliega el típico editor que ya conocemos. Allí definimos un color hexadecimal <strong>C0A27D</strong>.
+</p>
+<img alt="madera_04" height="368" src="madera_04.png" width="299" />
+<p>
+Esto cambia considerablemente el render al desaparecer aquel color fucsia tan fuera de lugar; aunque el resultado no es nada espectacular, sin duda. 
+</p>
+<img alt="madera_05" height="302" src="madera_05.png" width="483" />
+<p>
+Vamos a mejorar esta textura. Lo primero es acceder a la botonera <strong>Colores</strong> para aumentar el <strong>Contraste</strong>. Un valor <strong>3.000</strong> puede ser apropiado para que el cambio entre un color y el otro sea mucho más cortante.
+</p>
+<img alt="madera_06" height="391" src="madera_06.png" width="598" />
+<p>
+Y ahora nos dirigimos a la botonera propia de la textura, que en esta ocasión se denomina <strong>Madera </strong>y donde editamos tal y como muestra esta imagen.
+</p>
+<img alt="madera_07" height="473" src="madera_07.png" width="629" />
+<ul>
+	<li><strong>Seno</strong>. Es uno de los tres modelos que se nos ofrecen para generar los cortes.</li>
+</ul>
+<ul>
+	<li><strong>Anillo de ruido</strong>. Si queremos generar los típicos anillos de una madera natural optamos por <strong>Anillos</strong> o <strong>Anillo de ruido</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Duro</strong>. En nuestro caso afecta al tipo de anillo, que es menos regular que si hubiéramos optado por <strong>Suavidez</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Tamaño</strong>. No tiene que ver con el tamaño del anillo. Su traducción más adecuada sería <strong>Escala</strong> haciendo referencia a la onda con la que se forma el anillo. Vemos que no es una curva constante sino sinuosa. Este parámetro hace referencia a la escala de esas ondas a lo largo del anillo.</li>
+</ul>
+<ul>
+	<li><strong>Turbulencia</strong>. Si en el anterior parámetro editábamos la escala de las ondas en longitud, ahora editamos esa escala en altura. Es decir, si el anterior parámetro nos decía si había muchas o pocas turbulencias, este otro parámetro nos dice si esas turbulencias son suaves o bruscas.</li>
+</ul>
+<p>
+En realidad la textura ya está creada. Ahora lo que queda es editar su localización y escalado para que resulte creíble. Vemos cómo la textura se aplica de forma muy parecida en todas las caras del cubo y eso no es bueno. Lo primero es hacer que el anilllo no esté inscrito en una circunferencia (o en un cuadrado de dimensiones X e Y); así que alteraremos una de las dimensiones. Esto lo hacemos en la botonera <strong>Mapeo</strong> en al sección <strong>Tamaño</strong>. Nosotros optamos por variar el valor de <strong>X</strong> a <strong>2.00</strong> (aunque quizá sea algo exagerado).
+</p>
+<img alt="madera_08" height="456" src="madera_08.png" width="631" />
+<p>
+No parece razonable que se generen anillos en todas las caras del cubo si atendemos a que procede de una pieza natural. Los cortes en uno de los ejes deben seguir un deplazamiento más lineal que circular. Arreglar eso es tan sencillo como alterar el<strong> Tamaño </strong>en <strong>Z</strong>. Si hacemos que su valor sea <strong>0.00</strong> el desplazamiento será completamente recto y eso no es del todo bueno. Así que lo descendemos hasta <strong>0.20</strong>.
+</p>
+<img alt="madera_09" height="456" src="madera_09.png" width="614" />
+<p>
+Para aumentar su credibilidad variamos su origen de coordenadas para que el anillo de arriba no quede situado justo en el centro de la cara. Nos mantenemos en la botonera <strong>Mapeo</strong> para variar su<strong> Desplazamiento</strong> respecto a <strong>X</strong> (<strong>0.40</strong>) e <strong>Y</strong> (<strong>-0.20</strong>).
+</p>
+<img alt="madera_09" height="463" src="madera_10.png" width="619" />
+<p>
+A esta textura se le pueden añadir muchas mejoras con matices que le van otrogando mayor credibilidad. Una de esas mejoras es hacer que el color secundario de la textura sea ligeramente transparente para que se mezcle con el de la base del material. Descendemos para ello el valor<strong> Color </strong>en la botonera<strong> Influencia</strong>.
+</p>
+<img alt="madera_11" height="473" src="madera_11.png" width="634" />
+<p>
+Sin embargo estos parámetros pueden no ser los ideales para otro objeto. Por ejemplo, si le aplicamos este material a una esfera es conveniente editarle el Tamaño en <strong>X</strong> y en <strong>Y</strong> para que resulte convincente...
+</p>
+<img alt="madera_12" height="319" src="madera_12.png" width="562" />
+<p>
+...mientras que en esta otra composición, a la mona Suzzane se le han aplicado unos valores intermedios: <strong>Tamaño</strong> en <strong>X: 7.00 </strong>y en<strong> Y: 5.00</strong>.
+</p>
+<img height="310" src="madera_13.png" width="554" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id58">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta58_24_2" class="block" style="display:block;position:relative"><a href="madera.swf" target="_blank"><img alt="ver_video_madera" height="200" src="ver_video_madera.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id20">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta20_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado, una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="procedural_madera.blend" target="_blank"><img alt="descarga_procedural_madera" height="48" src="descarga_procedural_madera.png" width="243" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="ediciones_bsicas2.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="ruido.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

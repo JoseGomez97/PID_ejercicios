@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Deformación proporcional | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li id="current-page-parent"><a href="utilidades.html" class="current-page-parent daddy">Utilidades</a><ul>
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li id="active"><a href="deformacin_proporcional.html" class="active no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="subdividir.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extruir_individual.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Deformación proporcional</h1></div>
+<div class="FreeTextIdevice" id="id60">
+<div class="iDevice emphasis0">
+<div id="ta60_1" class="block" style="display:block;position:relative"><p>
+¿Cuántas veces se nos ha pasado por la mente lo bueno que sería desplazar un vértice y que los contiguos sufran un desplazamiento en función de la proximidad?. Eso es una <strong>deformación proporcional</strong> en la que a nivel interno Blender puede aplicar gran variedad de fórmulas matemáticas y así conseguir que el estiramiento quede más picudo, redondeado...
+</p>
+<p>
+Partamos de un plano (<strong>Añadir/Malla/Plano</strong>) al que le hemos aplicado unas cuantas <strong>subdivisiones</strong>.
+</p>
+<img alt="prop_01" height="388" src="prop_01.png" width="492" />
+<p>
+Ahora vamos a activar la <strong>deformación proporcional</strong> en la hilera de iconos del editor <strong>Vista 3D</strong> tal y como indica en la imagen siguiente. Al optar por <strong>Habilitar</strong> aparece al lado un nuevo icono representativo del tipo de deformación.
+</p>
+<img alt="prop_02" height="180" src="prop_03.png" width="450" />
+<p>
+Seleccionamos uno de los vértices <img alt="vertices_select" height="16" src="vertices.png" width="15" /> de la zona central y activamos el <strong>desplazamiento</strong> con la tecla <strong>&quot;G&quot;</strong>. Inmediatamente aparece una novedad: un <strong>campo de fuerza</strong> para la deformación. 
+</p>
+<img alt="prop_04" height="418" src="prop_04.png" width="455" />
+<p>
+Si <strong>desplazamos</strong> hacia arriba <strong>&quot;Z&quot; </strong>(se supone que la orden<strong> &quot;G&quot;</strong> ya estaba dada) y se hace evidente el efecto de deformación proporcional.
+</p>
+<img alt="prop_05" height="408" src="prop_05.png" width="473" />
+<p>
+Impresionante sin duda. Algunas cosas que debemos tener en cuenta sobre esta edición:
+</p>
+<ul>
+	<li>Ya hemos mencionado que hay varios tipos de deformación. El icono correspondiente suele ser bastante informativo.</li>
+</ul>
+<ul>
+	<li>El radio del campo de deformación se puede editar en tiempo real con la <strong>rueda del ratón</strong>.</li>
+</ul>
+<ul>
+	<li>Es muy importante acostumbrarse a desactivar esta herramienta cuando terminemos de usarla.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id61">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Posibles situaciones extrañas</h2>
+<div class="iDevice_inner">
+<div id="ta61_24_2" class="block" style="display:block;position:relative"><h4><span style="color: #006699">Al comenzar la edición no aparece la circunferencia del campo de fuerza.</span></h4>
+<p>
+El motivo es que la última vez que usamos esta herramienta salimos de ella dejando esta circunferencia a un tamaño que ahora no vemos. La solución es <strong>girar la rueda</strong> para aumentar su tamaño. También es posible que la dejáramos tan grande que tampoco alcancemos a verla; en este caso la solución es tratar de disminuir el tamaño de la misma manera. 
+</p>
+<p>
+Es por eso que se recomienda salir de esta edición preocupándonos de no originar este problema.
+</p>
+<h4><span style="color: #006699">En Modo Objeto <img height="16" src="modo_objeto.png" width="17" />, al mover un elemento se mueven los demás.</span></h4>
+<p>
+Aunque este tipo de recurso es más habitual del <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> también se puede usar en <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" />. En el caso que nos ocupa está claro que estamos originando que al mover un objeto los demás se desplacen porque hemos accionado la deformación proporcional. No puede ser un descuido, como por ejemplo haberla dejado olvidada desde <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" />, porque son independientes.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id62">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Deformación proporcional conectada</h2>
+<div class="iDevice_inner">
+<div id="ta62_25_2" class="block" style="display:block;position:relative"><p>
+Hay una opción de rango superior que hace que Blender distinga 
+vértices enlazados y se respete esta condición. Por ejemplo en este 
+caso.
+</p>
+<img alt="prop_04" height="295" src="prop_06.png" width="479" />
+<p>
+Queremos desplazar el vértice seleccionado <img alt="vertices_select" height="16" src="vertices.png" width="15" /> pero no deseamos que los vértices que no están conectados sufran deformación. Debemos activar un nuevo modo de deformación; donde antes escogimos <strong>Habilitar</strong>, ahora optamos por <strong>Conectado</strong>.
+</p>
+<img alt="prop_07" height="228" src="prop_07.png" width="498" />
+<p>
+A partir de ahí no hay diferencia con la deformación proporcional que ya hemos estudiado salvo el resultado.
+</p>
+<img alt="prop_08" height="281" src="prop_08.png" width="473" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="subdividir.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extruir_individual.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

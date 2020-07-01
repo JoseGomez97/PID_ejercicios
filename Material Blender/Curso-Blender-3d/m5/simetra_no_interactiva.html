@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Simetría no interactiva | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li id="current-page-parent"><a href="utilidades.html" class="current-page-parent daddy">Utilidades</a><ul>
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li id="active"><a href="simetra_no_interactiva.html" class="active no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="extruir_individual.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="adherir_elemento.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Simetría no interactiva</h1></div>
+<div class="FreeTextIdevice" id="id10">
+<div class="iDevice emphasis0">
+<div id="ta10_1" class="block" style="display:block;position:relative"><p>
+Es habitual querer<strong> invertir simétricamente un objeto</strong> que 
+ya está modelado porque durante el flujo de trabajo hemos cambiado de 
+idea respecto a la composición o asuntos similares.
+</p>
+<p>
+La edición no puede ser más sencilla pero nos viene muy bien para repasar asunto relativos a ejes <strong>Locales</strong> y <strong>Globales</strong> y adquirir un nuevo conocimiento.
+</p>
+<p>
+La simetría en sí se consigue seleccionando el objeto y usando el menú <strong>Objeto/Espejo</strong> y escogiendo el eje que se desee. Podemos optar por dar la orden por teclado con <strong>&quot;Control_M&quot;</strong> y después la tecla relativa al eje.
+</p>
+<p>
+Tenemos modelada esta mano de baja poligonización (<em>low-poly</em>).
+</p>
+<img alt="espej_01" height="374" src="espej_01.png" width="401" />
+<br />
+<a href="mano.blend"><img alt="descarga_mano" height="48" src="descarga_mano.png" width="146" /></a>
+<p>
+Es una mano derecha (por la curvatura del pulgar y otros asuntos anatómicos) pero suponemos que lo que necesitamos es la izquierda. Una opción aceptable es usar el modificador <strong>Espejo</strong>. Una vez que lo aplicáramos nos desharíamos de la mano derecha y nos quedaríamos con la izquierda. Pero lo lógico es hacer que este mismo objeto se convierta directamente en el simétrico. En nuestro ejemplo es <strong>&quot;Control_M X&quot;</strong>.
+</p>
+<img alt="espej_02" height="418" src="espej_02.png" width="465" />
+<p>
+El eje de simetría pasa por el <strong>Origen</strong>. Igual que ocurre en el resto de las ediciones de este tipo esa <strong>&quot;X&quot;</strong> se refiere a los ejes <strong>Globales</strong> del mundo 3D, mientras que si pulsamos dos veces la <strong>&quot;X&quot;</strong> estamos restringiendo al eje X <strong>Local</strong>. Lo que pasa es que en esta mano los ejes <strong>Locales</strong> y los <strong>Globales</strong> coinciden porque el cubo original con el que se modeló no se giró en ningún momento. 
+</p>
+<p>
+Sin embargo con la operación<strong> Objeto/Espejo </strong>hemos alterado uno de los ejes <strong>Locales</strong> (el X) que ha quedado invertido respecto al <strong>Global </strong>como consecuencia lógica de la edición. 
+</p>
+<img alt="espj_04" height="238" src="espej_04.png" width="630" />
+<p>
+Si no corregimos esto, se convertiría en un auténtico quebradero de cabeza al seguir haciendo ediciones. Llegaríamos a pensar que Blender se ha vuelto incoherente por completo. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id63">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Igualar ejes Locales con Globales</h2>
+<div class="iDevice_inner">
+<div id="ta63_26_2" class="block" style="display:block;position:relative"><p>
+Esta es la solución al problema anterior. Salvo que deseemos por un motivo muy concreto mantener los ejes <strong>Globales</strong> y los <strong>Locales</strong> desiguales lo mejor es darle la orden a Blender de que reorganice los ejes <strong>Locales</strong> para igualarlos con los <strong>Globales</strong>. Lo hacemos con <strong>Objeto/Aplicar/Rotación y escala</strong>.
+</p>
+<img alt="espej_05" height="224" src="espej_05.png" width="434" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="extruir_individual.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="adherir_elemento.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Enmascara | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li id="current-page-parent"><a href="materiales.html" class="current-page-parent daddy">Materiales</a><ul>
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li id="active"><a href="enmascara.html" class="active no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="slo_sombra.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_propiedades_pticas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Enmascara</h1></div>
+<div class="FreeTextIdevice" id="id16">
+<div class="iDevice emphasis0">
+<div id="ta16_1" class="block" style="display:block;position:relative"><p>
+Un recurso interesante es el de los objetos que se renderizan transparentes. Es lo que <strong>en diseño se denomina máscara</strong>. 
+</p>
+<p>
+Tenemos una fotografía del planeta Tierra y nos proponemos un montaje para añadirle la Luna. El problema es que nos hemos planteado que el satélite en cuestión se muestre al encontrarse semioculto por el planeta Tierra.
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id17">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Earth Pacific full
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a title="Show Earth Pacific full // Autor: NASA // Licencia: Dominio público Image" 
+             href=""
+             onclick="window.open(
+    'galleryPopup.html?i=0', 'galleryImage', 'menubar=no,alwaysRaised=yes,dependent=yes,width=640,height=480,scrollbars=yes,screenX='+((screen.width/2)-(640/2))+',screenY='+((screen.height/2)-(480/2)));"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Earth Pacific full // Autor: NASA // Licencia: Dominio público Image"
+                   src="earth_pacific_fullThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="earth_pacific_full.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Earth Pacific full // Autor: NASA // Licencia: Dominio público
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="preknowledgeIdevice" id="id19">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">La imagen en el render </h2>
+<div class="iDevice_inner">
+<div id="ta19_25_2" class="block" style="display:block;position:relative"><p>
+Para que la imagen aparezca en el render final debemos usar un <strong>modo de edición basado en nodos</strong>. Nosotros ahora no profundizaremos en este recurso, así que damos los requisitos necesarios para añadir la imagen.
+</p>
+<ul>
+	<li>Eliminamos el cubo inicial (<strong>Supr</strong>).</li>
+</ul>
+<ul>
+	<li>Cambiamos al entorno de trabajo a<strong> Compositing</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="mascara_01" height="310" src="mascara_01.png" width="476" />
+</blockquote>
+<ul>
+	<li>En el <strong>Editor de Nodos</strong> <img height="18" src="nodos.png" width="18" />, nos aseguramos de estar en el modo adecuado (<strong>Composición</strong> <img alt="mascara_03" height="18" src="mascara_03.png" width="18" />) y de tener activada la opción <strong>Usar nodos</strong>. Esto hace aparecer en el editor dos <strong>nodos</strong>, propiamente dichos, unidos por una línea. Estos nodos pueden hacerse más grandes estirando de la esquina inferior derecha. La navegación por este editor es muy similar a la de <strong>Vista 3D</strong> (girar la rueda del ratón para hacer zoom, rueda presionada para desplazarse...).</li>
+</ul>
+<blockquote>
+	<img alt="mascara_02" height="355" src="mascara_02.png" width="489" />
+</blockquote>
+<ul>
+	<li>Usamos el menú <strong>Añadir/Entrada/Image </strong>para disponer de un nuevo nodo especialmente destinado a cargar una imagen de fondo.</li>
+</ul>
+<blockquote>
+	<img alt="mascara_04" height="361" src="mascara_04.png" width="293" />
+</blockquote>
+<ul>
+	<li>Usando el botón <strong>Abrir </strong>del nuevo nodo vamos a por la imagen de la Tierra que hemos guardado en nuestro disco duro.</li>
+</ul>
+<blockquote>
+	<img alt="mascara_05" height="306" src="mascara_05.png" width="208" />
+</blockquote>
+<ul>
+	<li>De momento el nodo<strong> Image</strong> ha quedado suelto y no forma parte de la composición final. Aún necesitamos un nuevo nodo. Usamos el mismo menú <strong>Añadir</strong> para sacar uno de tipo <strong>Color/Z Combine</strong>. Esto es lo que tenemos de momento.</li>
+</ul>
+<blockquote>
+	<img alt="mascara_06" height="372" src="mascara_06.png" width="475" />
+</blockquote>
+<ul>
+	<li>Sólo resta hacer la composición para que Blender una la imagen y el render en una misma imagen. El proceso es completamente intuitivo haciendo las uniones que se marcan en la siguiente imagen. Ni siquiera nos tenemos que preocupar de eliminar la unión que hay entre <strong>Render Layers</strong> y <strong>Composite</strong> porque desaparece al crear la nueva unión entre <strong>Z Combine</strong> y <strong>Composite</strong>. En esta composición no olvidamos activar la opción <strong>Usar alfa</strong> del nodo <strong>Z Combine</strong> para que Blender tenga en cuenta las transparencias.</li>
+</ul>
+<blockquote>
+	<img alt="mascara_07" height="372" src="mascara_07.png" width="475" />
+</blockquote>
+<ul>
+	<li>Regresamos al entorno de trabajo <strong>Default</strong>.</li>
+</ul>
+<p>
+Ahora la imagen aparecerá en el <em>render</em>. Pero es más que probable que sus proporciones no coincidan. El tamaño de la imagen es 1042x780 así que usamos esas medidas para el <strong>Render</strong> <img alt="render" height="16" src="render.png" width="18" />. La salida debe ser del <strong>100%</strong>.
+</p>
+<blockquote>
+	<img alt="mascara_08" height="224" src="mascara_08.png" width="298" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id72">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta72_25_2" class="block" style="display:block;position:relative"><a href="imagen_de_fondo.swf" target="_blank"><img alt="ver_video_imagen_en_el_render" height="200" src="ver_video_imagen_en_el_render.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id21">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">La imagen en el editor Vista 3D</h2>
+<div class="iDevice_inner">
+<div id="ta21_27_2" class="block" style="display:block;position:relative"><p>
+Ya hemos dado la orden a Blender de que saque la imagen en el momento 
+del <em>render</em>, pero nada le hemos dicho sobre mostrar la imagen en el 
+editor <strong>Vista 3D</strong> para tenerla de referencia en el diseño. Recordamos que esto se hace desde el cuadro de <strong>
+Propiedades</strong> (<strong>&quot;N&quot;</strong>) en la botonera <strong>Imágenes de Fondo</strong>. Se verá en vistas 
+ortográficas y desde el punto de vista de la cámara. 
+</p>
+<img alt="mascara_09" height="326" src="mascara_09.png" width="623" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id22">
+<div class="iDevice emphasis0">
+<div id="ta22_1" class="block" style="display:block;position:relative"><p>
+Es el momento de aprender a hacer la máscara:
+</p>
+<ul>
+	<li>Añadimos una esfera (<strong>Añadir/Malla/Esfera UV</strong>), le aplicamos un modificador <strong>Subdivisión</strong>, un sombreado <strong>Suave</strong> y la colocamos en el lugar adecuado desde el punto de vista de la cámara (<strong>&quot;Control_Atl_NumPad 0&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="mascara_10" src="mascara_10.png" />
+</blockquote>
+<p>
+En el <strong>Material</strong> <img alt="materiales" height="16" src="materiales_panel.png" width="16" /> de esa esfera activamos <strong>Transparencia</strong>, pero donde antes escogíamos entre <strong>Transparencia Z</strong> o <strong>Trazado de rayos</strong>, ahora escogemos <strong>Enmascara</strong> y descendemos el valor de <strong>Alfa</strong> hasta <strong>0.000</strong>.
+</p>
+<img alt="mascara_11" height="110" src="mascara_11.png" width="301" />
+<p>
+Eso es suficiente. Por ejemplo, si añadimos una nueva esfera (<strong>Añadir/Malla/Esfera UV</strong>) para simular la Luna, y siempre que quede tapada por la esfera de la máscara, este será el resultado.
+</p>
+<img alt="mascara_12" height="430" src="mascara_12.png" width="578" />
+<p>
+El render incluye además un fondo de estrellas que aprenderemos a hacer algo más adelante. Lo incluimos para mostrar cómo incluso ese recurso se adapta a la máscara. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id23">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta23_29_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="mascara.blend"><img alt="descarga_mascara" height="48" src="descarga_mascara.png" width="161" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="slo_sombra.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_propiedades_pticas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

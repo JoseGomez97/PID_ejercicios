@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> CameraFPS | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li id="current-page-parent"><a href="cmara_interactiva.html" class="current-page-parent daddy">Cámara interactiva</a><ul>
+<li id="active"><a href="camerafps.html" class="active no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="cmara_interactiva.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="aadir_la_cmara_interactiva.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">CameraFPS</h1></div>
+<div class="preknowledgeIdevice" id="id1">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Un poco de Historia</h2>
+<div class="iDevice_inner">
+<div id="ta1_32_2" class="block" style="display:block;position:relative"><p>
+Gracias a las aportaciones de <strong>programadores que ceden códigos</strong> bajo 
+licencias como Creative Commons disfrutamos de un archivo como 
+<strong>CameraFPS</strong> que incluye una <strong>
+cámara completamente interactiva</strong> para recorrer un espacio 
+arquitectónico.
+</p>
+<p>
+El código original <strong>MouseLook</strong> fue escrito por Clarck Thames y 
+publicado con licencia CC-BY-3.0. En realidad es el resultado de un 
+magnífico tutorial suyo en el que explica paso a paso cómo se programa el 
+efecto. En este momento la cámara lo único que hace es obedecer el 
+movimiento del ratón originando la sensación de cabeceo del jugador. Esta acción es en realidad la que se conoce en el mundo de los videojuegos como <em>mouselook</em> (mirar con el ratón). 
+</p>
+<p>
+El
+testigo lo recoge Pelle Johnsen y publica <strong>FPSController</strong> también con 
+CC-BY-3.0. En esencia es una mejora de <strong>MouseLook</strong> al que le <strong>añade 
+controles para desplazar la cámara</strong>. FPS (<em>First Person Shooter</em>) hace referencia a los videojuegos en primera persona donde la cámara representa al jugador y, por norma general, incorporan el efecto <em>mouselook</em>; esto hace que el personaje sea controlado con las dos manos:
+</p>
+<ul>
+	<li><strong>Izquierda</strong>. Para desplazamientos adelante-atrás-derecha-izquierda.</li>
+</ul>
+<ul>
+	<li><strong>Ratón</strong>. Para mirar arriba-abajo-derecha-izquierda. Si el acto de mirar se hace mientras hay un desplazamiento, entonces hay un giro del personaje.</li>
+</ul>
+<p>
+Posteriormente Rafael Ángel López García hizo añadidos a la configuraión logrando una interactuación más confortable que la de <strong>FPSController</strong>; el resultado se llama<strong> CameraFPS</strong> y, por supuesto, continúa con la licencia de 
+siempre. 
+</p>
+<a href="camera_FPS.blend"><img alt="descarga_cameraFPS" height="48" src="descarga_cameraFPS.png" width="181" /></a> 
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id0">
+<div class="iDevice emphasis0">
+<div id="ta0_1" class="block" style="display:block;position:relative"><p>
+<strong>CameraFPS </strong>es un <em>.blend</em> que se abre como cualquier otro, y esto es lo que muestra en el editor <strong>Vista 3D</strong> (desde el punto de vista de la cámara).
+</p>
+<img alt="fos_01" height="384" src="fps.png" width="615" />
+<p>
+Entramos al juego (<strong>&quot;P&quot;</strong>) y usamos los siguientes controladores:
+</p>
+<ul>
+	<li>Tecla <strong>&quot;W&quot;</strong>. <strong>Adelante</strong>.</li>
+</ul>
+<ul>
+	<li>Tecla <strong>&quot;S</strong>&quot;. <strong>Atrás</strong>.</li>
+</ul>
+<ul>
+	<li>Tecla <strong>&quot;A&quot;</strong>. <strong>Izquierda</strong>.</li>
+</ul>
+<ul>
+	<li>Tecla <strong>&quot;D&quot;</strong>. <strong>Derecha</strong>.</li>
+</ul>
+<ul>
+	<li>Tecla <strong>&quot;Espacio&quot;</strong>. <strong>Salto</strong>.</li>
+</ul>
+<ul>
+	<li>Movimiento del <strong>ratón con botón izquierdo pulsado</strong>. <strong>Mirar</strong> arriba, abajo, derecha e izquierda. Tal y como se dijo antes, si el acto de mirar  se hace mientras hay un desplazamiento, entonces hay un giro de la cámara.</li>
+</ul>
+<ul>
+	<li>Tecla <strong>&quot;Esc&quot;</strong>. Sale del juego.</li>
+</ul>
+<blockquote>
+	<img alt="fps_02" height="430" src="fps_02.png" width="575" />
+</blockquote>
+<p>
+No nos vamos a detener a estudiar cuál es el proceso para crear el artilugio que consigue ese comportamiento de la cámara, pero sí haremos una breve descripción.
+</p>
+<p>
+Ya en sombreado <strong>Sólido</strong> y en el editor <strong>Vista 3D</strong>, si salimos del punto de vista de la cámara, esto es lo que hay.
+</p>
+<img alt="fps_03" height="331" src="fps_03.png" width="452" />
+<ul>
+	<li><strong>Un suelo</strong>. Nada sorprendente; lo único que nos puede llamar la atención es esa textura cuadriculada que tiene asignada y que se veía en sombreado <strong>Textura</strong>. No le damos mayor importancia porque es sólo para hacer más comprensible la experiencia de desplazarse con <strong>CameraFPS</strong>.</li>
+</ul>
+<ul>
+	<li>Unas cuantas<strong> lámparas</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Un cubo</strong>. Este objeto es el que está programado para desplazarse mientras arrastra consigo a la cámara ya que tienen una relación de parentesco.</li>
+</ul>
+<ul>
+	<li><strong>Una cámara</strong>. Asociada, como hemos dicho, al cubo. Esta cámara es la que tiene la programación para los movimientos de cabeceo.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id83">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta83_23_2" class="block" style="display:block;position:relative"><a href="cameraFPS.swf" target="_blank"><img alt="ver_video_cameraFPS" height="200" src="ver_video_cameraFPS.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="cmara_interactiva.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="aadir_la_cmara_interactiva.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

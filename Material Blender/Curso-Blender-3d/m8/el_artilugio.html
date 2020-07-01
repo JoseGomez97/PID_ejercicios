@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> El artilugio | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li id="current-page-parent"><a href="3dnp.html" class="current-page-parent daddy">3DNP</a><ul>
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li id="active"><a href="el_artilugio.html" class="active no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li><a href="seguir_una_trayectoria.html" class="daddy">Seguir una trayectoria</a><ul class="other-section">
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="entorno_de_trabajo.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="importar_objetos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">El artilugio</h1></div>
+<div class="FreeTextIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_1" class="block" style="display:block;position:relative"><p>
+¿Qué es todo eso que aparece en la escena por defecto?. Vamos poco a poco.
+</p>
+<p>
+Lo que hace 3DNP es obligar a la cámara a desplazarse haciendo círculos alrededor de un objeto mientras crea los <em>renders</em> correspondientes y así fabricar una ilusión del movimiento.
+</p>
+<p>
+Si nos fijamos hay una especie de esfera formada por unos vértices. Ese objeto se puede seleccionar como cualquier otro objeto en Blender. 
+</p>
+<img alt="3dnp_06" height="398" src="3dnp_06.png" width="438" />
+<p>
+Los distintos puntos marcan las posiciones que irá tomando la cámara en su recorrido haciendo <em>renders</em>. Es lo que en 3DNP se llaman<strong> Niveles</strong> y que nosotros aquí vamos a limitar a <strong>1</strong> (es necesario refrescar pulsando el botón <strong>Update CameraBoss</strong>).
+</p>
+<img alt="3dnp_07" height="196" src="3dnp_07.png" width="609" />
+<p>
+No vamos a cambiar nada más pero conviene tener presente:
+</p>
+<ul>
+	<li><strong>Grados</strong>. Ángulo entre posición y posición en la circunferencia de cada <strong>Nivel</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Tamaño</strong>. Se refiere a la esfera que delimita la trayectoria de la cámara</li>
+</ul>
+<ul>
+	<li><strong>CapBuffer</strong>.
+	Distancia entre el primer y el último <strong>Nivel</strong>. Esto no afecta al tamaño 
+	de la esfera pero ajusta automáticamente la distancia entre todos los <strong>Niveles</strong>.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id8">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">La cámara</h2>
+<div class="iDevice_inner">
+<div id="ta8_31_2" class="block" style="display:block;position:relative"><p>
+La configuración de la cámara no es muy especial. Lo único interesante es que si eliminamos el cubo y los textos que vienen de ejemplo se hace visible un objeto <strong>Vacío</strong>.
+</p>
+<img alt="3dnp_8" height="290" src="3dnp_08.png" width="370" />
+<p>
+La cámara está conectada a ese <strong>Vacío</strong> con una línea de puntos que representa la relación que tiene con él: esté donde esté la cámara siempre apuntará a ese objeto<strong></strong>.
+</p>
+<p>
+Esto quiere decir que cuando traigamos nuestro objeto desde otro <em>.blend </em>deberemos colocarlo teniendo en cuenta ese detalle.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="entorno_de_trabajo.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="importar_objetos.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

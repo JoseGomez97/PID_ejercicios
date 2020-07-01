@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Gráficas estadísticas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_grficas_estadsticas.html" class="active no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="rehacer_malla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="utilidades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Gráficas estadísticas</h1></div>
+<div class="FreeTextIdevice" id="id57">
+<div class="iDevice emphasis0">
+<div id="ta57_1" class="block" style="display:block;position:relative"><img alt="promo" height="339" src="graficas_promo.png" width="263" />
+<p>
+Supongamos que hemos creado en Inkscape o que hemos encontrado en algún <strong>repositorio de cliparts </strong>un gráfico en formato SVG con las provincias de Castilla y León. En última instancia también podemos dar por hecho que hemos creado nosotros mismos las curvas usando las curvas de bézier del propio Blender.
+</p>
+<p>
+Este es el gráfico.
+</p>
+<img alt="cyl_01" height="464" src="castilla_leon_01.png" width="535" />
+<br />
+<a href="castilla_leon.svg" target="_blank"><img alt="descraga_svg_cyl" height="48" src="descarga_castilla_leon_svg.png" width="179" /></a>
+<p>
+En la escena de inicio de Blender <strong>eliminamos</strong> (<strong>&quot;Supr&quot;</strong>) el cubo e importamos el archivo SVG con <strong>Archivo/Importar/Scalable Vector Graphics (.svg)</strong>.
+</p>
+<img alt="cyl_02" height="398" src="castilla_leon_02.png" width="556" />
+<p>
+Vemos cómo Blender importa los colores correctamente. Aunque no lo parezca a simple vista, en realidad son nueve objetos los que se han importado porque las curvas son independientes. Parecen un solo objeto porque todos los <strong>Orígenes</strong> coinciden. Lo mejor es seleccionar los nueve objetos a la vez y colocar cada uno de los orígenes en su sitio con la opción <strong>Origen/Origen a la geometría </strong>del cuadro <strong>Herramientas</strong> (<strong>&quot;T&quot;</strong>).  
+</p>
+<img alt="cyl_03" height="396" src="castilla_leon_03.png" width="502" />
+<p>
+Ahora en cada curva aplicamos en su correspondiente panel <img alt="curvas_panel" height="17" src="bezier_panel.png" width="16" /> una extrusión en función de los datos que queremos transmitir con la gráfica. Vamos a adaptar los valores de los que disponemos relativos a la población por provincias dentro del campo de la extrusión. Como los valores reales darían unas extrusiones tremendas hacemos tal y como se indica en esta imagen puesto que ya sabemos que dentro de los campos se pueden hacer operaciones matemáticas.
+</p>
+<img alt="n_curvas_6" height="478" src="n_curva_06.png" width="634" />
+<p>
+Estos son los datos a utilizar:
+</p>
+<ul>
+	<li>Ávila: 171.896</li>
+</ul>
+<ul>
+	<li>Burgos: 374.826</li>
+</ul>
+<ul>
+	<li>León: 499.284</li>
+</ul>
+<ul>
+	<li>Palencia: 172.510</li>
+</ul>
+<ul>
+	<li>Salamanca: 353.619</li>
+</ul>
+<ul>
+	<li>Segovia: 164.268</li>
+</ul>
+<ul>
+	<li>Soria: 95.258</li>
+</ul>
+<ul>
+	<li>Valladolid: 533.640</li>
+</ul>
+<ul>
+	<li>Zamora: 194.214</li>
+</ul>
+<p>
+De este modo conseguiremos ilustraciones para presentar gráficos en esta línea.
+</p>
+<img alt="cyl_05" height="474" src="castilla_leon_05.png" width="467" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id58">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta58_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="estadistica.blend"><img alt="descarga_estadistica" height="48" src="descarga_estadistica.png" width="180" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="rehacer_malla.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="utilidades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

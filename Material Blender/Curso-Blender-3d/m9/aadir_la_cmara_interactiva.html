@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Añadir la cámara interactiva | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li id="current-page-parent"><a href="cmara_interactiva.html" class="current-page-parent daddy">Cámara interactiva</a><ul>
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li id="active"><a href="aadir_la_cmara_interactiva.html" class="active no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="camerafps.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="ms_mapeados.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Añadir la cámara interactiva</h1></div>
+<div class="FreeTextIdevice" id="id32">
+<div class="iDevice emphasis0">
+<div id="ta32_1" class="block" style="display:block;position:relative">
+<p>
+Una vez que conocemos <b>CameraFPS</b> debemos decidir entre:
+</p>
+<ul>
+	<li>Traer a ese <i>.blend</i> la escena que tengamos ya creada (o crearla desde cero en él)</li>
+</ul>
+<ul>
+	<li>Llevar los dos objetos que conforman el artilugio a nuestro diseño.</li>
+</ul>
+<p>
+Nosotros nos quedamos con la segunda opción.
+</p>
+<p>
+Supongamos que ya disponemos de un entorno arquitectónico por el que nos gustaría pasear como puede ser una sala de exposiciones (de momento sin muchos adornos). 
+</p>
+<img src="fps_04.png" alt="fps_04" height="417" width="561" />
+<br />
+<br />
+<a href="museo_v1.blend"><img src="descarga_museo_v1.png" alt="descarga_museo_v1" height="48" width="181" /></a>
+<p>
+Sus características:
+</p>
+<ul>
+	<li>Se ha eliminado la cámara para evitar problemas cuando añadamos la que trae consigo <b>CameraFPS</b>.</li>
+</ul>
+<ul>
+	<li>Tiene dos imágenes mapeadas mediante <b>Malla/Desplegar UVs/Desenvolver</b>. La de la pared es una imagen que hace las veces de módulo repitiéndose a lo largo de todas las pareces de la estancia (no del elemento arquitectónico central)</li>
+</ul>
+<img src="fps_05.png" alt="fps_05" height="457" width="449" />
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id33">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Puerta y patrón de pared
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.1.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="puerta_museo.png" title="Show Puerta del siglo XIX (fotografía adaptada) Autor: Infrogmation // Licencia: GNU Free Documentation Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Puerta del siglo XIX (fotografía adaptada) Autor: Infrogmation // Licencia: GNU Free Documentation Image"
+                   src="puerta_museoThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="puerta_museo.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Puerta del siglo XIX (fotografía adaptada) Autor: Infrogmation // Licencia: GNU Free Documentation
+            </div>
+          </td>
+          <td width="1">
+            <a 
+             href="patron_pared.png" title="Show Patrón de pared empapelada // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons)  Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Patrón de pared empapelada // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons)  Image"
+                   src="patron_paredThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="patron_pared.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Patrón de pared empapelada // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons) 
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id34">
+<div class="iDevice emphasis0">
+<div id="ta34_1" class="block" style="display:block;position:relative"><p>
+Una vez abierto nuestro entorno arquitectónico usamos el menú <strong>Archivo/Añadir</strong> y nos vamos a buscar el <em>.blend</em> <strong>CameraFPS</strong>; una vez dentro de sus carpetas accedemos a <strong>Object</strong> y del interior seleccionamos (<em>cameraFPS</em> y <em>motorFPS</em>). Después pulsamos arriba a la derecha <strong>Link/Append from Library</strong>. 
+</p>
+<img alt="fps_06" height="232" src="fps_06.png" width="255" />
+<p>
+Estos dos objetos son la cámara y el cubo propios del artilugio. Por las características del <em>.blend</em> de origen, y de las propias geometrías, el cubo aparece apoyado en la rejilla y con su <strong>Origen</strong> en 0,0,0.
+</p>
+<img alt="fps_07" height="446" src="fps_07.png" width="565" />  
+<p>
+Sacamos rápido algunas consecuencias:
+</p>
+<ul>
+	<li>El artilugio es inmenso para nuestra arquitectura.</li>
+</ul>
+<ul>
+	<li>La precisión está garantizada porque en nuestro diseño el suelo esta con <strong>Localización Z= 0.000</strong>.</li>
+</ul>
+<p>
+Pero llega el dilema: ¿escalamos la habitación o escalamos el artilugio?. El problema de no haber trabajado desde el principio con todos los datos tiene consecuencias (negativas, claro) porque cualquiera de las dos opciones es mala; y la menos mala es escalar la arquitectura. ¿Por qué? Si escalamos el artilugio no alteramos su velocidad así que el jugador parecerá que va corriendo y no andando, mientras que si escalamos la arquitectura el problema es que la iluminación cambia porque los valores de <strong>Energía</strong> de las lámparas no se escalan. Entre arreglar el tema de la velocidad y el de la iluminación es mucho mejor optar por lo segundo.
+</p>
+<p>
+De momento nos vamos al cuadro <strong>Propiedades </strong>(<strong>&quot;N&quot;</strong>) y en la botonera <strong>Cursor 3D</strong> hacemos que todas su coordenadas sean<strong> 0.0000</strong>.
+</p>
+<img alt="fps_10" height="115" src="fps_10.png" width="156" />
+<p>
+Lo necesitamos para tomarlo como origen en el escalado, pero eso sólo funciona si el plano del suelo de la arquitectura también está con valor <strong>Location Z= 0.000</strong>.
+</p>
+<p>
+Ahora:
+</p>
+<ul>
+	<li>Cambiamos el <strong>Centro de pivotaje</strong> a <strong>Cursor 3D</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="fps_11" height="159" src="fps_11.png" width="194" />
+</blockquote>
+<ul>
+	<li>Seleccionamos los dos objetos de <strong>CameraFPS</strong> y después usamos <strong>Seleccionar/Inverso</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="inverso" height="293" src="inverso.png" width="503" />
+</blockquote>
+<ul>
+	<li>Nos colocamos en un punto de vista ortográfico (<strong>&quot;NumPad 5&quot;</strong>) y en sombreado <strong>Alambre</strong> (<strong>&quot;Z&quot;</strong>) para hacer el escalado (<strong>&quot;S&quot;</strong>). La finalidad es controlar que la cámara quede a una altura correcta respecto a las puertas.</li>
+</ul>
+<blockquote>
+	<img alt="fps_14" height="355" src="fps_14.png" width="590" />
+</blockquote>
+<p>
+Sólo nos queda:
+</p>
+<ul>
+	<li>Arreglar el tema de la iluminación volviendo a estudiar lo valores de <strong>Energía</strong> de las lámparas</li>
+</ul>
+<ul>
+	<li><strong>Girar el artilugio 90º en el eje Z</strong> (<strong>&quot;RZ90&quot;</strong>) y colocarlo de espaldas a la puerta principal.</li>
+</ul>
+<ul>
+	<li>No olvidar volver a poner el <strong>Centro de pivotaje</strong> a <strong>Punto medio</strong> para seguir trabajando.</li>
+</ul>
+<blockquote>
+	<img alt="fps_15" height="357" src="fps_15.png" width="473" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id36">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta36_25_2" class="block" style="display:block;position:relative">
+<p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="museo_v2.blend"><img src="descarga_museo_v2.png" alt="descarga_museo_v2" height="48" width="181" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="camerafps.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="ms_mapeados.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

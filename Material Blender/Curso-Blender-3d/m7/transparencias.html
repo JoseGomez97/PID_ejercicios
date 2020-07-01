@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Transparencias | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li id="current-page-parent"><a href="materiales.html" class="current-page-parent daddy">Materiales</a><ul>
+<li id="active"><a href="transparencias.html" class="active no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="materiales.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="slo_sombra.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Transparencias</h1></div>
+<div class="FreeTextIdevice" id="id10">
+<div class="iDevice emphasis0">
+<div id="ta10_1" class="block" style="display:block;position:relative"><p>
+Algunos materiales, tanto naturales como artificiales, permiten que <strong>la luz pase a través de ellos</strong>. Todo lo relativo a esta característica se encuentra en el panel <strong>Materiales</strong> <img alt="materiales" height="16" src="materiales_panel.png" width="16" /> en la botonera <strong>Transparencia</strong>. Ocurre como en la propiedad <strong>Espejo</strong> en la que se consumen muchos recursos del ordenador aumentando los tiempos de <em>render</em>. La casilla de activación permite configurar los parámetros de nuestra transparencia y activarla o desactivarla a nuestro antojo. Blender calcula la transparecia con dos tecnologías distintas:
+</p>
+<ul>
+	<li><strong>Transparencia Z</strong>. Consume menos recursos pero no permite efectos como la refracción.</li>
+</ul>
+<ul>
+	<li><strong>Trazado de rayos</strong>. Es la transparencia avanzada en la que se consumen más recursos a cambio de disponer de parámetros para resultados más interesantes.</li>
+</ul>
+<blockquote>
+	<img alt="transp_01" height="233" src="transp_01.png" width="602" />
+</blockquote>
+<p>
+Cuando se trata de cristales, la propiedad <strong>Transparencia</strong> va acompañada de la de <strong>Espejo</strong> por lo que el objeto no sólo deja pasar la luz sino que también la refleja en su superficie debido a su carácter pulido.
+</p>
+<p>
+Partimos del modelado de unos matraces como estos. La pared de fondo presenta una banda azulada que, además de darle un matiz decorativo, sirve para constarar asuntos como el <strong>Índice de Refracción</strong> (<strong>IdR</strong>). 
+</p>
+<img alt="transp_02" height="419" src="transp_02.png" width="487" />
+<br />
+<a href="matraces.blend"><img alt="descarga_matraces" height="48" src="descarga_matraces.png" width="168" /></a>
+<p>
+La escena está iluminada con la habitual <strong>iluminación básica</strong> pero en este caso le hemos añadido una lámpara más de tipo<strong> Área</strong> <img height="18" src="icono_area.png" width="18" /> para originar más brillos sobre las superficies de cristal.
+</p>
+<p>
+Comenzamos con la botonera <strong>Difuso</strong>. 
+</p>
+<ul>
+	<li>Color blanco puro: <strong>FFFFFF</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Intensidad: 1.000</strong>. Al máximo.</li>
+</ul>
+<blockquote>
+	<img alt="transp_03" height="88" src="transp_03.png" width="296" />
+</blockquote>
+<p>
+Nos vamos a la botonera <strong>Espejo</strong> a activar la propiedad y determinar:
+</p>
+<ul>
+	<li><strong>Reflectividad: 0.3</strong>. Como va a ser muy transparente le otorgamos poco poder de reflexión.</li>
+</ul>
+<ul>
+	<li><strong>Fresnel: 3.000</strong>. Para evitar reflejos en las caras que miran al espectador.</li>
+</ul>
+<ul>
+	<li><strong>Mezcla: 2.000</strong>. Para calibrar el nivel de influencia del efecto <strong>Fresnel</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Fundir a: Material</strong>. Para no preocuparnos del color del cielo, mejor que se desvanezca hacia el propio color <strong>Difuso</strong> del material.</li>
+</ul>
+<blockquote>
+	<img alt="transp_04" height="195" src="transp_04.png" width="299" />
+</blockquote>
+<p>
+Y llega el momento de activar la propiedad de la<strong> Transparencia </strong>en la botonera del mismo nombre y editar los siguientes parámetros.
+</p>
+<ul>
+	<li><strong>Alfa: 0.300</strong>. Los objetos serán transparentes pero no del todo.</li>
+</ul>
+<ul>
+	<li><strong>Fresnel: 2.000 y Mezcla: 2.000</strong> tienen la misma finalidad que en<strong> Espejo</strong> pero en esta ocasión aplicada a la transparencia.</li>
+</ul>
+<ul>
+	<li><strong>Brillo/Cantidad: 0.980</strong>. Es para que los objetos que se ven a través de la transparencia pierdan algo de definición.</li>
+</ul>
+<ul>
+	<li><strong>IdR: 1.010</strong>. Es el<strong> Índice de Refracción</strong>. El valor <strong>1.000</strong> significa que los objetos que aparecen detrás no se distorsionan. Nosotros queremos que lo hagan muy poco. <strong>IoR</strong> es muy agresivo por lo que subimos ligeramente.</li>
+</ul>
+<blockquote>
+	<img alt="transp_05" height="231" src="transp_05.png" width="297" />
+</blockquote>
+<p>
+Y con estas ediciones está lista la escena para el <em>render</em>, con el que hemos elaborado este material didáctico.
+</p>
+<img alt="n_matraces" height="422" src="n_matraces.png" width="540" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id63">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Un último consejo</h2>
+<div class="iDevice_inner">
+<div id="ta63_22_2" class="block" style="display:block;position:relative"><p>
+En condiciones normales <strong>el objeto que recoge la sombra</strong> no está preparado para recibir ese tipo de información. Es necesario activar en ese <strong>Material</strong> <img height="16" src="materiales_panel.png" width="16" /> la opción <strong>Recibir transparencias</strong> en la botonera <strong>Sombra</strong>.
+</p>
+<img alt="recibir" height="165" src="recibir.png" width="315" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id11">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta11_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="transparencia.blend"><img alt="descarga_transparencia" height="48" src="descarga_transparencia.png" width="198" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="materiales.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="slo_sombra.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Proyectar desde la vista | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="ms_mapeados.html" class="current-page-parent daddy">Más mapeados</a><ul>
+<li id="active"><a href="proyectar_desde_la_vista.html" class="active no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="ms_mapeados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="alfa_por_las_dos_caras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Proyectar desde la vista</h1></div>
+<div class="FreeTextIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_1" class="block" style="display:block;position:relative"><p>
+Conocemos la opción <strong>Desenvolver</strong> a la hora de desplegar las caras para un mapeado. Pero esa es sólo una de muchas otras opciones. Una de las más útiles es <strong>Proyectar desde vista</strong>. Si desplegamos de ese modo mientas nos encontramos en un punto de vista frontal, el recurso es tremendamente útil.
+</p>
+<p>
+A nuestro hipotético museo le vamos a añadir el primer cuadro. 
+</p>
+<a href="museo_v2.blend"><img alt="descarga_museo_v2" height="48" src="descarga_museo_v2.png" width="181" /></a>
+<p>
+Su modelado <strong>no tiene material</strong> y es verdaderamente sencillo:
+</p>
+<ul>
+	<li><strong>Un lienzo</strong> (las medidas del plano conviene que sean proporcionales a 
+	49x83 porque son -en centímetros- las de la obra <em>Viejos comiendo</em> sopa de Goya. Nos vale <strong>X=3.900</strong>, <strong>Y=2.300</strong>)...</li>
+</ul>
+<blockquote>
+	<img alt="cuadro_01" height="227" src="cuadro_01.png" width="494" />
+</blockquote>
+<ul>
+	<li>Partiendo de la selección de la cara del plano el modelado también tiene <strong>un marco</strong> a base de muy pocos polígonos (<em>lowpoly</em>) con algunas <strong>extrusiones</strong> (<strong>&quot;E&quot;</strong>) y <strong>escalados</strong> (<strong>&quot;S&quot;</strong>). Con desplazamientos adecuados en los vértices esto es lo que tenemos (hemos hecho visibles las <strong>Normales</strong>, una buena costumbre cuando estamos mapeando).</li>
+</ul>
+<blockquote>
+	<img alt="cuadro_02" height="408" src="cuadro_02.png" width="425" />
+</blockquote>
+<p>
+La imagen anterior nos informa de que la primera <strong>extrusión </strong>(<strong>&quot;E&quot;</strong>), la que sale perpendicular del lienzo ha quedado con la <strong>Normal</strong> invertida. Así que seleccionamos todas las caras (<strong>&quot;A&quot;</strong>) y usamos el menú <strong>Malla/Normales/Recalcular hacia afuera</strong>. Una vez colocado encima de la puerta de la galería interior, es posible que determinemos <strong>escalarlo </strong>(<strong>&quot;S&quot;</strong>) de una manera global para conseguir que la puerta parezca más ancha.
+</p>
+<img alt="cuadro_03" height="445" src="cuadro_03.png" width="543" />
+<p>
+El método para el mapeado en la cara donde plasmar la pintura es ya conocido... Estas son las imágenes que vamos a usar.
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id39">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Viejas comiendo sopas y Marco dorado
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.2.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="viejas_comiendo_sopas.jpg" title="Show Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público Image"
+                   src="viejas_comiendo_sopasThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="viejas_comiendo_sopas.jpg"></div>
+            <div class="caption" style="align:center;width=100%">
+              Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público
+            </div>
+          </td>
+          <td width="134px"><a href="marco_dorado.png" target="_blank"><img class="gallery" alt="Show Marco dorado // Licencia: Dominio Público Image"
+                   src="marco_doradoThumbnail.png"/></a>
+            
+             <div class="gallery_image" value="marco_dorado.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Marco dorado // Licencia: Dominio Público
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id38">
+<div class="iDevice emphasis0">
+<div id="ta38_1" class="block" style="display:block;position:relative"><p>
+Este es el resultado del mapeado sobre la cara central del cuadro.
+</p>
+<img alt="cuadro_04" height="456" src="cuadro_04.png" width="528" />
+<p>
+Así que vamos a ver el mapeado correspondiente al marco.
+</p>
+<p>
+De todos los dos bucles de caras correspondientes al marco seleccionamos <img alt="caras" height="16" src="caras.png" width="15" /> (<strong>&quot;Alt_Clic derecho</strong>&quot;) el más frontal dejando fuera de la selección el que sale perpendicular del plano del lienzo.
+</p>
+<img alt="cuadro_05" height="334" src="cuadro_05.png" width="500" />
+<p>
+Nos vamos al entorno de trabajo <strong>UV Editing</strong>:
+</p>
+<ul>
+	<li>En el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> cargamos la imagen <em>marco.png</em> que hemos descargado a nuestro disco duro.</li>
+</ul>
+<ul>
+	<li>En el editor<strong> Vista 3D</strong> nos colocamos en un punto de vista frontal al cuadro (en nuestro caso <strong>&quot;NumPad 3&quot;</strong>). No es necesario que sea ortográfico aunque eso puede ayudar a tener una mejor visión de la técnica que estamos usando.</li>
+</ul>
+<blockquote>
+	<img alt="cuadro_06" height="386" src="cuadro_06.png" width="548" />
+</blockquote>
+<p>
+Es el momento de dar la orden <strong>Malla/Desplegar UVs/Proyectar desde la vista</strong> (o el atajo<strong> &quot;U&quot;</strong>) desde el editor<strong> Vista 3D</strong>. 
+</p>
+<img alt="cuadro_07" height="283" src="cuadro_07.png" width="223" />
+<p>
+Esto obliga a Blender a proyectar sin deformar, y eso se adapta por completo a nuestras necesidades en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" />. Después sólo nos preocupamos de adaptar los vértices para que el mapeado sea correcto. 
+</p>
+<img alt="cuadro_09" height="452" src="cuadro_09.png" width="513" />
+<p>
+En el motor de juegos (<strong>&quot;P&quot;</strong>) presenta una sensación muy volumétrica sin apenas polígonos.
+</p>
+<img alt="cuadro_10" height="450" src="cuadro_10.png" width="456" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id85">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta85_25_2" class="block" style="display:block;position:relative"><a href="proyectar_desde_vista.swf" target="_blank"><img alt="ver_video_proyectar_desde_vista" src="ver_video_proyectar_desde_vista.png" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id40">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Los materiales</h2>
+<div class="iDevice_inner">
+<div id="ta40_24_2" class="block" style="display:block;position:relative"><p>
+Ahora asignamos <strong>Material</strong> <img height="16" src="materiales_panel.png" width="16" /> al objeto pero para que quede realmente bien atenderemos a estos consejos. La malla tiene tres materiales asignados a sus correspondientes caras:
+</p>
+<img alt="cuadro_11" height="407" src="cuadro_11.png" width="298" />
+<ul>
+	<li><strong>Lienzo</strong>. Tiene que tener la opción <strong>Textura en caras</strong> activada o no saldrá en la simulación (<strong>&quot;P&quot;</strong>). El valor de la<strong> Intensidad </strong>de <strong>Especular </strong>debe ser muy bajo para que no refleje luz.</li>
+</ul>
+<ul>
+	<li><strong>Marco_con_uv</strong>. Exactamente igual que la anterior aunque aquí la<strong> Intensidad</strong> de <strong>Especular</strong> puede ser algo más alto al tratarse de un material brillante.</li>
+</ul>
+<ul>
+	<li><strong>Marco_sin_uv</strong>. Es el material asignado al bucle de caras que sale perpendicular al lienzo. Como no tiene mapeado hay que darle un color (<strong>AC9E00</strong> puede ser una buena opción).</li>
+</ul>
+<p>
+De esa manera en la simulación presenta este aspecto.
+</p>
+<img alt="cuadro_12" height="414" src="cuadro_12.png" width="511" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id44">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta44_28_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="museo_un_cuadro_uv.blend"><img alt="descarga_museo_un_cuadro_uv" height="48" src="descarga_museo_un_cuadro_uv.png" width="261" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="ms_mapeados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="alfa_por_las_dos_caras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

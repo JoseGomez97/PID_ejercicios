@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> La configuración del javascript | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li id="current-page-parent"><a href="3dnp.html" class="current-page-parent daddy">3DNP</a><ul>
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li id="active"><a href="la_configuracin_del_javascript.html" class="active no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li><a href="seguir_una_trayectoria.html" class="daddy">Seguir una trayectoria</a><ul class="other-section">
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="exportar_las_mgenes.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="interactividad_en_web.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">La configuración del javascript</h1></div>
+<div class="FreeTextIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_1" class="block" style="display:block;position:relative"><p>
+Si nos dirigimos a la carpeta <em>HTML</em> de 3DNP y ejecutamos el archivo<em> 3DNP.html</em> el resultado no será el esperado. Es cierto que si hacemos <strong>clic y arrastramos</strong> es posible que llegue a hacerse visible nuestro modelo interactivo. Pero nosotros queremos que quede correcto.
+</p>
+<p>
+¿Qué ha ocurrido? Pues sencillamente que 3DNP viene configurado para trabajar correctamente si se dejan los valores por efecto con <strong>Niveles: 7</strong>. El cambio de <strong>7</strong> a <strong>1</strong> hace que el código no funcione bien. ¿Qué código?: el javascript que permite la interactividad; es decir el archivo llamado <em>3DNP config.js</em> que está dentro de la carpeta <em>HTML</em>.
+</p>
+<p>
+Sería fantástico que al hacer clic en <strong>Update CameraBoss</strong> al trabajar en 3DNP se autoeditara el código javascript, pero no es así. Tenemos que hacerlo a mano. No es nada complicado.
+</p>
+<p>
+Accedemos al código javascript de ese archivo y para ello basta abrirlo con un editor de textos cualquiera, como puede ser:
+</p>
+<ul>
+	<li><strong>Gedit</strong> en Linux.</li>
+</ul>
+<ul>
+	<li><strong>Bloc de Notas</strong> en Windows.</li>
+</ul>
+<ul>
+	<li><strong>Textedit</strong> en MacOS.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id15">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">El código por defecto</h2>
+<div class="iDevice_inner">
+<div id="ta15_25_2" class="block" style="display:block;position:relative"><p>
+Además de un buen número de líneas con comentarios, este es el código del javascript que contiene ese archivo:
+</p>
+<p>
+<strong>total = 144;<br />
+levels = 4;<br />
+startlevel = 4;<br />
+<br />
+filemode = 'NameNumber';<br />
+filename = 'frame';<br />
+suffix = '.jpg';<br />
+barLength = 164;<br />
+<br />
+viewmode = 'object';<br />
+friction = 0.5;<br />
+rotomatic = 80;<br />
+rotoresume = 3;<br />
+<br />
+keycodes = [119,100,115,97]</strong> 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id16">
+<div class="iDevice emphasis0">
+<div id="ta16_1" class="block" style="display:block;position:relative"><p>
+Esto es lo que hay que alterar:
+</p>
+<ul>
+	<li><strong>Total</strong>. De <strong>144</strong> a <strong>36</strong>. El valor <strong>144</strong> viene determinado porque hay un plano que hace de suelo y que recoge la sombra. De los siete niveles por defecto sólo nos hubieran interesado los cuatro superiores (36x4=144); los tres niveles inferiores serían ignorados aunque se hubieran hecho los <em>renders</em>. Nosotros hemos descendido los <strong>Niveles</strong> a <strong>1</strong> así que está claro que este parámetro tiene que ser <strong>36</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Levels</strong>. De <strong>4</strong> a <strong>1</strong>. Recordemos que nosotros habíamos cambiado <strong>7</strong> por <strong>1</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Starlevels</strong>. De <strong>4</strong> a <strong>1</strong>. La orden era que la virtualización comenzara en el nivel <strong>4</strong> (el central) con una vista frontal del objeto. Con el cambio de <strong>Niveles</strong> a <strong>1</strong> no tiene sentido decirle al programa que comience en el nivel <strong>4</strong>. Se produce una incoherencia, por lo que hay que cambiarlo a <strong>1</strong> para que todo tenga lógica.</li>
+</ul>
+<ul>
+	<li><strong>Rotomatic</strong>. De<strong> 80</strong> a <strong>0</strong>. Es la velocidad y el sentido de la rotación automática. El <em>script</em> da la orden de comenzar una rotación automática en el caso de que el navegante permanezca pasivo. Los valores positivos y negativos determinan el sentido. Pero a nosotros nos interesa en valor <strong>0</strong> porque hace que el efecto se desactive.</li>
+</ul>
+<ul>
+	<li><strong>Rotoresume</strong>. De <strong>3</strong> a <strong>0</strong>. Es el tiempo en segundos que el <em>script</em> espera para poner en marcha el anterior parámetro <strong>Rotomatic</strong>. Nos vuelve a interesar el valor <strong>0</strong> para anularlo, aunque es cierto que con <strong>Rotomatic</strong> a <strong>0</strong> es intrascendente manipular <strong>Rotoresume</strong>.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id17">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">El código definitivo</h2>
+<div class="iDevice_inner">
+<div id="ta17_27_2" class="block" style="display:block;position:relative"><p>
+<strong>total = 36;<br />
+levels = 1;<br />
+startlevel = 1;<br />
+<br />
+filemode = 'NameNumber';<br />
+filename = 'frame';<br />
+suffix = '.jpg';<br />
+barLength = 164;<br />
+<br />
+viewmode = 'object';<br />
+friction = 0.5;<br />
+rotomatic = 0;<br />
+rotoresume = 0;<br />
+<br />
+keycodes = [119,100,115,97]</strong>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="exportar_las_mgenes.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="interactividad_en_web.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

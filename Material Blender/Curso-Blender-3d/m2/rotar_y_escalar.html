@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Rotar y escalar | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Conceptos fundamentales (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Conceptos fundamentales (I)</a></li><li><a href="interfaz.html" class="daddy">Interfaz</a><ul class="other-section">
+<li><a href="entorno_default.html" class="no-ch">Entorno Default</a></li>
+</ul>
+</li>
+<li><a href="vista_3d.html" class="daddy">Vista 3D</a><ul class="other-section">
+<li><a href="navegacin.html" class="no-ch">Navegación</a></li>
+<li><a href="sin_teclado_numrico.html" class="no-ch">Sin teclado numérico</a></li>
+<li><a href="propiedades_y_herramientas.html" class="no-ch">Propiedades y Herramientas</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="transformaciones.html" class="current-page-parent daddy">Transformaciones</a><ul>
+<li><a href="mover.html" class="no-ch">Mover</a></li>
+<li id="active"><a href="rotar_y_escalar.html" class="active no-ch">Rotar y escalar</a></li>
+<li><a href="manipulador_3d.html" class="no-ch">Manipulador 3D</a></li>
+<li><a href="borrar_y_duplicar.html" class="no-ch">Borrar y Duplicar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_batera_musical.html" class="no-ch">Material didáctico: Batería musical</a></li>
+<li><a href="paneles.html" class="daddy">Paneles</a><ul class="other-section">
+<li><a href="renderizado.html" class="no-ch">Renderizado</a></li>
+<li><a href="guardar_el_render.html" class="no-ch">Guardar el render</a></li>
+<li><a href="materiales.html" class="no-ch">Materiales</a></li>
+<li><a href="mundo.html" class="no-ch">Mundo</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_crculo_cromtico.html" class="no-ch">Material didáctico: Círculo cromático</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="mover.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="manipulador_3d.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Rotar y escalar</h1></div>
+<div class="FreeTextIdevice" id="id20">
+<div class="iDevice emphasis0">
+<div id="ta20_1" class="block" style="display:block;position:relative"><p>
+En realidad, si se ha comprendido la filosofía de la transformación <strong>Mover</strong>, tanto <strong>Rotar</strong> como <strong>Escalar</strong> no deberían entrañar más dificultad que saber que los atajos son <strong>&quot;R&quot;</strong> y <strong>&quot;S&quot;</strong> respectivamente.
+</p>
+<p>
+Algunas particularidades a tener en cuenta respecto a la transformación <strong>Rotar</strong> son:
+</p>
+<ul>
+	<li>Si pulsamos <strong>&quot;Control&quot;</strong> durante la edición los saltos en el giro son de 5º. Este hecho se comprueba en tiempo real en la parte inferior izquierda del editor <strong>Vista 3D</strong>. En el siguiente ejemplo se ha restringido el giro al eje Z <strong>Global</strong> y como al mover el ratón se está pulsando la tecla <strong>&quot;Control&quot; </strong>vemos cómo se consigue fácilmente un ángulo de <strong>-25º</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="n_rot" height="397" src="n_rot.png" width="575" />
+</blockquote>
+<ul>
+	<li>Si buscamos precisión es muy habitual introducir el valor del giro a través de teclado con una secuencia de este tipo <strong>&quot;RZ45&quot;</strong> que se traduce por <strong>un giro en el eje Z con valor 45º</strong>. Cuando escribimos 45 lo vemos en tiempo real en el lugar antes señalado.</li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id21">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Viejo método vs método 2.60</h2>
+<div class="iDevice_inner">
+<div id="ta21_27_2" class="block" style="display:block;position:relative"><p>
+Lo que hemos explicado es el método con el que se han hecho estas ediciones hasta Blender 2.49b y así lo siguen haciendo la gran mayoría de los usuarios. Sin embargo en el paso a 2.5x se incorporó una manera visual de hacer todo eso y que consiste en pulsar <strong>&quot;R&quot;</strong> y después <strong>&quot;Intro&quot;</strong>. De esta manera no se hace edición ninguna pero en el cuadro<strong> Herramientas</strong> (<strong>&quot;T&quot;</strong>) se despliega una botonera para elegir todos los parámetros. Por supuesto esto es válido tanto para <strong>Mover</strong>, como para <strong>Rotar</strong> como para <strong>Escalar</strong>.
+</p>
+<p>
+Así, el ejemplo <strong>&quot;RZ45&quot;</strong> se consigue del siguiente modo. Tras <strong>&quot;R&quot;&quot;Intro&quot;</strong>:
+</p>
+<img alt="n_panel" height="430" src="n_panel.png" width="503" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id70">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ejes globales y ejes locales</h2>
+<div class="iDevice_inner">
+<div id="ta70_31_2" class="block" style="display:block;position:relative"><p>
+Un objeto sale a escena con su eje Z (<strong>Local</strong>) apuntando hacia arriba respecto al entorno 3D (<strong>Global</strong>) lo que se traduce que comparten orientación en ese eje. Y así ocurre con los tres ejes y en todas las ocasiones.  
+</p>
+<p>
+Sin embargo, más pronto que tarde, ese objeto se rotará y es muy 
+probable que su eje Z deje de coincidir con el del entorno. Pero <strong>¿qué 
+pasa si queremos desplazar el objeto sobre su eje Z Local?</strong> Si hacemos <strong>&quot;GZ&quot;</strong> no se cumplirán las expectativas. En ese caso la secuencia es <strong>&quot;GZZ&quot;</strong>; es decir, ponemos en marcha la edición de desplazamiento con <strong>&quot;G&quot;</strong>, después pulsamos <strong>&quot;Z&quot;</strong> dando la orden de que se restringa al eje <strong>Global</strong> correspondiente y para terminar le decimos a Blender que cambie de <strong>Global</strong> a <strong>Local</strong> pulsando por segunda vez la tecla <strong>&quot;Z</strong>&quot;.
+</p>
+<img alt="gzz" height="443" src="gzz.png" width="396" /> 
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id120">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta120_22_2" class="block" style="display:block;position:relative"><a href="m2_01_transformaciones.swf" target="_blank"><img alt="ver_video_transformaciones" height="200" src="ver_video_transformaciones.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="mover.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="manipulador_3d.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> De simulación a animación | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li id="current-page-parent"><a href="el_motor_de_juegos.html" class="current-page-parent daddy">El motor de juegos</a><ul>
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li id="active"><a href="de_simulacin_a_animacin.html" class="active no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="parmetros_importantes.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_galileo_en_pisa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">De simulación a animación</h1></div>
+<div class="preknowledgeIdevice" id="id14">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">¿Por qué hacer una animación?</h2>
+<div class="iDevice_inner">
+<div id="ta14_24_2" class="block" style="display:block;position:relative"><p>
+Los motivos pueden ser muy variados:
+</p>
+<ul>
+	<li>Como no hay nada interactivo, salvo la puesta en marcha de la propia simulación, la animación se integra en web o presentaciones de una manera muy sencilla.</li>
+</ul>
+<ul>
+	<li>En la animación se añaden materiales más sofisticados, mejores efectos de iluminación, velocidades distintas en la reproducción...</li>
+</ul>
+<ul>
+	<li>Podemos desplazarnos a cualquiera de los fotogramas para hacer un <em>render</em> estático (<strong>&quot;F12&quot;</strong>) de una de las posiciones de la simulación. </li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id11">
+<div class="iDevice emphasis0">
+<div id="ta11_1" class="block" style="display:block;position:relative"><p>
+No queremos trabajar con fotogramas clave, así que es importante poner un valor de <strong>24</strong> en el campo <strong>CPS</strong> de la botonera<strong> Físicas </strong>del panel <strong>Mundo</strong> <img alt="mundo" height="16" src="escena_panel.png" width="16" />. Como hemos bajado de <strong>60</strong> a<strong> 24</strong> es posible que haya que aumentar el valor de <strong>Sub-pasos</strong> en esa misma botonera.
+</p>
+<p>
+Ahora generamos la animación (no el vídeo):
+</p>
+<ul>
+	<li>Activamos la opción <strong>Juego/Grabar animación</strong> en la parte alta de la interfaz.</li>
+</ul>
+<blockquote>
+	<img alt="fisicas_16" height="186" src="fisicas_16.png" width="212" />
+</blockquote>
+<ul>
+	<li>Reproducimos la simulación (<strong>&quot;P&quot;</strong>)... y cuando esté completa la paramos (<strong>&quot;Esc&quot;</strong>), como es lógico.</li>
+</ul>
+<ul>
+	<li>Desactivamos la opción <strong>Juego/Grabar animación</strong>. Si no hacemos esto, cada vez que volvamos a reproducir la simulación (<strong>&quot;P&quot;</strong>), se sobreescribirá.</li>
+</ul>
+<p>
+Ya es posible reproducir la animación (<strong>&quot;Alt_A&quot;</strong>) en el editor <strong>Vista 3D</strong>.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id13">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Configuración del vídeo</h2>
+<div class="iDevice_inner">
+<div id="ta13_23_2" class="block" style="display:block;position:relative"><ul>
+	<li>Pasamos a la modalidad de trabajo <strong>Blender Estándar</strong>.</li>
+</ul>
+<ul>
+	<li>En el panel <strong>Render</strong> <img alt="render" height="16" src="render.png" width="18" /> ajustamos a nuestro gusto <strong>Resolución</strong>, <strong>Cuadro inicial</strong> (generalmente <strong>1</strong>), <strong>Cuadro final</strong> y atendemos a que <strong>Velocidad de refresco</strong> se corresponda con la que hemos definido en <strong>CPS</strong> anteriormente.</li>
+</ul>
+<blockquote>
+	<img alt="fisicas_19" height="220" src="fisicas_18.png" width="390" />
+</blockquote>
+<ul>
+	<li>En el mismo panel <strong>Render</strong> <img alt="render" height="16" src="render.png" width="18" /> vamos a la botonera <strong>Salida </strong>y escogemos un lugar de destino usando el icono <img alt="dir" height="16" src="3dnp_13.png" width="18" /> y el formato <strong>MPEG</strong>.</li>
+</ul>
+<ul>
+	<li>Mas abajo, en la botonera<strong> Codificación</strong> nos aseguramos de optar por el codec <strong>MPEG4</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="fisicas_19" height="399" src="fisicas_19.png" width="393" />
+</blockquote>
+<ul>
+	<li>Pulsamos el botón <strong>Animación</strong> y esperamos a que se genere la animación. </li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="parmetros_importantes.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_galileo_en_pisa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

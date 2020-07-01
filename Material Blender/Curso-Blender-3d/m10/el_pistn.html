@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> El pistón | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li id="current-page-parent"><a href="mecnica_restringida.html" class="current-page-parent daddy">Mecánica restringida</a><ul>
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li id="active"><a href="el_pistn.html" class="active no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li><a href="creacion_de_personajes.html" class="daddy">Creacion de personajes</a><ul class="other-section">
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="brazo_mvil.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="un_ciclo.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">El pistón</h1></div>
+<div class="FreeTextIdevice" id="id30">
+<div class="iDevice emphasis0">
+<div id="ta30_1" class="block" style="display:block;position:relative"><p>
+A partir de ahora mostramos el brazo con unos pasadores colocados en las bisagras así como unos remaches para sostener <em>brazo_inmovil </em>a la supuesta pared. 
+</p>
+<p>
+Le llega el turno a los dos elementos del pistón. El uno debe mirar al otro y viceversa. 
+</p>
+<p>
+Seleccionamos <em>piston_grueso</em> y le aplicamos una <strong>Restricción</strong> <img height="16" src="restricciones_panel.png" width="18" /> de tipo <strong>Seguir a</strong> y hacemos que su <strong>Objetivo</strong> sea <em>piston_fino</em>.
+</p>
+<img alt="piston_01" height="399" src="piston_01.png" width="529" />
+<p>
+La restricción dice que sea el eje Y el que apunte al <em>piston_fino</em> pero está claro que nosotros lo que necesitamos es que sea el eje X el que apunte hacia él.
+</p>
+<img alt="piston_02" height="362" src="piston_02.png" width="569" />
+<p>
+Esto se traduce en que al desplazar <em>piston_grueso</em> se verá obligado siempre a mirar a <em>piston_fino</em> (a su <strong>Origen</strong> en realidad).
+</p>
+<img alt="piston_03" height="294" src="piston_03.png" width="434" />
+<p>
+Ahora seleccionamos <em>piston_fino</em> y le aplicamos otra <strong>Restricción</strong> <img height="16" src="restricciones_panel.png" width="18" /> de tipo <strong>Seguir a </strong>con <strong>Objetivo </strong> <em>piston_grueso</em>. La única diferencia es que el eje debe ser -X (negativo). 
+</p>
+<img alt="piston_04" height="368" src="piston_04.png" width="530" />
+<p>
+Si desplazamos cualquiera de ellos el compañero le mirará siempre...
+</p>
+<img alt="piston_05" height="235" src="piston_05.png" width="309" />
+<p>
+Pero el pistón no responde de una forma conjunta, es decir, que las dos restricciones no se cumplen siempre y a la vez. Por ejemplo, en la anterior imagen, lo deseable es que <em>piston_grueso</em> se hubiera movido para mirar a <em>piston_fino</em>. Algo así.
+</p>
+<img alt="piston_06" height="234" src="piston_06.png" width="367" />
+<h3>
+<span style="color: #006699">¿Cómo lo conseguimos? </span>
+</h3>
+<p>
+Hay que hacer un emparentamiento simple entre <em>piston_fino </em>(hijo) y el objeto vacío (padre). Seleccionamos primero <em>piston_fino</em>, luego el objeto vacío y hacemos <strong>Objeto/Padre/Establecer/Objeto</strong>. Al ser el objeto vacío el padre, esto es lo que ocurre cuando lo <strong>movemos</strong> (<strong>&quot;G&quot;</strong>)...
+</p>
+<img alt="piston_07" height="294" src="piston_07.png" width="364" />
+<p>
+Lo que viene ahora es obvio...: seleccionamos primero el objeto vacío y después <em>brazo_movil </em>para repetir la mismo operación de emparentamiento (<strong>Objeto/Padre/Establecer/Objeto</strong>). Esto se traduce en que cuando <strong>rotemos</strong> el <em>brazo_movil</em> (<strong>&quot;R&quot;</strong>) todo el pistón funciona a las mil maravillas...
+</p>
+<img alt="piston_08" height="336" src="piston_08.png" width="410" />
+<p>
+...a excepción de uno de los pasadores que se queda descolgado.
+</p>
+<p>
+Ese pasador tiene que ser hijo de<em> brazo_movil</em>..., o de <em>piston_delgado</em>..., o incluso del objeto vacío. Aplicando la lógica lo mejor es que sea hijo de <em>brazo_movil</em>. Tras ese emparentamiento, todo queda perfecto.
+</p>
+<img alt="piston_09" height="348" src="piston_09.png" width="436" />
+<p>
+Tal y como está nuestro brazo articulado ya está listo para ser animado pero en realidad faltarían cosas para refinarlo, como puede ser emparentar el resto de los pasadores y, sobre todo, que <em>brazo_inmovil</em> sea el padre final de toda la estructura para poder seleccionarla y llevarnos todo a otro sitio (<strong>&quot;G&quot;</strong>).
+</p>
+<p>
+Una edición extra que le da coherencia a la mecánica es seleccionar <em>brazo_movil </em>y en <strong>Propiedades </strong>(<strong>&quot;N&quot;</strong>) dejar sólo la <strong>Rotación: Y</strong> sin bloquear.
+</p>
+<img alt="piston_10" height="300" src="piston_10.png" width="157" />
+<p>
+Esto hace que no podamos ni moverlo ni escalarlo, tal y como ocurriría en la vida real. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id124">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta124_27_2" class="block" style="display:block;position:relative"><a href="brazo_piston.swf" target="_blank"><img alt="ver_video_brazo_piston" height="196" src="ver_video_brazo_piston.png" width="286" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id35">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta35_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="brazo_configurado.blend"><img alt="decarga_brazo_configurado" height="48" src="descarga_brazo_configurado.png" width="238" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="brazo_mvil.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="un_ciclo.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

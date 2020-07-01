@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Eliminar duplicados | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (I)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (I)</a></li><li><a href="extrusin.html" class="daddy">Extrusión</a><ul class="other-section">
+<li><a href="extrusin_nula.html" class="no-ch">Extrusión nula</a></li>
+</ul>
+</li>
+<li><a href="bucles_de_bordes_y_facetas.html" class="daddy">Bucles de bordes y facetas</a><ul class="other-section">
+<li><a href="aadir_bucles.html" class="no-ch">Añadir bucles</a></li>
+<li><a href="editar_bucles.html" class="no-ch">Editar bucles</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_ensamble_con_espiga.html" class="no-ch">Material didáctico: Ensamble con espiga</a></li>
+<li><a href="adherencias.html" class="daddy">Adherencias</a><ul class="other-section">
+<li><a href="cursor_a_seleccionado.html" class="no-ch">Cursor a seleccionado</a></li>
+<li><a href="seleccin_a_cursor.html" class="no-ch">Selección a Cursor</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="objetos_de_revolucin.html" class="current-page-parent daddy">Objetos de revolución</a><ul>
+<li><a href="el_perfil.html" class="no-ch">El perfil</a></li>
+<li><a href="girar.html" class="no-ch">Girar</a></li>
+<li id="active"><a href="eliminar_duplicados.html" class="active no-ch">Eliminar duplicados</a></li>
+<li><a href="recalculado_de_normales.html" class="no-ch">Recalculado de normales</a></li>
+<li><a href="modificador_solidificar.html" class="no-ch">Modificador Solidificar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cilindro_hidrulico.html" class="no-ch">Material didáctico: Cilindro hidráulico</a></li>
+<li><a href="textos.html" class="daddy">Textos</a><ul class="other-section">
+<li><a href="cambio_de_tipografa.html" class="no-ch">Cambio de tipografía</a></li>
+<li><a href="ediciones_bsicas.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="marcos.html" class="no-ch">Marcos</a></li>
+<li><a href="texto_a_malla.html" class="no-ch">Texto a malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cartel_anunciador.html" class="no-ch">Material didáctico: Cartel anunciador</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="girar.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="recalculado_de_normales.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Eliminar duplicados</h1></div>
+<div class="FreeTextIdevice" id="id31">
+<div class="iDevice emphasis0">
+<div id="ta31_1" class="block" style="display:block;position:relative"><p>
+El problema de la costura es consecuencia de que los vértices del perfil se han duplicado al hacer un giro completo de 360º. En más de una ocasión hemos hecho referencia al tema de los<strong> puntos dobles</strong> y parece que ya se ha manifestado uno de los problemas que pueden dar. 
+</p>
+<p>
+Hay que deshacerse de ellos inmediatamente:
+</p>
+<ul>
+	<li>Seleccionamos todos los vértices de la malla <strong>&quot;A&quot;</strong>.</li>
+</ul>
+<ul>
+	<li>En el cuadro de <strong>Herramientas &quot;T</strong>&quot; pulsamos la opción <strong>Eliminar duplicados</strong> (o <strong>Malla/Vértices/Eliminar duplicados</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="n_dobles" height="474" src="n_dobles.png" width="593" />
+</blockquote>
+<p>
+Tal y como puede comprobarse en la imagen anterior, en el momento de la edición se nos informa del número de puntos dobles que había en la malla (realmente en los vértices seleccionados) y que han sido eliminados. En el caso de la ánfora se trataba de 51 puntos.
+</p>
+</div></div>
+</div>
+<div class="ReflectionIdevice" id="id32">
+<div class="iDevice emphasis1">
+<img alt="iDevice icon" class="iDevice_icon"  src="icon_reflection.gif"/>
+<span class="iDeviceTitle"><strong>Reflexión</strong></span>
+<script type="text/javascript" src="common.js"></script>
+<div class="iDevice_inner">
+<div id="ta32_8" class="block" style="display:block;position:relative"><p>
+Si se trataba de un perfil hecho con 28 puntos ¿Por qué crees que sale una cifra final de 51 puntos duplicados?
+</p>
+</div><div id="view32" style="display:block;"><input type="button" name="btnshow32" value="Click here" class="feedbackbutton" onclick="showAnswer('32',1)"/>
+</div>
+<div id="hide32" style="display:none;"><input type="button" name="btnshow32" value="Hide" class="feedbackbutton" onclick="showAnswer('32',0)"/>
+</div>
+<div id="s32" class="feedback" style=" display: none;"><div id="ta32_9" class="block" style="display:block;position:relative"><p>
+El perfil tiene 28 puntos, de los cuales 1 es un tanto especial. El que coincide con el eje se ha duplicado nada menos que 24 veces (el número de <strong>Pasos</strong> que escogimos para <strong>Girar</strong>). Esas 24 duplicaciones sumadas a las de los otros 27 puntos, que sólo se han duplicado una vez, nos da un total de 24+27=51  
+</p>
+<img alt="dobles_02" height="467" src="dobles_02.png" width="240" />
+</div></div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="girar.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="recalculado_de_normales.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

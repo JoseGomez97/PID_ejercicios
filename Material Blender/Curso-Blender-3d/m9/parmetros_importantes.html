@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Parámetros importantes | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li id="current-page-parent"><a href="el_motor_de_juegos.html" class="current-page-parent daddy">El motor de juegos</a><ul>
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li id="active"><a href="parmetros_importantes.html" class="active no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="fsicas_y_cuerpo_rgido.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="de_simulacin_a_animacin.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Parámetros importantes</h1></div>
+<div class="FreeTextIdevice" id="id10">
+<div class="iDevice emphasis0">
+<div id="ta10_1" class="block" style="display:block;position:relative">
+<p>
+A continuación damos un recetario de parámetros que consideraremos en primer instancia, aunque hay otros muchos que conviene experimentar (todos son relativos a<b> Cuerpo rigido</b>):
+</p>
+<h4>
+<span style="color: #006699">PANEL FÍSICAS <img src="fisica_panel.png" alt="fisicas" height="17" width="17" />. BOTONERA: LÍMITES DE COLOSIÓN</span>
+</h4>
+<ul>
+	<li><b>Límites de colisión</b>. Hay límites para las geometrías básicas <b>Cubo</b>, <b>Esfera</b>, <b>Cilindro</b> y<b> Cono</b>. Del resto de opciones nos interesa mucho <b>Envoltura convexa</b> que es la adecuada para mallas no tan geométricas como puede ser la mona Suzanne.</li>
+</ul>
+<blockquote>
+	<img src="fisicas_12.png" alt="fisicas_12" height="226" width="482" />
+</blockquote>
+<ul>
+	<li><b>Margen</b>. Determina una distancia entre la malla y una especie de <b>envoltorio virtual </b>que es el que realmente colisiona. Si queremos que sea <b>0.000</b> y nos da algún problema basta con ampliarlo mínimamente (<b>0.002</b>, por ejemplo) y se arregla el conflicto.</li>
+</ul>
+<h4>
+<span style="color: #006699">PANEL FÍSICAS <img src="fisica_panel.png" alt="fisicas" height="17" width="17" />. BOTONERA: FÍSICAS</span> 
+</h4>
+<img src="fisicas_13.png" alt="fisicas_13" height="317" width="278" />
+<ul>
+	<li><b>Radio</b>. Está en la botonera <b>Físicas</b>. Se representa visualmente en el editor <b>Vista 3D</b> tanto en sombreado <b>Alambre</b> como en <b>Sólido</b>. Está directamente relacionado con el <b>Límite de colisión: Esfera</b>. Si este límite está asignado a una esfera lo normal es que <b>Radio</b> coincida con la malla. Pero por diferentes motivos puede que queramos un radio mayor o menor para la esfera delimitadora.</li>
+</ul>
+<ul>
+	<li><b>Masa</b>. También en la botonera <b>Físicas</b>. Aunque ya sabemos que masa no es lo mismo que peso debemos hacer una interpretación en este sentido. Dos objetos, uno con una <b>Masa: 1.000</b> y otro de<b> 2.000</b>, porque descenderán a la misma velocidad. Pero no es lo mismo que un cuerpo de <b>Masa: 10.000</b> golpee a otro <b>Cuerpo rígido</b> de<b> 5.000</b> que a otro de<b> 1.000</b>. El de <b>Masa: 5.000</b> se comportará como si fuera mucho más pesado y sufrirá menos desplazamiento que el de <b>1.000</b>.</li>
+</ul>
+<ul>
+	<li><b>Amortiguación</b>. En realidad no todos los cuerpos caen a la misma velocidad debido a que a algunos les afecta más que a otros el aire que se encuentran por el camino, tal es el caso de una pluma. Este rozamiento puede editarse por separado para:</li>
+</ul>
+<ul>
+	<li> 
+	<ul>
+		<li><b>Traslación</b>. Afecta a asuntos como la caída libre. <b>1.000</b> hace que el objeto encuentre tanta resistencia que no se mueva.</li>
+	</ul>
+	</li>
+</ul>
+<ul>
+	<li> 
+	<ul>
+		<li><b>Rotación</b>. Exatamente igual.</li>
+	</ul>
+	</li>
+</ul>
+<h4>
+<span style="color: #006699">PANEL MUNDO <img src="escena_panel.png" alt="mundo" height="16" width="16" />. BOTONERA: FÍSICAS</span> 
+</h4>
+<img src="fisicas_14.png" alt="fisicas_14" height="225" width="340" />
+<ul>
+	<li><b>Gravedad</b>. Está claro que hace referencia a la fuerza con la que los cuerpos son atraídos verticalmente hacia abajo en el eje Z <b>Global</b>. <b>Gravedad: 0.00</b> equivale a flotar en el aire.</li>
+</ul>
+<ul>
+	<li><b>CPS</b>. Son los cuadros por segundo que van a calcularse. Este parámetro es realmente importante si vamos a acabar convirtiendo nuestra simulación en una animación en vídeo. En ese caso ajustaremos aquí entre 24 y 30 que serán los fotogramas por segundo a los que haremos la animación final. Un valor alto origina animaciones de tipo <i>slow-motión</i> (cámara superlenta). En realidad sea cual sea este parámetro es posible variar la velocidad de reproducción posteriormente manipulando la distancia entre los fotogramas clave que se generan al grabar.</li>
+</ul>
+<ul>
+	<li><b>Sub-pasos</b>. Aumenta la precisión de los cálculos corrigiendo posibles comportamientos extraños (objetos que se introducen en otros al colisionar, por ejemplo). Una variación en este parámetro puede suponer un cambio de comportamiento en los rebotes porque la información procesada es mayor.</li>
+</ul>
+<h4>
+<span style="color: #006699">PANEL MATERIALES <img src="materiales_panel.png" alt="materiales" height="16" width="16" />. BOTONERA: FÍSICAS</span>
+</h4>
+<img src="fisicas_15.png" alt="fisicas_15" height="133" width="353" />
+<p>
+Hay propiedades físicas exclusivas de los materiales. Parece razonable que cuando estamos creando un objeto con apariencia de plástico sea ahí donde nos ocupemos de determinar sus propiedades físicas para el motor de juegos. Al encontrarnos en la modalidad<b> Blender Game</b> se hace visible alguna botonera nueva como es el caso de <b>Físicas</b>.<br />
+Aquí definimos cuánta fuerza se absorbe en un impacto o si hay mucho rozamiento en el contacto de unos objetos con otros:
+</p>
+<ul>
+	<li><b>Fricción</b>. Determina cuánto rozamiento se origina. En un cubo que resbala por un plano inclinado, un valor de <b>Fricción: 0.000</b> en este último significa que el cubo resbala indefinidamente aunque el valor de <b>Fricción</b> de ese cubo sea enorme. El plano se comportaría como una pista de hielo.</li>
+</ul>
+<ul>
+	<li><b>Elasticidad</b>. En un choque con otro cuerpo ¿cuánta fuerza absorbe este objeto? Si el cubo de antes cae desde una altura, al llegar al plano sólo rebotará si ninguno de los dos (plano y cubo) absorbe el 100% de la fuerza; si uno de los dos objetos tiene<b> Elasticidad: 0.000</b> el cubo no rebotará. La correcta manipulación de este parámetro hace, por ejemplo, que una pelota bote de forma realista pero al ser un <b>Cuerpo rígido</b> no se deformará en el bote; sin embargo, el análisis de los <b>Cuerpos elásticos</b> sobrepasa los fines de <b>Blender: 3D en la Educación</b>.</li>
+</ul>
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="fsicas_y_cuerpo_rgido.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="de_simulacin_a_animacin.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

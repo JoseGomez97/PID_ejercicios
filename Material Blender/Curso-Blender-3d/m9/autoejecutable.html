@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Autoejecutable | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li id="active"><a href="autoejecutable.html" class="active no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="sombreado_glsl.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_cpula_estrellada.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Autoejecutable</h1></div>
+<div class="FreeTextIdevice" id="id62">
+<div class="iDevice emphasis0">
+<div id="ta62_1" class="block" style="display:block;position:relative"><p>
+Cuando reproducimos la simulación con el reproductor integrado de Blender se abre una ventana emergente y se ejecuta el programa. 
+</p>
+<img alt="run_01" height="332" src="runtime_01.png" width="577" />
+<p>
+Las opciones de <strong>Resolución </strong>no requieren ninguna explicación siendo realmente interesante <strong>Pantalla completa </strong>y acto seguido activar <strong>Desktop</strong> para que el autoejecutable se adapte a la resolución que tenga el usuario. 
+</p>
+<p>
+La idea de crear un autoejecutable es conseguir ese mismo efecto pero sin necesidad de lanzarlo desde dentro de Blender; incluso sin la necesidad de tener el propio Blender instalado.
+</p>
+<p>
+Debemos activar la extensión (<strong>Archivo/Preferencias de usuario</strong>) denominada <strong>Save As Game Engine Runtime</strong>.
+</p>
+<img alt="run_02" height="420" src="runtime_02.png" width="583" />
+<p>
+Antes de exportar lo mejor es <strong>crear en algún lugar una carpeta</strong> para este fin, por ejemplo en el <em>Escritorio</em>. 
+</p>
+<p>
+Ya en el entorno de trabajo encontramos la opción en<strong> Archivo/Exportar/Save As Game Engine Runtime</strong>.
+</p>
+<img alt="run_03" height="418" src="runtime_03.png" width="472" />
+<p>
+Le damos un nombre y lugar de detino. Ya tenemos el autoejecutable. En el caso de Windows se crea un buen repertorio de librerías .DLL. En este ejemplo para Windows nuestra simulación se llama<em> juego.exe</em>. 
+</p>
+<img alt="run_04" height="377" src="runtime_04.png" width="639" />
+<p>
+En Linux y MacOSX el producto final es más simple al no tener que añadir librerías.  
+</p>
+<img alt="run_05" height="396" src="runtime_05.png" width="633" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id65">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Exclusividad</h2>
+<div class="iDevice_inner">
+<div id="ta65_24_2" class="block" style="display:block;position:relative"><p>
+El autoejecutable sólo funciona en la plataforma en la que ha sido creado. Es decir; que un autoejecutable fabricado en un Blender bajo Windows no funciona ni en un sistema operativo Linux ni en uno MacOX de la misma manera que un Blender compilado para un sistema no puede instalarse en otro. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="sombreado_glsl.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_cpula_estrellada.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

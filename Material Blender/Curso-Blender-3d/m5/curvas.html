@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Curvas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li id="active"><a href="curvas.html" class="active daddy">Curvas</a><ul>
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="rosca.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extrusin_en_curvas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Curvas</h1></div>
+<div class="FreeTextIdevice" id="id31">
+<div class="iDevice emphasis0">
+<div id="ta31_1" class="block" style="display:block;position:relative"><p>
+Hay un tipo de objetos llamados curvas (<strong>Añadir/Curvas</strong>) que merecen una parada en nuestro estudio debido a la gran cantidad de posibilidades que nos brindan. En realidad su potencial está más relacionado con las animaciones pero es necesario conocer sus fundamentos para el modelado.
+</p>
+<p>
+Cuando añadimos una bézier (<strong>Añadir/Curva/Bézier</strong>) lo que aparece en escena es un curva suave editable en <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> en sus extremos tanto por sus<strong> nodos</strong> como por sus<strong> asas</strong>.
+</p>
+<img alt="bezier_01" height="269" src="bezier_01.png" width="505" />
+<p>
+Su panel <img alt="bezier_panel" height="17" src="bezier_panel.png" width="16" /> nos brinda la posibilidad de que la curva sea <strong>3D</strong> quede restringida a un plano <strong>2D</strong>.
+</p>
+<img alt="n_curva_01" height="194" src="n_rosca_05.png" width="313" />
+<p>
+La creación de nuevos nodos es igual que cuando añadimos vértices a una malla: tan sólo hay que tener seleccionado uno de los nodos finales y <strong>extruir </strong>(<strong>&quot;E&quot;</strong>) .
+</p>
+<img height="449" src="bezier_03.png" width="585" />
+<p>
+Para cerrar la curva seleccionamos los dos nodos (inicial y final) y usamos <strong>&quot;F&quot;</strong> o <strong>Curva/Hacer segmento</strong>. 
+</p>
+<img alt="bezier_04" height="389" src="bezier_04.png" width="632" />
+<p>
+Tanto la edición anterior como otras las encontramos en el cuadro<strong> Herramientas</strong> (<strong>&quot;T&quot;</strong>).
+</p>
+<img alt="n_curvas_03" height="255" src="n_curva_03.png" width="194" />
+<p>
+Destacamos:
+</p>
+<ul>
+	<li><strong>Asas</strong>. Hay cuatro tipos de nodos definidos por las características de sus asas, de los cuales nos interesan sólo:</li>
+</ul>
+<ul>
+	<ul>
+		<li><strong>Alinear. </strong>Son los nodos por defecto. Originan una sensación de continuidad en la curva.</li>
+	</ul>
+</ul>
+<ul>
+	<ul>
+		<li><strong>Libre</strong>. Se origina un nodo de esquina. En ese punto la curva se puede quebrar al editar las asas.</li>
+	</ul>
+</ul>
+<blockquote>
+	<blockquote>
+		<img alt="n_curva_02" height="395" src="n_curva_02.png" width="442" />
+	</blockquote>
+</blockquote>
+<ul>
+	<li><strong>Subdividir</strong>. Si tenemos dos nodos seleccionados, esta opción añade uno nuevo en el centro sin alterar la forma de la curva.</li>
+</ul>
+<ul>
+	<li><strong>Definir tipo de curva</strong>. Sólo nos interesan:</li>
+</ul>
+<ul>
+	<ul>
+		<li><strong>Bézier</strong>. La curva por defecto.</li>
+	</ul>
+</ul>
+<ul>
+	<ul>
+		<li><strong>Polígono</strong>. La curva se convierte en una poligonal quebrada a base de segmentos rectos sin asas (ya que no tendrían sentido).</li>
+	</ul>
+</ul>
+<blockquote>
+	<blockquote>
+		<img alt="n_crva_04" height="442" src="n_curva_04.png" width="563" />
+	</blockquote>
+</blockquote>
+</div></div>
+</div>
+<div class="activityIdevice" id="id32">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Ejercitación</h2>
+<div class="iDevice_inner">
+<div id="ta32_32_2" class="block" style="display:block;position:relative"><p>
+Vamos a proponerte un ejercicio para repasar algunos conceptos fundamentales.
+</p>
+<ul>
+	<li>Traza con curva 2D del contorno de medio <em>canal de aguas</em> usando de fondo esta imagen.</li>
+</ul>
+<blockquote>
+	<img alt="canal_01" height="350" src="canal_01.png" width="600" />
+</blockquote>
+<p>
+A continuación se explica brevemente el método para usar una imagen de fondo.
+</p>
+<p>
+Nos dirigimos al cuadro de <strong>Propiedades </strong>(<strong>&quot;N&quot;</strong>) y buscamos una botonera llamada <strong>Imágenes de fondo</strong>; la desplegamos con el pequeño triángulo, activamos la opción y pulsamos <strong>Agregar imagen</strong>. Tras esto desplegamos el panel <strong>No establecido</strong> para poder usar el botón <strong>Abrir</strong> e ir a buscar nuestra imagen de referencia. 
+</p>
+<img alt="imagenfondo_01" height="267" src="actividad_03_03.png" width="431" />
+<p>
+Siempre que estemos en una vista ortográfica se verá la imagen; también desde el punto de vista de la cámara <strong>&quot;NumPad 0&quot;</strong> aunque es seguro que se mostrará distorsionada porque las proporciones no son las mismas (si cambiamos <strong>Resolución X</strong> a <strong>1200</strong> y <strong>Resolución Y</strong> a <strong>700</strong> el problema se soluciona ya que estas son medidas proporcionales a las de la imagen, 600x350px). 
+</p>
+<ul>
+	<li>Coloca el <strong>Origen</strong> del objeto en el lugar que se indica en esta imagen. Te recordamos que debes usar tanto <strong>Objeto/Adherencia</strong> como la opción <strong>Origen</strong> en el cuadro de <strong>Herramientas </strong>(<strong>&quot;T&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="canal_02" height="352" src="canal_02.png" width="597" />
+</blockquote>
+<ul>
+	<li>Comprueba cómo este tipo de objeto también admite el modificador<strong> Espejo</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="canal_03" height="260" src="canal_03.png" width="493" />
+</blockquote>
+<ul>
+	<li>Como si se tratara de un objeto <strong>Texto</strong> aplícale una extrusión.</li>
+</ul>
+<blockquote>
+	<img alt="canal_05" height="400" src="canal_04.png" width="613" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id33">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta33_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="canal.blend"><img alt="descarga_canal" height="48" src="descarga_canal.png" width="144" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="rosca.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extrusin_en_curvas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

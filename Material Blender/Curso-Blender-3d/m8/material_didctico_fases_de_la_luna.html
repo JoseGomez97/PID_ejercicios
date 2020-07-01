@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Fases de la luna | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li><a href="seguir_una_trayectoria.html" class="daddy">Seguir una trayectoria</a><ul class="other-section">
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_fases_de_la_luna.html" class="active no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="seguir_a.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Fases de la luna</h1></div>
+<div class="FreeTextIdevice" id="id52">
+<div class="iDevice emphasis0">
+<div id="ta52_1" class="block" style="display:block;position:relative"><p>
+Pocas experiencias pueden compararse con explicarle a un niño por qué la Luna cambia de forma.
+</p>
+<p>
+Vamos a crear una animación para ayudar en esa explicación aunque incluye una pequeña mentira: no es la Luna la que se mueve sino la lámpara.
+</p>
+<p>
+Sustituimos el cubo de inicio por una esfera (<strong>Añadir/Malla/Esfera UV</strong>) y aprovechando la correcta localizacion del <strong>Cursor 3D </strong>sacamos también una curva circular (<strong>Añadir/Curva/Círculo</strong>). Esta curva sale a escena con un radio igual que el de la esfera así que inmediatamente la <strong>escalamos</strong> (<strong>&quot;S&quot;</strong>).
+</p>
+<img alt="luna_01" src="luna_01.png" />
+<p>
+La escena ya cuenta con una lámpara y la vamos a utilizar para la animación. Seguimos el protocolo para que se originen los fotogramas clave con triquiñuela incluida:
+</p>
+<ul>
+	<li>Seleccionamos primero la lámpara <strong>Puntual</strong> <img height="18" src="icono_puntual.png" width="18" /> y luego el círculo.</li>
+</ul>
+<ul>
+	<li>Emparentamos con <strong>&quot;Control_P&quot;/Seguir camino</strong>. Se crean los fotogramas clave.</li>
+</ul>
+<ul>
+	<li>Desemparentamos con <strong>&quot;Alt_P&quot;/Eliminar padre</strong>. Concluimos la triquiñuela.</li>
+</ul>
+<ul>
+	<li>Eliminamos las transformaciones previas del la lámpara; en este caso <strong>Objeto/Limpiar/Posición</strong>. La lámpara se sitúa en 0.0.0 por lo que queda dentro de la esfera.</li>
+</ul>
+<p>
+Nos resta añadir una<strong> Restricción</strong> <img height="16" src="restricciones_panel.png" width="18" /> de tipo <strong>Seguir camino</strong> a la lámpara. No olvidaremos que es este el objeto que tiene que estar seleccionado y que la curva (<em>BezierCircle</em>, si no le damos otro nombre) es el <strong>Objetivo</strong>: 
+</p>
+<img height="213" src="luna_02.png" width="580" />
+<p>
+Seleccionamos la trayectoria y en el panel <strong>Curva</strong> <img height="16" src="camino_05.png" width="16" /> cambiamos el valor de<strong> Fotogramas</strong> a <strong>200 </strong>para que el desplazamiento de la lámpara sea más lento.
+</p>
+<img alt="luna_03" height="154" src="luna_03.png" width="288" />
+<p>
+El resto son asuntos estéticos. Por ejemplo en el panel <strong>Mundo</strong> <img height="16" src="escena_panel.png" width="16" /> hacemos un par de ediciones:
+</p>
+<ul>
+	<li><strong>Color de horizonte</strong>. Un hexadecimal <strong>000000</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="luna_05" height="126" src="luna_05.png" width="293" />
+</blockquote>
+<ul>
+	<li><strong>Estrellas</strong>. Una configuración en esta línea (la esfera ya tiene un modificador<strong> Subdivisión </strong>y un sombreado <strong>Suave</strong> en el siguiente <em>render</em>; no está activada la <strong>Oclusión ambiental</strong>, la única iluminación es la de la lámpara a la que se le ajusta el valor de <strong>Energía</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="luna_06" height="407" src="luna_06.png" width="532" />
+</blockquote>
+<p>
+Nos queda definir la longitud de la animación. <strong>400</strong> fotogramas es una buena opción porque de ese modo vemos dos veces el ciclo completo.
+</p>
+<img alt="luna_04" height="221" src="luna_04.png" width="286" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id56">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Exportación (recordatorio)</h2>
+<div class="iDevice_inner">
+<div id="ta56_32_2" class="block" style="display:block;position:relative"><p>
+Esta imagen incluye lo necesario para una buena exportación. Todo se edita en <strong>Render</strong> <img height="16" src="render.png" width="18" />.
+</p>
+<img alt="luna_11" height="393" src="luna_11.png" width="291" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id76">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Resultado final</h2>
+<div class="iDevice_inner">
+<div id="ta76_21_2" class="block" style="display:block;position:relative"><a href="fases_luna.swf" target="_blank"><img src="ver_video_luna_fases.1.png" alt="ver_video_luna_fases" height="200" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id59">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta59_35_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="luna_fases.blend"><img alt="descarga_luna_fases" height="48" src="descarga_luna_fases.png" width="179" /></a>
+<p>
+NOTA: este .blend incluye un mapeado de la luna.
+</p>
+<p>
+<img alt="n_luna" height="439" src="n_luna.png" width="582" />
+<br />
+<span style="color: #999999">Imagen mapeada: Full moon // Autor: Luc Viatour // Licencia: GNU Free Documentation License</span>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="seguir_a.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

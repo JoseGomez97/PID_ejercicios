@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Alfa por las dos caras | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="ms_mapeados.html" class="current-page-parent daddy">Más mapeados</a><ul>
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li id="active"><a href="alfa_por_las_dos_caras.html" class="active no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="proyectar_desde_la_vista.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="sombras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Alfa por las dos caras</h1></div>
+<div class="FreeTextIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_1" class="block" style="display:block;position:relative"><p>
+Al asignar un mapeado UV sobre un objeto sin material, Blender se comporta de un modo muy inteligente; por ejemplo, ya hemos visto cómo Blender entiende que si el objeto no tiene material, pero se le ha mapeado una textura, lo lógico es que se vea en el motor de juegos y por tanto le asigna por defecto la opción <strong>Textura en caras</strong>.
+</p>
+<p>
+Eso mismo ocurre cuando lo que mapeamos es una textura con transparencias. Vamos a hacer una bonita lámpara de araña para nuestro museo virtual.
+</p>
+<a href="museo_un_cuadro_uv.blend"><img alt="descarga_museo_un_cuadro_uv" height="48" src="descarga_museo_un_cuadro_uv.png" width="261" /></a>
+<p>
+En su momento, en <strong>Material didáctico: Galileo en Pisa</strong>, vimos una extraordinaria extensión para importar imágenes. Se comentó que esa importación deja el material correctamente tanto para <strong>Blender Estándar</strong> como para <strong>Blender Game</strong>. Lo que aquí vamos a ver es el proceso manual por el cual somos nosotros los que configuramos todo; sólo así comprenderemos qué hace la extensión <strong>Import Images as Planes</strong> y cuáles son las opciones que debemos manipular si deseamos un resultado diferente.
+</p>
+<p>
+Esta es la imagen que usaremos (es un PNG con fondo transparente). 
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id42">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Módulo para lámpara de araña
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.3.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="modulo_lampara.png" title="Show Módulo para lámpara de araña // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons) Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Módulo para lámpara de araña // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons) Image"
+                   src="modulo_lamparaThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="modulo_lampara.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Módulo para lámpara de araña // Autor: Joaclint // Licencia: CC-SA-BY (Creative Commons)
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id43">
+<div class="iDevice emphasis0">
+<div id="ta43_1" class="block" style="display:block;position:relative"><p>
+Sacamos un plano a escena y lo <strong>rotamos 90º en X</strong> (<strong>&quot;RX90&quot;</strong>). Si es necesario lo <strong>escalamos</strong> (<strong>&quot;S&quot;</strong>) para que vaya colocándose cerca de su destino final. Recordamos que <strong>no debe tener material asignado</strong>.
+</p>
+<img alt="arana_01" height="327" src="arana_01.png" width="563" />
+<p>
+En ese plano, y según el método ya aprendido mapeamos la imagen guardada en nuestro disco duro.
+</p>
+<img alt="arana_02" height="449" src="arana_02.png" width="624" />
+<p>
+Si activamos la simulación, todo parece perfecto pero no lo es. Estos son los problemas:
+</p>
+<ul>
+	<li>Los contornos no son de calidad. Eso se soluciona fácilmente activando la opción <strong>Premultiplicar</strong> en el cuadro <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>) del <strong>Editor UV </strong><img height="16" src="uv.png" width="18" /> (no del editor <strong>Vista 3D</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="arana_03" height="223" src="arana_03.png" width="205" />
+</blockquote>
+<ul>
+	<li>Si hacemos órbita para mirar la parte de atrás del plano vemos que la imagen no se mapea por esa cara. Y este es el problema que no tiene solución si el objeto carece de material. </li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id45">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Configurar el material</h2>
+<div class="iDevice_inner">
+<div id="ta45_29_2" class="block" style="display:block;position:relative"><p>
+Comenzamos por darle un<strong> Material</strong> <img height="16" src="materiales_panel.png" width="16" /> al plano y configurar a mano. En ese momento todo parece irse al traste... (el mapeado desaparece).
+</p>
+<p>
+Lo primero, como siempre, es activar <strong>Textura en caras</strong> para asegurarnos que se renderiza en la simulación (<strong>&quot;P&quot;</strong>).
+</p>
+<p>
+Como estamos en la modalidad de trabajo <strong>Blender Game</strong> en el panel<strong> Material</strong> <img alt="material" height="16" src="materiales_panel.png" width="16" /> aparece una botonera llamada <strong>Opciones de juego</strong>:
+</p>
+<ul>
+	<li>Activamos la transparencia con <strong>Mezcla alfa: Fusionar alfa</strong>.</li>
+</ul>
+<ul>
+	<li>Vemos que la opción <strong>Desechar caras traseras</strong> está activada; lo que procede es desactivarla para que se renderice la textura por las dos caras en la simulación (<strong>&quot;P&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="arana_04" height="106" src="arana_04.png" width="456" />
+</blockquote>
+<p>
+No estaría mal descender casi a <strong>0.000</strong> la <strong>Intensidad </strong>de <strong>Especular</strong> para que quede casi mate. 
+</p>
+<img alt="arana_05" height="457" src="arana_05.png" width="426" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id82">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta82_22_2" class="block" style="display:block;position:relative"><a href="alfa_en_las_dos_caras.swf" target="_blank"><img src="ver_video__alfa_por_las_dos_caras.png" alt="ver_video_alfa_por_las_dos_caras" height="200" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id46">
+<div class="iDevice emphasis0">
+<div id="ta46_1" class="block" style="display:block;position:relative"><p>
+En realidad lo que queda ahora no es un trabajo de mapeado sino de modelado pero damos un breve resumen del método. Queremos que este mapeado se repita ocho veces para conseguir la sensación de lámpara de araña.
+</p>
+<p>
+Esto es lo que hay que hacer:
+</p>
+<ul>
+	<li>Pasamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y seleccionamos <img alt="vertices" height="16" src="vertices.png" width="15" /> uno de los vértices de la parte interior y hacemos <strong>Malla/Adherencia/Cursor a seleccionado</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="arana_06" height="370" src="arana_06.png" width="368" />
+</blockquote>
+<ul>
+	<li>Volvemos a <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y usamos <strong>Origen/Origen al Cursor 3D</strong> en el cuadro <strong>Herramientas</strong> (<strong>&quot;T&quot;</strong>). Esto permite controlar los giros sin necesidad de cambiar de <strong>Centro de pivotaje</strong>.</li>
+</ul>
+<ul>
+	<li>Seguimos en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> para hacer en una sola edición un <strong>duplicado y rotarlo 45º en Z </strong>(<strong>&quot;Shift_D RZ45&quot;</strong>). También podemos hacerlo en dos pasos con <strong>&quot;Shift_D Intro&quot;</strong> y después la <strong>rotación de 45º en Z</strong> (<strong>&quot;RZ45&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="arana_45" src="arana_07.png" />
+</blockquote>
+<ul>
+	<li>Seleccionamos el último objeto (debería haber quedado seleccionado) y vamos repitiendo la misma operación hasta completar los ocho brazos de la araña.</li>
+</ul>
+<blockquote>
+	<img alt="arana_08" height="372" src="arana_08.png" width="406" />
+</blockquote>
+<p>
+No nos alarmamos al ver que sólo el plano seleccionado muestra la 
+transparencia con calidad,  es una cuestión de ahorro de recursos a la 
+que no le daremos importancia porque en la simulación (<strong>&quot;P&quot;</strong>) se ve bien.
+</p>
+<img alt="arana_09" height="514" src="arana_09.png" width="571" />
+<p>
+Es muy interesante el resultado conseguido con tan solo ocho polígonos.
+</p>
+<p>
+En principio sólo nos queda añadir un cilindro o un cubo y hacer con él la unión entre la lámpara y el techo.  
+</p>
+<img alt="arana_10" height="417" src="arana_10.png" width="585" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id47">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta47_31_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="museo_lampara.blend"><img alt="descarga_museo_lampara" height="48" src="descarga_museo_lampara.png" width="217" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="proyectar_desde_la_vista.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="sombras.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Bump mapping | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li id="current-page-parent"><a href="texturas.html" class="current-page-parent daddy">Texturas</a><ul>
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li id="active"><a href="bump_mapping.html" class="active no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="otras_texturas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="importar_texturas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Bump mapping</h1></div>
+<div class="FreeTextIdevice" id="id24">
+<div class="iDevice emphasis0">
+<div id="ta24_1" class="block" style="display:block;position:relative"><p>
+Nos vamos a detener en una edición que se conoce como <em>bump mapping</em>. Como no queremos entrar a un análisis muy exhaustivo de este recurso diremos que con este tipo de edición vamos a simular relieves donde no los hay. Lo mejor es un ejemplo sobre nuestra textura de madera.
+</p>
+<p>
+La última de las texturas que le añadimos era una de tipo <strong>Nubes</strong> para darle un aspecto corroído o envejecido. Para darle a la madera un tratamiento en el que esas zonas corroídas se metan hacia adentro de la superficie podríamos hacer una subdivisión y deformar la malla pero con bump mapping conseguimos un engaño visual aceptable si las condiciones lo permiten. Lo vemos.
+</p>
+<p>
+Nos situamos en la textura de la que estamos hablando.
+</p>
+<img alt="bump_01" height="198" src="bump_01.png" width="286" />
+<p>
+Nos dirigimos a la botonera <strong>Influencia</strong> para activa la opción<strong> Geometría: Normal </strong>y aumentamos su valor a<strong> 2.000</strong>. El resultado en el <em>render</em> es el mencionado. Blender fabrica el engaño visual adaptándose a la dirección de la luz y que parezca que la malla se deforma (se nota sobre todo en la cara superior debido a que tenemos editado el <strong>Tamaño</strong> en <strong>Z</strong>). 
+</p>
+<img alt="bump_02" height="346" src="bump_02.png" width="611" />
+<p>
+<strong>¿Cuál es el punto débil de este recurso?</strong> Pues que la malla en realidad no se ha deformado y las aristas delatan que no es más que un truco.
+</p>
+<img alt="bump_03" height="312" src="bump_03.png" width="556" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id25">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta25_23_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="madera_bump.blend"><img alt="descarga_madera_bump" height="48" src="descarga_madera_bump.png" width="203" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="otras_texturas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="importar_texturas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

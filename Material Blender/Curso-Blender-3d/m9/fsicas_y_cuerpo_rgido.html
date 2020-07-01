@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Físicas y Cuerpo rígido | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li id="current-page-parent"><a href="el_motor_de_juegos.html" class="current-page-parent daddy">El motor de juegos</a><ul>
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li id="active"><a href="fsicas_y_cuerpo_rgido.html" class="active no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li><a href="sombras.html" class="daddy">Sombras</a><ul class="other-section">
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="blender_game.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="parmetros_importantes.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Físicas y Cuerpo rígido</h1></div>
+<div class="FreeTextIdevice" id="id5">
+<div class="iDevice emphasis0">
+<div id="ta5_1" class="block" style="display:block;position:relative"><p>
+No esperemos más y veamos nuestra primera simulación en acción.
+</p>
+<p>
+A la escena inicial le sacamos un plano (<strong>Añadir/Malla/Plano</strong>) además de dejar el cubo por defecto. Colocamos el cubo a una distancia razonable del plano.
+</p>
+<img alt="fisica_04" height="401" src="fisicas_04.png" width="417" />
+<p>
+Y ponemos en marcha el juego; o lo que es lo mismo, activamos el motor de juego, desde el panel <strong>Render</strong> <img alt="fisicas" height="16" src="render.png" width="18" /> pulsando el botón <strong>Empezar juego</strong> de la botonera <strong>Reproductor incorporado</strong> (<strong>no Reproductor independiente</strong>), aunque recomendamos el atajo <strong>&quot;P&quot;</strong> desde <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" />.
+</p>
+<img alt="fisicas_05" height="360" src="fisicas_05.png" width="606" />
+<p>
+Nada ocurre, salvo que el editor <strong>Vista 3D</strong> cambia de apariencia a una especie de <em>render</em>. Salimos del juego con la tecla <strong>&quot;Esc&quot;</strong> y todo vuelve a la normalidad. ¿qué ha ocurrido?. Exactamente lo que tiene que pasar: nada. Los dos objetos que forman parte de la animación (sin contar la lámpara y la cámara) son cuerpos de tipo <strong>Estático</strong> y por lo tanto es como su hubiéramos activado la simulación en una habitación con un suelo y una mesa; nada se mueve.
+</p>
+<p>
+Pero estamos de acuerdo en que el cubo está en el aire y según la lógica debería caer atraído hacia el plano gracias a la fuerza de la gravedad.
+</p>
+<p>
+Nos vamos al panel<strong> Físicas</strong> <img alt="fisicas" height="17" src="fisica_panel.png" width="17" /> y en la botonera del mismo nombre cambiamos de <strong>Estático</strong> a <strong>Cuerpo rígido</strong>. 
+</p>
+<img alt="fisicas_06" height="412" src="fisicas_06.png" width="326" />
+<p>
+Con el puntero del ratón sobre el editor <strong>Vista 3D</strong> (en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />, no lo olvidemos) ponemos en marcha la simulación (<strong>&quot;P&quot;</strong>). El cubo cae. Las físicas se ponen de manifiesto. Ya hemos hecho nuestra primera simulación.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id6">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Primeras conclusiones</h2>
+<div class="iDevice_inner">
+<div id="ta6_22_2" class="block" style="display:block;position:relative"><ul>
+	<li>Estemos en sombreado <strong>Sólido</strong> o en sombreado <strong>Textura </strong>la iluminación no
+	es global sino que depende exclusivamente de las lámparas de la escena. El sombreado <strong>Textura</strong> hace visibles los mapeados UV (si los hubiera) pero algunas ayudas visuales como el <strong>Atributo: Radio</strong> sólo se ven con sombreado <strong>Sólido</strong> a <strong>Alambre</strong></li>
+</ul>
+<blockquote>
+	<img alt="fisicas_10" height="284" src="fisicas_10.png" width="374" />
+</blockquote>
+<ul>
+	<li>La simulación la vemos desde el punto de vista dónde estemos trabajando, pero cuando llegue el momento la simulación debe ser encuadrada desde la cámara.</li>
+</ul>
+<ul>
+	<li>Estas recreaciones no son cuestión de activar un par de casillas; un buen resultado depende de variar y probar un buen número de veces con distintas configuraciones.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_1" class="block" style="display:block;position:relative"><p>
+Pero vamos a hacer algunos cambios. Lo primero es<strong> rotar</strong> (<strong>&quot;R&quot;</strong>) el cubo para 
+que no caiga con una cara paralela a la del plano del suelo.
+</p>
+<img alt="fisica_07" height="408" src="fisicas_07.png" width="375" />
+<p>
+Lo que era una simulación (<strong>&quot;P&quot;</strong>) más o menos aceptable a pasado a ser un desastre; el cubo se queda clavado al plano (incluso lo atraviesa ligeramente) y no tiende a posarse sobre una de sus caras.
+</p>
+<img alt="fisicas_08" height="164" src="fisicas_08.png" width="511" />
+<p>
+Comenzamos por activar la opción <strong>Límites de colisión</strong> en la botonera del mismo nombre del panel <img alt="fisicas" height="17" src="fisica_panel.png" width="17" /> y nos quedamos con la opción <strong>Límites: Caja</strong> que es perfecta para el objeto con el que estamos trabajando. 
+</p>
+<img alt="limites_09" height="87" src="fisicas_09.png" width="319" />
+<p>
+Con esto Blender determina una superficie virtual que envuelve a la malla. La simulación (<strong>&quot;P&quot;</strong>) gana calidad: el cubo ya no atraviesa al plano y además se mueve de modo realista hasta posarse sobre una de sus caras.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id84">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta84_24_2" class="block" style="display:block;position:relative"><a href="cuerpo_digido.swf" target="_blank"><img alt="ver_video_cuerpo_rigido" height="200" src="ver_video_cuerpo_rigido.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id9">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Reproductor independiente</h2>
+<div class="iDevice_inner">
+<div id="ta9_21_2" class="block" style="display:block;position:relative"><p>
+Lo primero que debemos saber de esta reproducción es que se toma<strong> la cámara como punto de vista</strong>.  
+</p>
+<p>
+Si reproducimos con <strong>Empezar juego</strong> de la botonera <strong>Reproductor independiente</strong>, Blender nos mostrará la simulación en una ventana emergente. Esta reproducción es una imitación exacta de cómo se verá cuando fabriquemos el <strong>autoejecutable</strong> que nos permite reproducir nuestro trabajo sin estar ejecutando Blender; incluso en un ordenador donde el programa no está ni siquiera instalado.
+</p>
+<img alt="fisicas_11" height="414" src="fisicas_11.png" width="595" /> 
+<p>
+En nuestro ejemplo el cubo viene con un material asignado porque es el cubo que pone Blender en la escena por defecto. Pero el plano lo hemos añadido sin más y carece de material. En este <strong>Reproductor independiente</strong> comprobamos cómo los objetos que no tienen asignado un material aparecen completamente negros.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="blender_game.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="parmetros_importantes.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> La restricción | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li id="current-page-parent"><a href="seguir_una_trayectoria.html" class="current-page-parent daddy">Seguir una trayectoria</a><ul>
+<li id="active"><a href="la_restriccin.html" class="active no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="seguir_una_trayectoria.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="una_triquiuela.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">La restricción</h1></div>
+<div class="FreeTextIdevice" id="id35">
+<div class="iDevice emphasis0">
+<div id="ta35_1" class="block" style="display:block;position:relative"><p>
+En el terreno de la animación es muy habitual que los objetos cumplan con obligaciones del tipo <strong>no pasar de...</strong>, <strong>no girar más de...</strong>, <strong>apuntar hacia...</strong>, <strong>copiar el movimiento de...</strong> A ese tipo de obligaciones es lo que en Blender denominamos <strong>Restricciones</strong> y tienen su propio panel, cuyo icono es muy significativo: unas cadenas <img alt="restricciones" height="16" src="restricciones_panel.png" width="18" />. 
+</p>
+<p>
+Para analizar el funcionamiento de este recurso necesitamos el cubo inicial y una curva circular (<strong>Agregar/Curva/Círculo</strong>). El cubo lo <strong>escalamos en X</strong> (<strong>&quot;SX&quot;</strong>) y el círculo lo <strong>escalamos</strong> (<strong>&quot;S&quot;</strong>) para que quede como en esta imagen.
+</p>
+<img alt="camino_01" height="369" src="camino_01.png" width="551" />
+<p>
+Al cubo le aplicamos la restricción <strong>Seguir camino</strong>.
+</p>
+<img alt="camino_02" height="404" src="camino_02.png" width="563" />
+<p>
+Nada ocurre en el editor <strong>Vista 3D</strong>. El propio cuadro de opciones de la restricción parece estar alertándonos de que algo erróneo está pasando mediante un campo con el fondo rojo.
+</p>
+<p>
+El motivo de que la restricción no tenga efecto es que Blender aún no sabe a qué curva debe seguir el cubo. En el campo <strong>Objetivo</strong>, con el icono <img alt="objeto" height="17" src="camino_03.png" width="18" />, están las curvas disponibles (en nuestro caso sólo una llamada, por defecto, <em>BezierCircle</em>) 
+</p>
+<img alt="camino_04" height="224" src="camino_04.png" width="624" />
+<p>
+Ahora sí: el cubo obedece y se coloca en el punto que, a nivel interno, Blender considera el origen de la curva. Todo parece indicar que con la puesta en marcha de la animación (<strong>&quot;Alt_A&quot;</strong>) el cubo comenzará a desplazarse pero no es así. Pero sacamos nuestras propias conclusiones:
+</p>
+<ul>
+	<li><strong>Adelante</strong>. Nos dice que es el eje Y (<strong>Local</strong>) del objeto el que se coloca en dirección a la curva.</li>
+</ul>
+<ul>
+	<li><strong>Arriba</strong>. El eje Z (<strong>Local</strong>) es el que apunta hacia arriba.</li>
+</ul>
+<p>
+Recordamos que al no haberse girado el cubo, sus ejes <strong>Locales </strong>coinciden con los <strong>Globales </strong>del entorno 3D.   
+</p>
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="seguir_una_trayectoria.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="una_triquiuela.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

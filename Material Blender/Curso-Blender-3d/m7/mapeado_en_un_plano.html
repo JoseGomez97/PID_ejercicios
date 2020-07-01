@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Mapeado en un plano | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li id="current-page-parent"><a href="texturas.html" class="current-page-parent daddy">Texturas</a><ul>
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li id="active"><a href="mapeado_en_un_plano.html" class="active no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="editor_uv.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mapeado_de_una_caja.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Mapeado en un plano</h1></div>
+<div class="FreeTextIdevice" id="id29">
+<div class="iDevice emphasis0">
+<div id="ta29_1" class="block" style="display:block;position:relative"><p>
+Preparamos la escena con un simple plano y nos dirigimos al entorno de trabajo <strong>UV Editing</strong>. Allí cargamos en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> esta imagen.
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id30">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Viejos comiendo sopa
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.1.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="viejas_comiendo_sopas.jpg" title="Show Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público Image"
+                   src="viejas_comiendo_sopasThumbnail.jpg"/>
+            </a>
+             <div class="gallery_image" value="viejas_comiendo_sopas.jpg"></div>
+            <div class="caption" style="align:center;width=100%">
+              Viejos comiendo sopa // Autor: Francisco de Goya // Licencia: Dominio público
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id31">
+<div class="iDevice emphasis0">
+<div id="ta31_1" class="block" style="display:block;position:relative"><p>
+Esto es lo que se nos muestra.
+</p>
+<img alt="uv_03" height="415" src="uv_03.png" width="628" />
+<p>
+En el editor <strong>Vista 3D</strong> pasamos a <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> y seleccionamos <img height="16" src="caras.png" width="15" /> la cara del plano. Después nos dirigimos al menú <strong>Malla/Despegar UV/Desenvolver</strong>.
+</p>
+<img alt="uv_04" height="445" src="uv_04.png" width="481" />
+<p>
+En el editor <strong>Vista 3D</strong> no ocurre nada pero en el <strong>Editor UV</strong> <img src="uv.png" /> sí. El plano se ha proyectado sobre la imagen. Como es lógico no es posible que el cuadro se adapte a las proporciones del cuadrado.
+</p>
+<img alt="uv_05" height="313" src="uv_05.png" width="499" />
+<p>
+¿Cómo solucionamos ese problema? Está claro que debemos deformar el cuadrado en el editor Vista 3D para que tenga las proporciones adecuadas. Podemos hacerlo de una manera más o menos intuitiva porque la finalidad de Blender no es ese tipo de exactitudes pero vamos a aprovechar para recordar ediciones básicas con el panel de<strong> Propiedades</strong> (<strong>&quot;N&quot;</strong>).  
+</p>
+<ul>
+	<li>Pasamos a <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y en el panel <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>) aplicamos la <strong>escala en X</strong> para ajustar las proporciones. Como la imagen mide 900x520 la relación entre los lados es 900/520=<strong>1.73</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="uv_06" height="277" src="uv_06.png" width="559" />
+</blockquote>
+<ul>
+	<li>Se origina un conflicto interno en Blender. Si le damos de nuevo la orden <strong>Desenvolver </strong>se seguirá proyectando un cuadrado como antes. El motivo es que la edición la hemos hecho en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> lo que para Blender significa que, independientemente de la apariencia que nos esté mostrando ahora, en realidad la malla es un cuadrado. Por lo tanto, si le damos la orden <strong>Desenvolver</strong>, Blender nos devolverá este mensaje en la zona alta de la interfaz.</li>
+</ul>
+<blockquote>
+	<img alt="uv_07" height="66" src="uv_07.png" width="457" />
+</blockquote>
+<ul>
+	<li>Solucionar lo anterior es sencillo. Hay que decirle a Blender que considere la nueva forma de la malla como original, es decir, con todos los <strong>escalados</strong> a <strong>1.000</strong>. La orden se da desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> con <strong>Objeto/Aplicar/Escalar</strong>. Vemos cómo la anterior <strong>escala en X</strong> de <strong>1.730</strong> se ajusta automáticamente a <strong>1.000</strong> sin variar la forma de la malla.</li>
+</ul>
+<blockquote>
+	<img alt="uv_08" src="uv_08.png" />
+</blockquote>
+<ul>
+	<li>Pasamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />, para seleccionar de nuevo la cara <img height="16" src="caras.png" width="15" /> y volver a dar la orden  <strong>Malla/Despegar UV/Desenvolver</strong>. La proyección queda perfecta en el<strong> Editor UV</strong> <img height="16" src="uv.png" width="18" />.</li>
+</ul>
+<blockquote>
+	<img alt="uv_09" height="305" src="uv_09.png" width="501" />
+</blockquote>
+<p>
+El proceso de mapeado ha terminado. Regresamos al entorno de trabajo <strong>Default</strong>. 
+</p>
+<p>
+Pero <strong>¿hay que trabajar a ciegas?</strong>. No. En el editor <strong>Vista 3D</strong> activamos el modo de sombreado <strong>Textura</strong> y la imagen del cuadro se ve perfectamente.
+</p>
+<img alt="uv_10" height="468" src="uv_10.png" width="473" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id32">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Posibles situaciones extrañas</h2>
+<div class="iDevice_inner">
+<div id="ta32_38_2" class="block" style="display:block;position:relative"><h4>
+<span style="color: #006699">La cara mapeada se ve negra al pasar a sombreado Textura.</span>
+</h4>
+<p>
+El tipo de sombreado <strong>Textura</strong> tiene en cuenta las lámparas. Es muy probable que ninguna esté iluminando la cara en cuestión. 
+</p>
+<h4>
+<span style="color: #006699">La cara mapeada se ve transparente. ¡Ha desaparecido!</span>
+</h4>
+<p>
+Es un problema de <strong>Normales</strong>. De hecho, si hacemos órbita para ver la cara opuesta del plano veremos que en realidad se ha mapeado en aquella otra cara. La solución es seleccionar la cara mal mapeada e invertir la dirección de la normal con <strong>Malla/Normales/Voltear normales</strong>. 
+</p>
+<h4>
+<span style="color: #006699">El mapeado se hace correctamente pero la imagen sale invertida o girada.</span>
+</h4>
+<p>
+Hay varias herramientas para controlar esto (dando por hecho que la cara está seleccionada <img height="16" src="caras.png" width="15" /> en <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" />):
+</p>
+<ul>
+	<li><strong>Malla/Caras/Rotate UVs</strong>. Presenta dos opciones para rotar el mapeado: sentido <strong>Horario</strong> y <strong>Antihorario</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Malla/Caras/Mirror UVs</strong>. Hace la simetría axial de la imagen en <strong>X</strong> o en <strong>Y</strong>.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id33">
+<div class="iDevice emphasis0">
+<div id="ta33_1" class="block" style="display:block;position:relative"><p>
+Sólo queda hacer que la imagen salga en el <em>render</em>. Vamos al <strong>Material</strong> <img alt="material" height="16" src="materiales_panel.png" width="16" /> del plano (o le creamos uno si no lo tiene ya) y activamos la opción<strong> Textura en caras </strong>en la botonera<strong> Opciones</strong>. 
+</p>
+<img alt="uv_12" height="233" src="uv_12.png" width="323" />
+<p>
+A continuación nuestras <em>Viejas comiendo sopas</em> aplicadas en una ficha técnica muy simple sobre esta maravilla de la pintura.
+</p>
+<img alt="uv_13" height="455" src="uv_13.png" width="462" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id69">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta69_22_2" class="block" style="display:block;position:relative"><a href="mapear_un_plano.swf" target="_blank"><img alt="ver_video_mapear_un_plano" height="200" src="ver_video_mapear_un_plano.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id34">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta34_40_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="uv_plano.blend"><img alt="descarga_uv_plano" height="48" src="descarga_uv_plano.png" width="165" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="editor_uv.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="mapeado_de_una_caja.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

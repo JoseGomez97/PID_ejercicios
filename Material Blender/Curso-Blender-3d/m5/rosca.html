@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Rosca | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li id="current-page-parent"><a href="otros_modificadores.html" class="current-page-parent daddy">Otros modificadores</a><ul>
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li id="active"><a href="rosca.html" class="active no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="booleano.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="curvas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Rosca</h1></div>
+<div class="FreeTextIdevice" id="id27">
+<div class="iDevice emphasis0">
+<div id="ta27_1" class="block" style="display:block;position:relative"><p>
+Este es un modificador destinado a hacer muelles y objetos similares. Su aplicación es muy sencilla.
+</p>
+<p>
+Partimos de un círculo (<strong>Añadir/Malla/Círculo</strong>), pasamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />, seleccionamos todos los vértices <strong>&quot;A&quot;</strong> y <strong>rotamos 90º en el eje Y </strong>(<strong>&quot;RY90&quot;</strong>). Lo habitual ha sido siempre rotar desde <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" /> pero en esta ocasión lo hacemos desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> porque no queremos alterar los ejes<strong> Locales</strong> del objeto; queremos que el eje Z del círculo siga coincidiendo con el eje Z del entorno 3D.
+</p>
+<img alt="espiral_01" height="353" src="espiral_01.png" width="298" />
+<p>
+Le aplicamos el modificador<strong> Rosca</strong>. De momento sólo nos preocupamos de activar la opción <strong>Calcular orden</strong> que evitará una mala lectura de las normales de la malla virtual. 
+</p>
+<img alt="n_rosca_01" height="241" src="n_rosca_01.png" width="552" />
+<p>
+Todo lo que ha ocurrido es lógico:
+</p>
+<ul>
+	<li><strong>Eje Z</strong>. El círculo ha rotado sobre su eje Z. Eso es importante. No ha rotado respecto al eje Z <strong>Global</strong> sino respecto al eje Z <strong>Local</strong> del objeto. Si hubiéramos rotado antes en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> el resultado hubiera sido muy distinto.</li>
+</ul>
+<ul>
+	<li><strong>Ángulo: 360º</strong>. La rotación es un giro completo.</li>
+</ul>
+<ul>
+	<li><strong>Iteraciones: 1</strong>. Es el número de veces que se repite el ciclo.</li>
+</ul>
+<p>
+Sabemos que el eje de rotación es perpendicular al eje Z <strong>Local</strong> pero, ¿cuál es el punto que se toma como referencia para ese eje de rotación?. Pues el <strong>Origen</strong>. Eso significa que si desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> seleccionamos todos los vértices <strong>&quot;A&quot; </strong>y desplazamos con el <strong>Manipulador 3D</strong> sobre el eje X (rojo), el eje de giro dejará de pasar por el centro del círculo.
+</p>
+<img alt="espiral_03" height="375" src="espiral_03.png" width="460" />
+<p>
+Llega lo bueno; aumentamos el valor del parámetro<strong> Espiral </strong>hasta que se separen los dos círculos (inicial y final).
+</p>
+<img alt="n_rosca_02" height="231" src="n_rosca_02.png" width="626" />
+<p>
+Ahora sólo nos queda determinar el número de <strong>Iteraciones</strong>.
+</p>
+<img alt="n_rosca_03" height="268" src="n_rosca_03.png" width="575" />
+<p>
+Supongamos que con todos los vértices seleccionados hacemos un <strong>escalado en X</strong> (<strong>&quot;SX&quot;</strong>) para hacer una espiral.
+</p>
+<img alt="espiral_06" height="469" src="espiral_06.png" width="548" />
+<p>
+Si desde <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" /> <strong>duplicamos y rotamos 180º en Z</strong> (<strong>&quot;RZ180&quot;</strong>) tendremos una bonita representación del esqueleto de azúcar y fosfato del ADN.
+</p>
+<img alt="espiral_07" height="422" src="espiral_07.png" width="360" />
+<p>
+A la hora de hacer el render es necesario aumentar el valor de <strong>intervalos de procesamiento</strong>. Esto determina la resolución.
+</p>
+<img alt="n_rosca_04" height="209" src="n_rosca_04.png" width="483" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id28">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta28_28_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="adn.blend"><img alt="descarga_adn" height="48" src="descarga_adn.png" width="129" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id89">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta89_29_2" class="block" style="display:block;position:relative"><a href="Rosca.swf" target="_blank"><img alt="ver_video_rosca" height="200" src="ver_video_rosca.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="booleano.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="curvas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Cielo y sol | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li id="current-page-parent"><a href="iluminacin.html" class="current-page-parent daddy">Iluminación</a><ul>
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li id="active"><a href="cielo_y_sol.html" class="active no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="slo_iluminar.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="tres_luces.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Cielo y sol</h1></div>
+<div class="FreeTextIdevice" id="id34">
+<div class="iDevice emphasis0">
+<div id="ta34_1" class="block" style="display:block;position:relative"><p>
+En todos los <em>renders</em> que hemos hecho hasta ahora optábamos por una de estas dos posibilidades:
+</p>
+<ul>
+	<li>Que saliera el color del <strong>Mundo</strong> <img height="16" src="escena_panel.png" width="16" /> (gris por defecto). Ese color es editable en el gran rectángulo <strong>Color de horizonte</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="luz_14" height="465" src="luz_14.png" width="595" />
+</blockquote>
+<ul>
+	<li>Poner un plano editado para dar la sensación de que no termina nunca.</li>
+</ul>
+<blockquote>
+	<img alt="luz_15" height="458" src="luz_15.png" width="608" />
+</blockquote>
+<p>
+Pero vamos a profundizar en la creación de cielos para nuestras escenas.
+</p>
+<p>
+Contamos con un modelado que simula unas dunas. Además necesitamos una lámpara de tipo <strong>Sol</strong> <img height="18" src="icono_sol.png" width="18" /> y la cámara colocada adecuadamente. Vamos a concretar esto último:
+</p>
+<ul>
+	<li>La cámara estará orientada teniendo en cuenta el horizonte determinado por el plano XY del entorno 3D y simbolizado por la rejilla. En otras palabras: el cielo será coherente con el entorno 3D.</li>
+</ul>
+<blockquote>
+	<img alt="luz_16" height="341" src="luz_16.png" width="538" />
+</blockquote>
+<ul>
+	<li>La lámpara <strong>Sol</strong> <img height="18" src="icono_sol.png" width="18" /> no sólo se sitúa en el lugar adecuado en el encuadre sino que la orientación de sus rayos debe ser muy meditada. Por ejemplo, el hecho de que la lámpara se vea a través de la cámara, no significa que sea vista por ella. Supongamos que el sol está en el encuadre pero que sus rayos son verticales al plano XY de la rejilla; eso quiere decir que es mediodía y que el sol se encuentra en el cenit, sobre nuestras cabezas. Esto no es malo en sí, pero debemos tener en cuenta que el sol no aparecerá en el <em>render </em>porque es físicamente incorrecto.</li>
+</ul>
+<blockquote>
+	<img alt="luz_17" height="446" src="luz_17.png" width="610" />
+</blockquote>
+<p>
+En realidad el hecho de que el sol se vea a través de la cámara es intrascendente si la dirección de los rayos le dicen a Blender que haga otra cosa. Un simple ejemplo estrambótico pero esclarecedor. En esta escena se verá el sol en el <em>render </em>a pesar de estar detrás de la cámara porque la dirección de los rayos dice que vienen hacia nosotros (mostramos el <em>render </em>a pesar de no haber explicado aún cómo hacer que se renderice el cielo).
+</p>
+<img alt="luz_18" height="432" src="luz_18.png" width="604" />
+<p>
+¿Cómo hemos conseguido en este último <em>render </em>que en lugar de ese fondo gris neutro del <strong>Mundo</strong> <img height="16" src="escena_panel.png" width="16" /> aparezca un cielo amarillento del atardecer/amanecer?. Muy sencillo: activando la opción <strong>Cielo</strong> en la botonera <strong>Cielo y Atmósfera </strong>siempre que esté seleccionada la lámpara <strong>Sol</strong> <img height="18" src="icono_sol.png" width="18" />.
+</p>
+<img alt="luz_19" height="343" src="luz_19.png" width="293" />
+<p>
+Con la lámpara <strong>Sol</strong> <img height="18" src="icono_sol.png" width="18" /> en la posición adecuada y una inclinación de los rayos casi horizontales este es nuestro primer <em>render</em>.
+</p>
+<img alt="luz_20" height="446" src="luz_20.png" width="640" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id36">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">El color del cielo</h2>
+<div class="iDevice_inner">
+<div id="ta36_21_2" class="block" style="display:block;position:relative"><p>
+El color amarillento no es casualidad. Blender se comporta casi de un
+modo inteligente en ese sentido. Si los rayos fueran perpendiculares al 
+suelo este sería el resultado.
+</p>
+<img alt="luz_21" height="444" src="luz_21.png" width="630" />
+<p>
+Estos colores son editables pero nosotros nos conformamos con lo valores por defecto. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_1" class="block" style="display:block;position:relative"><p>
+En la botonera <strong>Cielo y atmósfera</strong> nos facilitarnos la vida diciéndole a Blender que determine los parámetros de fábrica para un desierto.
+</p>
+<img alt="luz_22" height="474" src="luz_22.png" width="630" />
+<p>
+Son muchos los parámetros para experimentar y crear nuestra propia escena. De todos ellos nosotros editamos sólo <strong>Tamaño: 10.000</strong>, con lo que el disco solar se hace más evidente.
+</p>
+<img alt="luz_23" height="474" src="luz_23.png" width="567" />
+<p>
+Si le echamos una mano a Blender dándole a la lámpara <strong>Sol</strong> <img height="18" src="icono_sol.png" width="18" /> un color amarillento y añadiendo otra lámpara <strong>Semiesférica</strong> <img height="18" src="icono_semi.png" width="18" /> de color anaranjado este es uno de los posibles resultados que puede ofrecernos. 
+</p>
+<img alt="luz_24" height="448" src="luz_24.png" width="637" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id59">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta59_25_2" class="block" style="display:block;position:relative"><a href="sol.swf" target="_blank"><img src="ver_video_el_sol.png" alt="ver_video_el_sol" height="200" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id39">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta39_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="cielo.blend"><img alt="descarga_cielo" height="48" src="descarga_cielo.png" width="137" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="slo_iluminar.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="tres_luces.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

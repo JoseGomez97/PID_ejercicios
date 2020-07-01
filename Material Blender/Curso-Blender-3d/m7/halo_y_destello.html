@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Halo y Destello | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="iluminacin.html" class="current-page-parent daddy">Iluminación</a><ul>
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li id="active"><a href="halo_y_destello.html" class="active no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="estrellas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_osa_mayor.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Halo y Destello</h1></div>
+<div class="FreeTextIdevice" id="id6">
+<div class="iDevice emphasis0">
+<div id="ta6_1" class="block" style="display:block;position:relative"><p>
+<img alt="flare_01" height="293" src="flare_01.png" width="516" />
+<br />
+<span style="color: #999999">Mograph lensflare// Autor: Pkisme // Licencia: CC-BY-SA-3.0 (Creative Commons)</span>
+</p>
+<p>
+Se trata en realidad de una característica que se edita desde el panel de <strong>Materiales</strong> <img alt="materiales" height="16" src="materiales_panel.png" width="16" />.
+</p>
+<p>
+Pero comencemos por concretar los términos: 
+</p>
+<ul>
+	<li><strong>Halo</strong>. Gran resplandor que coincide con la fuente luminosa.</li>
+</ul>
+<ul>
+	<li><strong>Destello</strong>. Secuencia lineal de otras manchas luminosas que se extienden por la imagen. Tienen su origen en el halo y pasan por el centro de la imagen. Pueden extenderse a ambos lados del halo.</li>
+</ul>
+<p>
+Los dos efectos están derivados del lenguaje fotográfico y es por eso que al añadirlos a una escena 3D suelen contribuir a que el espectador caiga en el engaño visual de que se trata de una instantánea tomada de la vida real. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id7">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Preparación del objeto para el halo</h2>
+<div class="iDevice_inner">
+<div id="ta7_22_2" class="block" style="display:block;position:relative"><p>
+El objeto para el halo es una malla con un solo vértice. Sacamos a escena un plano (<strong>Añadir/Malla/Plano</strong>) y desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> eliminamos todos los vértices menos uno.
+</p>
+<img alt="flares_02" height="217" src="flare_02.png" width="299" />
+<p>
+El hecho de que el <strong>Origen</strong> y el único vértice no coincidan no es bueno aunque podrían quedar así. Lo mejor es, por lo tanto, conseguir la coincicencia pasando a <strong>Modo objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y usando <strong>Origen/Origen a geometría </strong>en el cuadro de <strong>Herramientas</strong> (<strong>&quot;T&quot;</strong>). Como la geometría es un único punto de la malla se consigue que el <strong>Origen</strong> se desplace y se produzca la coincidencia.
+</p>
+<p>
+De esta manera tenemos mejor acceso a ese objeto que es algo peculiar al no tener una malla evidente.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id8">
+<div class="iDevice emphasis0">
+<div id="ta8_1" class="block" style="display:block;position:relative"><p>
+Supongamos que tenemos el paisaje del desierto con la atmósfera realizado en una de las prácticas anteriores.
+</p>
+<img alt="flares_03" height="318" src="flare_03.png" width="572" />
+<br />
+<a href="atmosfera.1.blend"><img alt="descarga_atmosfera" height="48" src="descarga_atmosfera.png" width="171" /></a>
+<p>
+Preparamos el objeto para el halo tal y como hemos descrito arriba y después lo colocamos para que ocupe el lugar correcto desde el punto de vista de la cámara. 
+</p>
+<img alt="flares_05" height="365" src="flare_05.png" width="583" />
+<p>
+A ese objeto le asignamos un <strong>Material</strong> <img height="16" src="materiales_panel.png" width="16" /> pero, tras ponerle el nombre adecuado (<em>halo</em>) le cambiamos de tipo <strong>Superficie</strong> a<strong> Halo</strong>. 
+</p>
+<img alt="flares_06" height="351" src="flare_06.png" width="311" />
+<p>
+Con esto aparece una nueva botonera de nombre<strong> Halo</strong> para editarlo. Si hacemos ahora un <em>render</em> no obtendríamos gran cosa, así que alteramos algunos parámetros:
+</p>
+<img alt="flares_08" height="472" src="flare_08.png" width="636" />
+<ul>
+	<li><strong>Alfa: 0.300</strong>. Para que se funda con el fondo y pierda algo de fuerza.</li>
+</ul>
+<ul>
+	<li><strong>Dureza: 100</strong>. Para que quede más nítido.</li>
+</ul>
+<ul>
+	<li><strong>Anillos: 6</strong>. Añade unos aros alrededor del halo. Nosotros hemos alterado el color para que sean amarillentos.</li>
+</ul>
+<ul>
+	<li><strong>Líneas: 12</strong>. El foco de luz emite unos rayos desde el origen. Aquí se determina el número.</li>
+</ul>
+<p>
+Ahora nos vamos a la botonera de abajo, que se llama <strong>Destello </strong>y activamos la opción.
+</p>
+<img alt="flares_09" height="99" src="flare_09.png" width="347" />
+<p>
+Para conseguir un efecto interesante debemos hacer un buen repertorio de pruebas. Nosotros nos quedamos con los siguientes parámetros:
+</p>
+<ul>
+	<li><strong>Subdestellos: 10</strong>. Número de motas luminosas que se generan.</li>
+</ul>
+<ul>
+	<li><strong>Semilla</strong>. Secuencia de motas (tamaño, color, distancia...). Hay una gran variedad. Nosotros nos hemos quedado con la <strong>22</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="flares_10" height="438" src="flare_10.png" width="580" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id73">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta73_26_2" class="block" style="display:block;position:relative"><a href="halo_y_estrella.swf" target="_blank"><img alt="ver_video_halo_y_destello" height="200" src="ver_video_halo_y_destello.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id9">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta9_24_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="halo_destello.blend"><img alt="descarga_halo_destello" height="48" src="descarga_halo_destello.png" width="195" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="estrellas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_osa_mayor.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

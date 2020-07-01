@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Tres luces | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li id="current-page-parent"><a href="iluminacin.html" class="current-page-parent daddy">Iluminación</a><ul>
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li id="active"><a href="tres_luces.html" class="active no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="cielo_y_sol.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Tres luces</h1></div>
+<div class="FreeTextIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div id="ta40_1" class="block" style="display:block;position:relative">
+<p>
+Hay muchas teorías para conseguir una buena iluminación en una escena a base de lámparas. De todas esas teorías la más popular es la que se basa en tres puntos de luz. Este es el esquema general:
+</p>
+<ul>
+	<li>Una <b>luz principal</b>. En función de la escena esta será una lámpara <b>Puntual</b> <img src="icono_puntual.png" height="18" width="18" /> (para interiores donde la luz provenga de una fuente artificial) o <b>Sol</b> <img src="icono_sol.png" height="18" width="18" /> (para exteriores donde claramente la iluminación principal será natural). En nuestro ejemplo optamos por una luz <b>Puntual</b> <img src="icono_puntual.png" height="18" width="18" /> ya que se trata de un pequeño objeto de juguete. Hemos aumentado <b>Muestras</b> a <b>20</b> en la botonera <b>Muestreo</b> de la lámpara. La principal consecuencia en el <i>render</i> es la presencia de muchas zonas a las que no llega la luz lateral y que se muestran de un color completamente negro.</li>
+</ul>
+<blockquote>
+	<img src="tres_01.png" alt="tres_01" height="468" width="624" />
+</blockquote>
+<ul>
+	<li>Una segunda luz complementaria a la anterior y que hace las funciones de <b>luz rebotada</b>. Es un de truco visual por el que damos a entender que hay objetos alrededor y que recogen la luz principal haciendo que una pequeña parte salga rebotada para que el objeto protagonista la recoja. Esta segunda lámpara puede ser <b>Puntua</b>l <img src="icono_puntual.png" height="18" width="18" /> o una <b>Área</b> <img src="icono_area.png" height="18" width="18" /> que emita poca luz; la justa para compensar a la lámpara principal. En nuestro caso (para simplificar al máximo) volvemos a optar una luz <b>Puntua</b>l <img src="icono_puntual.png" height="18" width="18" /> con una <b>Energía</b> muy baja. Esta luz rebotada no debe originar sombras y debe tener un color ligeramente alejado del blanco, como puede ser un azulado. Las consecuencias en el <i>render </i>son todas positivas; el objeto multiplica exponencialmente su apariencia tridimensional así como la sensación de ocupar un sitio en el espacio.</li>
+</ul>
+<blockquote>
+	<img src="tres_02.png" alt="tres_02" height="506" width="412" />
+</blockquote>
+<ul>
+	<li>Una tercera<b> luz de relleno</b>. No es bueno que la parte oscura de un objeto se funda en exceso con la sombra; además esta luz seguirá cumpliendo con el cometido de simular luz rebotada, que ilumina la parte trasera del objeto. Como nuestro modelo no es plano por detrás es muy probable que parte de esta iluminación acabe viéndose desde el encuadre, contorneando los objetos en las zonas excesivamente oscuras para que se separen visualmente de su sombra arrojada. Esta lámpara debe estar situada en una posición alineada con la propia cámara. Una de las mejores opciones para esta luz de relleno es una lámpara <b>Semiesférica</b> <img src="icono_semi.png" height="18" width="18" />. Así que nosotros optamos por ella.</li>
+</ul>
+<blockquote>
+	<img src="tres_03_rev.png" alt="tres_luces_rev" height="413" width="586" />
+</blockquote>
+<p>
+Con todo lo anterior debemos obtener un resultado muy aceptable.
+</p>
+<img src="tres_04.png" alt="tres_04" height="356" width="506" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id60">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta60_26_2" class="block" style="display:block;position:relative"><a href="tres_focos.swf" target="_blank"><img alt="ver_video_tres_luces" src="ver_video_tres_luces.png" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id41">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta41_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="tres_luces.blend"><img alt="descarga_tres_luces" height="48" src="descarga_tres_luces.png" width="173" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="cielo_y_sol.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="actividades.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Las mallas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li id="active"><a href="las_mallas.html" class="active no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="modo_posado.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="skinning.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Las mallas</h1></div>
+<div class="preknowledgeIdevice" id="id54">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Lapintef</h2>
+<div class="iDevice_inner">
+<div id="ta54_24_2" class="block" style="display:block;position:relative"><img alt="lapintef" height="395" src="skin_01.1.png" width="446" />
+<p>
+Nuestro personaje se llama <strong>Lapintef</strong>. Le hemos aplicado rotaciones y escalado (<strong>Objeto/Aplicar/Rotación y escalado</strong>) a todos los objetos que lo conforman. Y estas son las características de su modelado:
+</p>
+<img alt="skin_06" height="418" src="skin_06.png" width="490" />
+<ul>
+	<li>Los nombres de los objetos tienen un sufijo <strong>&quot;.L&quot;</strong> o <strong>&quot;.R&quot; </strong>(left o right, izquierda o derecha). En los objetos esto es una simple ayuda para la organización pero en los huesos estos sufijos serán interpretados correctamente por Blender y nos ahorrará mucho trabajo y tiempo al hacer animaciones. Así que consideramos una buena costumbre añadir estos sufijos a las mallas también.</li>
+</ul>
+<ul>
+	<li><strong>cabeza</strong> es un único objeto con cuatro materiales distintos.</li>
+</ul>
+<ul>
+	<li><strong>ojo</strong> es una malla con tres materiales. Es importante para la localización de los huesos que sus <strong>Orígenes </strong>estén bien situados en los centros de las esferas.</li>
+</ul>
+<ul>
+	<li><strong>cadera_femur </strong>es el resultado de unir (<strong>Objeto/Unión</strong>) una esfera con un cilindro. En el momento de esa edición se cuidó el detalle de hacer que la esfera fuera el objeto dominante para que el <strong>Origen </strong>se conservara en su centro. Eso facilitará la localización del hueso en su momento.</li>
+</ul>
+<ul>
+	<li><strong>rodilla_tibia</strong> es exactamente igual que el anterior y se cuido de nuevo el mismo detalle para el tema del <strong>Origen</strong>.</li>
+</ul>
+<ul>
+	<li><strong>tobillo_pie</strong> repite la misma filosofía que en los dos casos anteriores.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id55">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta55_25_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="lapintef.blend"><img height="48" src="descarga_lapintef.png" width="157" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id57">
+<div class="iDevice emphasis0">
+<div id="ta57_1" class="block" style="display:block;position:relative"><p>
+Seleccionamos los dos objetos <em>cadera_femur </em>para hacer <strong>Malla/Adherencia/Cursor a seleccionado</strong>.
+</p>
+<img alt="rig_02" height="404" src="skin_02.png" width="411" />
+<p>
+Ese es el lugar ideal para sacar el primer hueso, así que pasamos a <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> para hacer <strong>Añadir/Esqueleto/Hueso único</strong>. En la siguiente imagen lo mostramos en sombreado<strong> Alambre</strong>.
+</p>
+<img alt="skin_03" height="410" src="skin_03.png" width="205" />
+<p>
+La opción ideal para seguir trabajando en sombreado <strong>Sólido</strong> y que se vean claramente los huesos está en el panel <strong>Objeto</strong> <img height="16" src="objeto_panel.png" width="15" />. Vamos a la botonera <strong>Mostrar</strong> y activamos la opción <strong>Rayos-X</strong> (lógicamente ese hueso debe estar seleccionado).
+</p>
+<img alt="skin_04" height="420" src="skin_04.png" width="500" />
+<p>
+Si en un proceso de modelado es muy recomendable poner nombre a los distintos objetos, en el <em>rigging </em>podemos
+afirmar que si continuamos adelante sin nombrar a los diferentes huesos
+el caos aparecerá más pronto que tarde. Para poner nombre usamos el 
+mismo sitio de siempre en el cuadro <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>) pero fijándonos de estar en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />. Es posible ponerle nombre al esqueleto entero (<em>Armature</em>, por defecto) y a los huesos individualmente. A este hueso lo llamamos <em>cabeza</em>. En la siguiente captura ya aparece el hueso con la cola <strong>desplazada en Z</strong> (<strong>&quot;GZ&quot;</strong>) para ocupar un lugar más adecuado. 
+</p>
+<img alt="lapiz_01" height="433" src="lapiz_01.png" width="379" />
+<p>
+Con algo seleccionado del hueso en<strong> Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> nos vamos a las opciones del cuadro<strong> Herramientas </strong>(<strong>&quot;T&quot;</strong>) para activar la opción <strong>Simetría X</strong>. 
+</p>
+<img alt="skin_05" height="65" src="skin_05.png" width="214" />
+<p>
+Nos colocamos en un punto de vista frontal (<strong>&quot;NumPad 1&quot;</strong>) y ortográfico (<strong>&quot;NumPad 5&quot;</strong>) y seleccionamos la cabeza del hueso.
+</p>
+<p>
+Ahora hay que hacer una extrusión un tanto peculiar. La extrusión normal (<strong>&quot;E&quot;</strong>) está reservada para crear un hueso sin tener en cuenta la opción <strong>Simetría X</strong> mientras que para aprovecharnos de esta herramienta debemos dar la orden con <strong>&quot;Shift_E&quot;</strong>.
+</p>
+<img alt="lapiz_02" height="439" src="lapiz_02.png" width="503" />
+<p>
+LLega el trabajo farragoso porque para que el esqueleto haga bien su 
+trabajo es necesario garantizar la precisión. Si nos fijamos en la 
+anterior imagen las colas de los nuevos huesos no están en el centro de 
+las esferas de las caderas. Hacerlo &quot;a ojo&quot; no es una buena opción, así 
+que usamos las adherencias:
+</p>
+<ul>
+	<li>En <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> seleccionamos <em>cadera_femur.L</em> y hacemos <strong>Objeto/Adherencia/Cursor a selecionado</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_03" height="438" src="lapiz_03.png" width="368" />
+</blockquote>
+<ul>
+	<li>En <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> seleccionamos la cola del hueso y hacemos <strong>Esqueleto/Adherencia/Selección a cursor</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_04" height="438" src="lapiz_04.png" width="368" />
+</blockquote>
+<p>
+Algo ha quedado mal y no perderemos tiempo en solucionarlo. Los huesos tienen un ligero giro en el eje X (rojo) y eso es mal augurio. 
+Lo corregimos de inmediato en el panel <strong>Hueso</strong> <img height="17" src="hueso.png" width="17" /> (aprovechamos para usar este panel para renombrar el hueso, si no lo hemos hecho ya, a <em>cadera.L</em>) 
+</p>
+<img alt="lapiz_05" height="416" src="lapiz_05.png" width="461" />
+<p>
+Hacemos lo mismo con el hueso <em>cadera.R</em>. Es <strong>muy importante</strong> renombrar con los sufijos tal y como hemos dicho o la <strong>extrusión</strong> (<strong>&quot;Shift_E&quot;</strong>) no funcionará bien. Una <strong>opción interesante</strong> es no nombrar durante el proceso de extrusionado en espejo y hacer ese protocolo al final. 
+</p>
+<p>
+Continuamos con el <em>rigging</em> extruyendo (<strong>&quot;Shift_E&quot;</strong>) desde la cola del hueso<em> cadera.L</em> (y <em>cadera.R</em>), después usamos las adherencias para garantizar que la cola del nuevo hueso, al que llamaremos <em>femur.L </em>(y<em> femur.R</em>), caiga en el centro de la rodilla y solucionamos la posible rotación.
+</p>
+<img alt="lapiz_06" height="438" src="lapiz_06.png" width="250" />
+<p>
+Hacemos lo mismo para diseñar el hueso<em> tibia.L </em>(y<em> tibia.R</em>).
+</p>
+<img alt="lapiz_07" height="438" src="lapiz_07.png" width="250" />
+<p>
+Desde <strong>&quot;Numpad 3&quot; </strong>hacemos la última <strong>extrusión</strong> (<strong>&quot;Shift_E&quot;</strong>) para crear el hueso <em>pie.L </em>(y <em>pie.R</em>). 
+</p>
+<img alt="lapiz_08" height="403" src="lapiz_08.png" width="207" />
+<p>
+Este es un resumen visual de lo que tenemos hasta ahora.
+</p>
+<img alt="lapiz_09" height="444" src="lapiz_09.png" width="466" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id59">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Los ojos</h2>
+<div class="iDevice_inner">
+<div id="ta59_22_2" class="block" style="display:block;position:relative"><p>
+También los ojos necesitan sus huesos en el <em>rigging. </em>Tienen que tener la cabeza en el centro de las esferas y apuntar en la dirección de la mirada (eje Y). Además tienen que ser hijos del hueso cabeza. 
+</p>
+<p>
+Seleccionamos la cola del hueso cabeza y hacemos una <strong>extrusión</strong> con espejo (<strong>&quot;Shift_E&quot;</strong>) y en el desplazamiento anclamos en el eje X para que no se incline.
+</p>
+<img alt="lapiz_10" height="441" src="lapiz_10.png" width="385" />
+<p>
+El problema es que el ser hijos del hueso cabeza están conectados a este. Ahora:
+</p>
+<ul>
+	<li>Seleccionamos el hueso <em>ojo.L </em>(que así lo habremos llamado) y nos vamos al panel de <strong>Hueso</strong> <img height="17" src="hueso.png" width="17" /> para desactivar la opción <strong>Conectado </strong>en la botonera <strong>Relaciones</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_11" height="384" src="lapiz_11.png" width="530" />
+</blockquote>
+<ul>
+	<li>Repetimos lo mismo para <em>ojo.R</em>. Ya podremos separarlos sin que dejen de ser hijos del hueso cabeza.</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_12" height="403" src="lapiz_12.png" width="299" />
+</blockquote>
+<ul>
+	<li>Seleccionamos <em>ojo.L</em> y lo<strong> rotamos -90º</strong> (negativo) <strong>en Z </strong>(<strong>&quot;RZ-90&quot;</strong>) y lo mismo hacemos con <em>ojo.R</em>, sólo que en este caso el valor de<strong> 90</strong> es positivo..</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_13" height="399" src="lapiz_13.png" width="520" />
+</blockquote>
+<ul>
+	<li>Usamos el conocido método de las adherencias para garantizar que se colocan en el sitio previsto. La única novedad es que al hacer <strong>Selección a cursor </strong>debemos seleccionar todo el hueso para que no se descoloque respecto al eje X.</li>
+</ul>
+<blockquote>
+	<img alt="lapiz_14" height="358" src="lapiz_14.png" width="464" />
+</blockquote>
+<p>
+Desplazamos las colas en el eje Y para conseguir una proporción más moderada.
+</p>
+<img alt="lapiz_15" height="358" src="lapiz_15.png" width="464" />
+<p>
+Hemos concluido el <em>rigging</em> de base. Con esto poco se puede hacer 
+pero en los apartados siguientes aprenderemos a perfeccionarlo al hilo de
+los inconvenientes que se detecten tras el <em>skinning</em>. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id58">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta58_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="lapintef_pre_rig.blend"><img alt="descarga_lapintef_pre_rig" height="48" src="descarga_lapintef_pre_rig.png" width="217" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="modo_posado.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="skinning.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

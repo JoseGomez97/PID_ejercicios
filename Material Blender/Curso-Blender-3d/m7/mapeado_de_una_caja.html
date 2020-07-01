@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Mapeado de una caja | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li id="current-page-parent"><a href="texturas.html" class="current-page-parent daddy">Texturas</a><ul>
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li id="active"><a href="mapeado_de_una_caja.html" class="active no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="atmsfera.html" class="no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="mapeado_en_un_plano.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="multimaterial_con_alfa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Mapeado de una caja</h1></div>
+<div class="preknowledgeIdevice" id="id65">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Base teórica</h2>
+<div class="iDevice_inner">
+<div id="ta65_21_2" class="block" style="display:block;position:relative"><p>
+No siempre es un plano lo que hay que mapear y la técnica <strong>Desenvolver</strong> no es eficaz de una manera tan directa. Por ejemplo, si seleccionamos <img height="16" src="caras.png" width="15" /> todas las caras de un cubo y hacemos <strong>Malla/Desplegar UV/Desenvolver</strong> este es el resultado en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" />.
+</p>
+<img alt="uv_14" height="306" src="uv_14.png" width="303" />
+<p>
+Todas las caras coinciden unas encima de otras y el mapeado resulta imposible. 
+</p>
+<p>
+Como si de un recortable en cartulina se tratara seleccionamos <a href="lados.PNG"><img alt="lados" height="16" src="lados.png" width="15" /></a> aquellos lados por los que cortar para que se cree el desplegable correcto.
+</p>
+<img alt="uv_15" height="442" src="uv_15.png" width="620" />
+<p>
+Seguimos en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> para dar la orden y se produzcan los cortes que en Blender se han denominado <strong>costuras</strong>. Usamos <strong>Malla/Arista/Marcar costuras</strong>. La apariencia de esos lados en el editor <strong>Vista 3D</strong> cambia; ahora tienen un tono rojizo. 
+</p>
+<img alt="uv_16" height="328" src="uv_16.png" width="362" />
+<p>
+Blender es sensible a esos cortes y ahora la orden <strong>Malla/Desplegar Uvs/Desenvolver</strong> tendrá este efecto en el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> (recordemos que tienen que estar todas las caras seleccionadas<strong> &quot;A&quot;</strong>).
+</p>
+<img alt="uv_17" height="444" src="uv_17.png" width="443" />
+<p>
+Con esta disposición resulta realmente sencillo adaptar la imagen a las caras. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id74">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta74_21_2" class="block" style="display:block;position:relative"><a href="costuras.swf" target="_blank"><img alt="ver_video_costuras" height="200" src="ver_video_costuras.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id35">
+<div class="iDevice emphasis0">
+<div id="ta35_1" class="block" style="display:block;position:relative"><p>
+Lo vamos a ver en un caso práctico sobre un modelado que presenta este aspecto.
+</p>
+<img alt="uv_18" height="464" src="uv_18.png" width="493" />
+<br />
+<a href="camara_oscura.blend"><img alt="descarga_cámara_oscura" height="48" src="descarga_camara_oscura.png" width="208" /></a>
+<p>
+Lo primero es contar con una imagen para el mapeado sobre el cubo de la cámara oscura. Es esta. 
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id37">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Textura para cámara oscura
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.2.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px"><a href="camara_oscura_textura.png" target="_blank"><img class="gallery" alt="Show Desplegable para cámara oscura // Autor: Joaclint // Licencia:  CC-BY-SA (Creative Commons) Image"
+                   src="camara_oscura_texturaThumbnail.png"/></a>
+            
+             <div class="gallery_image" value="camara_oscura_textura.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              Desplegable para cámara oscura // Autor: Joaclint // Licencia:  CC-BY-SA (Creative Commons)
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id38">
+<div class="iDevice emphasis0">
+<div id="ta38_1" class="block" style="display:block;position:relative"><p>
+Damos por hecho que ya nos encontramos en el entorno de trabajo <strong>UV Editing</strong> y que hemos cargado la imagen para la textura en el <strong>Editor UV </strong><img height="16" src="uv.png" width="18" />. 
+</p>
+<p>
+Lo primero que decidimos es no calcular las proporciones como hicimos con el plano y así probar nuevos recursos. Vamos directos a por las costuras. Si escogemos estos lados...
+</p>
+<img alt="uv_19" height="311" src="uv_19.png" width="522" />
+<p>
+...este será el aspecto en el <strong>Editor UV </strong><img height="16" src="uv.png" width="18" />.
+</p>
+<img alt="uv_20" height="315" src="uv_20.png" width="456" />
+<p>
+Esto obedece a toda la lógica explicada anterormente por lo que no debe extrañarnos que las caras sean todas cuadradas.
+</p>
+<p>
+Las edicionones sobre el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> son muy similares a las del editor <strong>Vista 3D</strong>:
+</p>
+<ul>
+	<li>Seleccionamos todos los vértices <strong>&quot;A&quot;</strong> y los <strong>giramos 90º</strong> (<strong>&quot;R90&quot;</strong>). Recolocamos con <strong>&quot;G&quot;</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="uv_21" height="321" src="uv_21.png" width="460" />
+</blockquote>
+<ul>
+	<li>Podemos hacer escalados en un eje (<strong>&quot;SX&quot;</strong>, por ejemplo).</li>
+</ul>
+<blockquote>
+	<img alt="uv_22" height="318" src="uv_22.png" width="461" />
+</blockquote>
+<ul>
+	<li>Pero sin duda lo mejor es <strong>Seleccionar con borde</strong> (<strong>&quot;B&quot;</strong>) toda una secuencia de vértices y después desplazar <strong>&quot;G&quot;</strong> en el eje correspondiente.</li>
+</ul>
+<blockquote>
+	<img alt="uv_23" height="313" src="uv_23.png" width="455" />
+</blockquote>
+<p>
+Tras una dosis de trabajo y paciencia tendremos la geometría colocada en su sitio. 
+</p>
+<img alt="uv_24" height="305" src="uv_24.png" width="449" />
+<p>
+De regreso al entrono de trabajo <strong>Default</strong>, y tras activar el modo de sombreado <strong>Textura</strong>, para evitar que algunas caras mapeadas queden negras por falta de iluminación elegimos entre:
+</p>
+<ul>
+	<li>Eliminar (<strong>&quot;Supr&quot;</strong>) la única lámpara de la escena. Esto nos obligará a volver a sacarla luego si queremos tener una <strong>iluminación básica</strong> al completo.</li>
+</ul>
+<ul>
+	<li>Cambiar la lámpara de capa. Recordamos que es necesario tenerla seleccionada y hacer <strong>Objeto/Mover a capa</strong> y seleccionar. Nosotros la enviamos a la segunda. Esta opción tiene todas las ventajas, porque al quedar la <strong>Capa 1</strong> sin lámpara Blender le aplica una iluminación general en el editor <strong>Vista 3D </strong>desapareciendo el problema de las caras negras, aunque la <strong>Capa 2</strong> con la lámpara esté activada para el <em>render</em>.</li>
+</ul>
+<blockquote>
+	<img alt="uv_28" height="25" src="uv_28.png" width="418" />
+</blockquote>
+<p>
+Llega la primera sorpresa: El cubo no estaba colocado adecuadamente respecto a la orientación de la textura (podemos consolarnos calculando cuántas posibilidades había y llegar a la conclusión de que hubiera sido casi un milagro). Comenzamos por el primer <strong>giro de 180º en el eje X</strong> (<strong>&quot;RX180&quot;</strong>).
+</p>
+<img alt="uv_25" height="338" src="uv_25.png" width="459" />
+<p>
+Aún así la caja sigue girada; es necesario una segunda orden, esta vez son <strong>90º en el eje Y</strong> (<strong>&quot;RY90&quot;</strong>)
+</p>
+<img alt="uv_26" height="344" src="uv_26.png" width="494" />
+<p>
+Tras configurar el material tal y como se vio en el apartado anterior, y con una <strong>iluminación de tres puntos</strong>...
+</p>
+<img alt="uv_27" height="388" src="uv_27.png" width="535" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id40">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta40_22_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="uv_cubo.blend"><img alt="descarga_uv_cubo" height="48" src="descarga_uv_cubo.png" width="165" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="mapeado_en_un_plano.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="multimaterial_con_alfa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

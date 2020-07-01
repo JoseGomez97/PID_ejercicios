@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Materiales vinculados | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li id="current-page-parent"><a href="materiales.html" class="current-page-parent daddy">Materiales</a><ul>
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li><a href="reflectividad.html" class="no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li id="active"><a href="materiales_vinculados.html" class="active no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="entorno_virtual.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="malla_multimaterial.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Materiales vinculados</h1></div>
+<div class="FreeTextIdevice" id="id11">
+<div class="iDevice emphasis0">
+<div id="ta11_1" class="block" style="display:block;position:relative"><p>
+Cuando a un objeto le asignamos un material de los que ya están creados en la escena se produce un <strong>vínculo </strong>por el cual, si variamos un parámetro de ese material, el cambio afectará a todos los objetos que lo contengan. 
+</p>
+<p>
+Del mismo modo, cuando <strong>duplicamos</strong> (<strong>&quot;Shift_D&quot;</strong>) un objeto <strong>el material queda enlazado</strong> al original y a la copia. Esto obedece a la lógica y está bien que sea así. Sin embargo en algunas ocasiones interesa duplicar toda esa información pero con la posibilidad de hacer después cambios particulares. Por ejemplo, imaginemos que hemos creado un material cromado con gran variedad de parámetros. Ahora queremos asignar ese mismo material a otro objeto pero le queremos hacer una variación en el color <strong>Difuso</strong>. En tal caso es necesario asignar el material primero para <strong>después desvincularlo </strong>y así originar un <strong>nuevo material con el cambio deseado</strong>.
+</p>
+<p>
+Vamos con un ejemplo.
+</p>
+<p>
+Tenemos una esfera con el material metálico de color anaranjado.
+</p>
+<img alt="linked_01" height="306" src="mat_linked_01.png" width="551" />
+<p>
+Este <em>render</em> contiene un detalle que aún no hemos estudiado; se trata de hacer que la imagen del entorno virtual <strong>se desenfoque ligeramente</strong> para darle un aire menos pulido al objeto. Esta no es una propiedad de la textura sino del material de la bola. Lo editamos con el parámetro <strong>Cantidad</strong> en la botonera <strong>Espejo</strong>. Este parámetro lleva implícita una <strong>sensación visual de ruido</strong> que se soluciona aumentando el valor de <strong>Muestras</strong>.
+</p>
+<img alt="linked_02" height="196" src="mat_linked_02.png" width="299" />
+<p>
+La segunda bola ha adquirido este material porque se ha<strong> duplicado</strong> (<strong>&quot;Shift_D&quot;</strong>) la primera o porque le hemos asignado ese material desde el listado de materiales ya creados. En cualquiera de los dos casos, al alterar el material de una de las bolas se produce el cambio en la otra; por ejemplo un cambio en el color <strong>Difuso</strong>.
+</p>
+<img alt="linked_04" height="305" src="mat_linked_03.png" width="551" />
+<p>
+Blender nos informa de que el material está enlazado a dos objetos con un <strong>número &quot;2&quot;</strong> junto al nombre del material.
+</p>
+<img alt="linked_05" height="125" src="mat_linked_05.png" width="298" />
+<p>
+Suponemos que tenemos seleccionada la bola de atrás. Al pulsar sobre ese número<strong> &quot;2&quot;</strong> el material de esa bola se independiza y adquiere autonomía propia. Lo primero que hace Blender es darle un <strong>nombre diferente</strong>. En nuestro caso el material original se llama <em>bola</em> y al desvincularse Blender llama al nuevo material <em>bola.001</em>.
+</p>
+<img alt="linked_06" height="125" src="mat_linked_06.png" width="298" /> 
+<p>
+Le damos un nombre más apropiado como puede ser <em>bola_naranja</em> (al antiguo bola lo podemos renombrar <em>bola_azul</em>). Al editar ahora el color <strong>Difuso</strong> de la bola de atrás le cambiaremos el color manteniendo el resto de las propiedades heredadas.
+</p>
+<img alt="linked_07" height="302" src="mat_linked_07.png" width="543" />
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="entorno_virtual.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="malla_multimaterial.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

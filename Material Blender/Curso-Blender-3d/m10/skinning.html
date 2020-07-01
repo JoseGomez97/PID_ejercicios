@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Skinning | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li id="active"><a href="skinning.html" class="active no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="las_mallas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="cinemtica_directa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Skinning</h1></div>
+<div class="FreeTextIdevice" id="id50">
+<div class="iDevice emphasis0">
+<div id="ta50_1" class="block" style="display:block;position:relative"><p>
+Llamamos<em> skinning</em> al proceso por el cual se asigna el <em>rigging </em>a una malla. Hay muchas posibilidades; desde las que permiten la deformación de la malla hasta las que permiten a los objetos comportarse como sólidos al estilo de una mecánica restringida. En esencia el <em>skinning </em>es una relación de parentesco entre la malla y el hueso donde el que manda es este último.<br />
+Vamos a hacer un skinning muy sencillo del personaje que acabamos de crear.
+</p>
+<p>
+Seleccionamos la malla cabeza y le aplicamos una <strong>Restricción</strong> <img src="restricciones_panel.png" /> de tipo <strong>Hijo de</strong>.
+</p>
+<img alt="skin_10" height="378" src="skin_10.png" width="482" />
+<p>
+Como en casi todas las restricciones hace falta definir un<strong> Objetivo</strong>. En este caso el objeto<em> Armature </em>(nombre del esqueleto por defecto).
+</p>
+<img alt="skin_11" height="259" src="skin_11.png" width="455" />
+<p>
+La malla <em>cabeza</em> se ha descolocado pero no le damos importancia. Lo que si es importante es que debajo del campo <strong>Objetivo </strong>se ha creado uno nuevo llamado <strong>Hueso</strong>; debemos seleccionar para ese campo el hueso <em>cabeza</em>. 
+</p>
+<img alt="skin_11" height="257" src="skin_12.png" width="523" />
+<p>
+De nuevo la malla cabeza se descoloca. Tampoco tiene importancia porque ahora vamos a pulsar <strong>Definir inversa</strong> y se corrige el problema. 
+</p>
+<img alt="skin_13" height="258" src="skin_13.png" width="435" />
+<p>
+Si pasamos el esqueleto a <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y rotamos el hueso cabeza, la malla emparentada obedece y copia la transformación.
+</p>
+<img alt="skin_05" height="382" src="skin_14.png" width="287" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id60">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">El camino corto</h2>
+<div class="iDevice_inner">
+<div id="ta60_21_2" class="block" style="display:block;position:relative"><p>
+La restricción anterior es un emparentamiento complejo que permite controlar muchos parámetros. Pero nosotros necesitamos un emparentamiento más sencillo y directo. Damos por hecho que <strong>no hemos creado la restricción anterior o que la hemos eliminado</strong>.
+</p>
+<img alt="skin_17" height="257" src="skin_17.png" width="274" />
+<ul>
+	<li>Pasamos el esqueleto a <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" />.</li>
+</ul>
+<ul>
+	<li>Seleccionamos <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> la malla <em>cabeza</em>.</li>
+</ul>
+<ul>
+	<li>Selecionamos el hueso <em>cabeza </em>(al haberlo dejado en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> quedará azul.) </li>
+</ul>
+<ul>
+	<li>Usamos el atajo <strong>&quot;Control_P&quot; </strong>y en el menú emergente optamos por <strong>Hueso</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="skin_15" height="433" src="skin_15.png" width="431" />
+</blockquote>
+<p>
+Con esto hemos conseguido lo mismo que con el proceso de la restricción aunque ahora no disponemos de un cuadro para configurar parámetros.
+</p>
+<p>
+La relación de parentesco que hemos creado aparece en el panel de <strong>Objeto</strong> <img height="16" src="objeto_panel.png" width="15" /> de la la malla <em>cabeza</em> en la botonera<strong> Relaciones</strong>. 
+</p>
+<img alt="skin_16" height="119" src="skin_16.png" width="278" />
+<p>
+Aquí es posible cambiar de hueso, por ejemplo.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id61">
+<div class="iDevice emphasis0">
+<div id="ta61_1" class="block" style="display:block;position:relative"><p>
+Continuamos con este método corto haciendo los siguientes emparentamientos:
+</p>
+<ul>
+	<li>El objeto <em>ojo.L</em> hijo del hueso<em> ojo.L</em>.</li>
+</ul>
+<ul>
+	<li>El objeto<em> ojo.R</em> hijo del hueso <em>ojo.R</em>.</li>
+</ul>
+<ul>
+	<li>El objeto <em>cadera_femur.L</em> hijo del hueso <em>femur.L</em>.</li>
+</ul>
+<ul>
+	<li>El objeto <em>cadera_femur.R </em>hijo del hueso <em>femur.R</em>.</li>
+</ul>
+<ul>
+	<li>El objeto <em>rodilla_tibia.L</em> hijo del hueso<em> tibia.L</em>.</li>
+</ul>
+<ul>
+	<li>El objeto rodilla_tibia.R hijo del hueso tibia.R.</li>
+</ul>
+<ul>
+	<li>El objeto<em> tobilla_pie.L</em> hijo del hueso<em> pie.L</em>.</li>
+</ul>
+<ul>
+	<li>El objeto <em>tobilla_pie.R</em> hijo del hueso <em>pie.R</em>.</li>
+</ul>
+<p>
+Cuando acabamos el <em>skinning </em>es muy fácil crear una pose como esta en la que Lapintef, además de dar un paso adelante, es capaz de mirar al suelo. Lo único que hemos hecho ha sido<strong> rotar </strong>(<strong>&quot;R&quot;</strong>) huesos en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" />.
+</p>
+<img alt="lapintef_andando" height="403" src="skin_18.png" width="369" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id62">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">No todo es perfecto</h2>
+<div class="iDevice_inner">
+<div id="ta62_23_2" class="block" style="display:block;position:relative"><p>
+¿Qué ocurre si <strong>rotamos</strong> (<strong>&quot;S&quot;</strong>) el hueso cabeza desde un punto de vista frontal?
+</p>
+<img alt="skin_19" height="403" src="skin_19.png" width="369" />
+<p>
+Nada deseable, sin duda. La cabeza se separa de las piernas. Hay que poner solución a este problema. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id64">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Restituir la pose</h2>
+<div class="iDevice_inner">
+<div id="ta64_25_2" class="block" style="display:block;position:relative"><p>
+Ya hemos dicho que el trabajo de <em>rigging</em> es independiente del de diseño y animación. Lo habitual es tener el personaje en otro <em>.blend</em> y añadirlo a nuestro proyecto. Nunca debe perderse el personaje en su pose de <em>rigging</em>.
+</p>
+<p>
+Después de jugar a hacer poses se restituye la pose original seleccionando todos los huesos (<strong>&quot;A&quot;</strong>) en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y usando el menú<strong> Pose/Limpiar transformación/Todo</strong>.
+</p>
+<img alt="skin_20" height="196" src="skin_20.png" width="459" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id65">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Jerga final</h2>
+<div class="iDevice_inner">
+<div id="ta65_26_2" class="block" style="display:block;position:relative"><p>
+A pesar de que está claramente diferenciado lo que es el <em>rigging</em> y lo que es el <em>skinning</em> en el mundo del diseño 3D se suele llamar <em>rigging </em>al producto final del personaje, con todas sus restricciones, asignación de mallas...
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id63">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta63_24_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="lapintef_skin.blend"><img alt="descarga_lapintef_skin" height="48" src="descarga_lapintef_skin.png" width="195" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="las_mallas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="cinemtica_directa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

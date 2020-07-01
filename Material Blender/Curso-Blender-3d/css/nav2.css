@@ -1,0 +1,21 @@
+/* ==========================================
+Copyright University of Auckland 2004
+Created by Brent Simpson, brent.simpson@auckland.ac.nz
+Centre for Flexible and Distance Learning
+============================================= */
+
+
+
+#siteNav ul li ul.other-section
+{height:0px;overflow:hidden;}
+
+#siteNav ul li:hover ul.other-section
+{height:auto;overflow: visible;background-color:#eee;}
+
+
+#siteNav ul li 
+{border-top: 1px solid #999999;}
+
+
+#siteNav ul li:first-child
+{border-top:0px solid #ff0000;}

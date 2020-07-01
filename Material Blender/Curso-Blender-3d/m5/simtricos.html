@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Simétricos | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li id="current-page-parent"><a href="objetos_vinculados.html" class="current-page-parent daddy">Objetos vinculados</a><ul>
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li id="active"><a href="simtricos.html" class="active no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="duplicados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="serie.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Simétricos</h1></div>
+<div class="preknowledgeIdevice" id="id83">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Base teórica</h2>
+<div class="iDevice_inner">
+<div id="ta83_22_2" class="block" style="display:block;position:relative"><p>
+Muchos objetos son  <strong>simétricos</strong>,
+como puede ser un rostro. Para esas ocasiones dispondremos de un 
+modificador que nos hará todo el trabajo mientras nosotros nos ocupamos 
+sólo de modelar una de las mitades. Supone un tipo de simetría que denominaremos <strong>interactiva</strong>.
+</p>
+<p>
+Sacamos a escena un cono (<strong>Añadir/Malla/Cono</strong>) y le aplicamos el modificador <strong>Espejo</strong>. Aparentemente no ocurrirá nada en el editor <strong>Vista 3D</strong> aunque en realidad se han producido automáticamente varias ediciones:
+</p>
+<ul>
+	<li><strong>El cono se ha duplicado</strong> con vinculación (algo así como un <strong>&quot;Alt_D&quot;</strong>)</li>
+</ul>
+<ul>
+	<li>Se ha <strong>espejado respecto al plano perpendicular a X</strong> y, por lo
+	tanto, su apariencia no cambia ya que este objeto es simétrico respecto
+	a ese plano (también lo es respecto al plano perpendicular a Y).</li>
+</ul>
+<p>
+Por lo tanto, para ver en acción las consecuencias del modificador <strong>Espejo</strong> debemos ir a sus opciones y cambiar <strong>Eje X</strong> por <strong>Eje Z</strong>. 
+</p>
+<img alt="esp_02" height="277" src="simetrico_01.png" width="563" />
+<p>
+En <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> se comporta como un sólo elemento pero desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> ocurre algo muy similar a <strong>Duplicar vinculado</strong>. Si seleccionamos todos los vértices <strong>&quot;A&quot;</strong> y desplazamos en Z...
+</p>
+<img alt="sime_02" height="477" src="simetrico_02.png" width="323" />
+<p>
+Una vez comprendida la teoría elemental vamos con los consejos 
+fundamentales para trabajar correctamente con este modificador. Lo más 
+habitual es que el objeto inicial sea un cubo y que su simetría sea 
+vertical y no horizontal como ocurría en el caso del cono. Lo primero de
+todo es <strong>eliminar aquella cara que coincide con el supuesto eje de simetría</strong>.
+</p>
+<img alt="sime_03" height="331" src="simetrico_03.png" width="428" />
+<p>
+Ahora aplicamos el modificador <strong>Espejo </strong>y vemos cómo la cara que hemos quitado queda tapada por el segundo cubo simétrico. Pasamos a <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" />, seleccionamos todos los vértices <strong>&quot;A&quot;</strong> y desplazamos.
+</p>
+<img alt="sime_04" height="394" src="simetrico_04.png" width="438" />
+<p>
+Uno de los grandes potenciales de este modificador es ordenarle que haga una <strong>soldadura automática</strong> de los vértices que se encuentran en el plano de simetría. Para ello:
+</p>
+<ul>
+	<li>Nos aseguramos de que los vértices se solapen.</li>
+</ul>
+<blockquote>
+	<img alt="sime_05" height="349" src="simetrico_05.png" width="379" />
+</blockquote>
+<ul>
+	<li>Activamos la opción <strong>Limitar</strong>. De esta manera cuando volvamos a deslazar los vértices veremos que se ha producido la soldadura mencionada.</li>
+</ul>
+<blockquote>
+	<img alt="esp_01" height="479" src="esp_01.png" width="570" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id87">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta87_27_2" class="block" style="display:block;position:relative"><a href="73696d657472c3ad615f696e746572616374697661.swf" target="_blank"><img alt="ver_video_simetria_interactiva" height="200" src="ver_video_simetria_interactiva.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id2">
+<div class="iDevice emphasis0">
+<div id="ta2_1" class="block" style="display:block;position:relative"><p>
+Trabajar así es realmente confortable tal como veremos en un proyecto real. Vamos a modelar una mesa escolar poniendo el punto de atención en el modelado de las patas. 
+</p>
+<img alt="mesa_07" height="369" src="mesa_07.png" width="384" />
+<p>
+Editamos el cubo de la escena inicial para que tome las proporciones de la mesa.
+</p>
+<img alt="mesas_01" height="211" src="mesa_01.png" width="397" />
+<p>
+Añadimos un cilindro (<strong>Añadir/Malla/Cilindro</strong>) sin los vértices de las 
+tapas y escalamos teniendo en cuenta que será usado para los tubos de 
+las patas. Lo colocamos en el supuesto punto de contacto con el suelo.
+</p>
+<img alt="mesa_02" height="449" src="mesa_02.png" width="577" />
+<p>
+Hubiéramos podido hacer este desplazamiento desde <strong>Modo Edición</strong> <img src="modo_edicion.png" /> y así es muy probable que el <strong>Origen</strong> se hubiera mantenido alineado con el centro de la mesa, pero como no tenemos garantías hacemos los ajustes necesarios (desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />):
+</p>
+<ul>
+	<li>Seleccionamos la mesa y usamos <strong>Objeto/Adherencia/Cursor a seleccionado</strong>.</li>
+</ul>
+<ul>
+	<li>Seleccionamos el cilindro y usamos la opción <strong>Origen/Origen al Cursor 3D</strong> del cuadro de <strong>Herramientas </strong>(<strong>&quot;T&quot;</strong>).</li>
+</ul>
+<p>
+Conseguimos así que el origen del cilindro esté, no sólo alineado con el de la mesa, sino coincidiendo con él.
+</p>
+<p>
+Aplicamos al cilindro el modificador <strong>Espejo</strong>. La consecuencia es inmediata. Como el <strong>Origen</strong>
+no está en el centro del cilindro, no ha ocurrido aquello que pasó con 
+el cono porque, tal y como estamos comprobando, el eje de simetría lo 
+determina el <strong>Origen</strong>.
+</p>
+<img alt="esp_03" height="461" src="esp_03.png" width="633" />
+<p>
+Como también queremos las simétricas a estas dos, activamos la simetría en <strong>Eje Y</strong>.
+</p>
+<img alt="mesa_04" height="417" src="mesa_04.png" width="288" />
+<p>
+Llega la hora de pasar a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />, seleccionar el bucle superior del
+cilindro y comenzar a modelar la pata. Al llegar a la curva usamos 
+<strong>extrusiones</strong> (<strong>&quot;E&quot;</strong>) y <strong>giros</strong> (<strong>&quot;R&quot;</strong>). Si estamos colocados en el punto de vista 
+adecuado y con visión ortográfica el trabajo será muy agradable.
+</p>
+<img alt="mesa_05" height="472" src="mesa_05.png" width="603" />
+<p>
+Al llegar a la unión no olvidaremos activar (o tener activada antes) la opción <strong>Limitar</strong> para que se haga la soldadura. 
+</p>
+<img alt="mesa_06" height="438" src="mesa_06.png" width="377" />
+<p>
+A partir de ahí el modelado no incluye nada nuevo respecto a lo ya estudiado.
+</p>
+<img alt="mesa_08" height="384" src="mesa_08.png" width="639" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id14">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta14_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="mesa_escolar.blend"><img height="48" src="descarga_mesa_escolar.png" width="200" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id15">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Añadir Superficie subdividida</h2>
+<div class="iDevice_inner">
+<div id="ta15_22_2" class="block" style="display:block;position:relative"><p>
+Dos son los asuntos a considerar si queremos hacer convivir en una misma malla el modificador <strong>Espejo</strong> con el de <strong>Subdivisión</strong>:
+</p>
+<ul>
+	<li>La malla no debe tener caras que coincidan con el plano virtual de simetría si se va a usar la opción <strong>Limitar</strong>. Es por eso que en la explicación de arriba eliminamos una de las caras del cubo aunque en aquel momento no aplicamos <strong>Subdivisión</strong>.</li>
+</ul>
+<ul>
+	<li>Aplicamos el modificador <strong>Subdividir</strong> cuando la malla tenga una buena cantidad de vértices como por ejemplo en este modelado...</li>
+</ul>
+<blockquote>
+	<img alt="sime_08" height="479" src="simetrico_07.png" width="584" />
+</blockquote>
+<p>
+Es un pez para <strong>explicar sus diferentes aletas</strong>. Hemos optado por un diseño no realista, con un aire <em>cartoon</em>.
+</p>
+<img alt="sime_09" height="344" src="simetrico_09.png" width="620" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id11">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta11_29_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="aletas.blend"><img height="48" src="descarga_aletas.png" width="157" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="duplicados.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="serie.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

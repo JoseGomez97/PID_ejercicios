@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Estiramientos | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li><a href="cinemtica_directa.html" class="no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li id="active"><a href="estiramientos.html" class="active no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="mejoras.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="meterial_didctico_bye_bye.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Estiramientos</h1></div>
+<div class="FreeTextIdevice" id="id91">
+<div class="iDevice emphasis0">
+<div id="ta91_1" class="block" style="display:block;position:relative"><p>
+Vamos a crear un nuevo personaje realmente sencillo. Incorpora una tipo de restricción que no es <strong>Cinemática inversa </strong>pero lo consideramos lo suficientemente importante como para no cerrar el tema sin mencionarlo y este apartado es el mejor sitio. 
+</p>
+<img alt="bye_14" height="383" src="bye_14.png" width="585" />
+<p>
+Sólo necesitamos tres huesos. Partiendo del primero de ellos (<strong>Añadir/Esqueleto/Hueso único</strong>) hacemos dos <strong>extrusiones </strong>(<strong>&quot;E&quot;</strong>) en<strong> Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> y restringiendo en Z. En el panel <strong>Hueso</strong> <img height="17" src="hueso.png" width="17" /> nos aseguramos de que no tengan rotaciones y los llamamos<em> abajo_control</em>, <em>deformable</em> y <em>arriba_control</em>.
+</p>
+<img alt="bye_01" src="bye_1.png" />
+<p>
+Estas son la características de cada uno de ellos:
+</p>
+<ul>
+	<li><em>arriba_contro</em>l. Tiene que pertenecer al mismo esqueleto pero sin que haya una relación de parentesco con <em>deformable</em>. Como hemos obtenido el hueso por <strong>extrusión </strong>(<strong>&quot;E&quot;</strong>) debemos eliminar el parentesco a mano borrando<em> deformable </em>del campo <strong>Emparentar</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="bye_02" height="352" src="bye_02.png" width="277" />
+</blockquote>
+<ul>
+	<li><em>deformable</em>. Tiene que ser hijo de <em>abajo_control</em>.</li>
+</ul>
+<blockquote>
+	<img alt="bye_03" height="352" src="bye_03.png" width="277" />
+</blockquote>
+<ul>
+	<li><em>abajo_control</em>. No es hijo de ningún otro hueso por lo que en principio actúa como padre final.</li>
+</ul>
+<p>
+Antes de seguir, y para una mejor organización, vamos al panel <strong>Objeto</strong> <img height="16" src="objeto_panel.png" width="15" /> y cambiamos el nombre <em>Armature</em> por <em>esqueleto</em>.
+</p>
+<img alt="bye_04" height="97" src="bye_04.png" width="279" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id92">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Estiramiento</h2>
+<div class="iDevice_inner">
+<div id="ta92_22_2" class="block" style="display:block;position:relative"><p>
+Seleccionamos en<strong> Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> el hueso <em>deformable</em> y le aplicamos una <strong>Restricción de hueso </strong><img height="18" src="hueso_restricciones.png" width="18" /> de tipo<strong> Estirar a</strong> con <strong>Objetivo:</strong> <em>esqueleto</em> y <strong>Hueso:</strong> <em>arriba_control</em>.
+</p>
+<img height="250" src="bye_05.png" width="396" />
+<p>
+La consecuencia es que al mover<em> arriba_control</em> el hueso <em>deformable</em> sufrirá un estiramiento/encogimiento en consecuencia. Es el llamado efecto <strong>squash&amp;stretch</strong>. 
+</p>
+<img alt="bye_06" height="364" src="bye_06.png" width="377" />
+<p>
+Y no sólo eso sino que el efecto es similar al desplazar el hueso <em>abajo_control</em>. 
+</p>
+<p>
+La configuración del <em>rigging </em>tiene un pequeño defecto: para desplazarlo en conjunto es necesario seleccionar los dos controladores y eso no es bueno. Pero al ser un personaje tan simple no vamos a crear un hueso <em>posición</em> que hiciera las veces de padre final.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id93">
+<div class="iDevice emphasis0">
+<div id="ta93_1" class="block" style="display:block;position:relative"><p>
+Nos falta el personaje que puede ser una simple esfera (<strong>Añadir/Malla/Esfera UV</strong>) con el <strong>desplazamiento</strong> (<strong>&quot;G&quot;</strong>) y <strong>escalado</strong> (<strong>&quot;S&quot;</strong>) necesarios para que <em>deformable</em> sea su padre.
+</p>
+<img alt="bye_07" height="422" src="bye_07.png" width="282" />
+<p>
+Seleccionamos primero la esfera en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y después el hueso <em>deformable </em>en <strong>Modo Posado</strong> <img height="18" src="modo_posado.png" width="18" /> y hacemos <strong>&quot;Control P&quot;</strong> y escogemos <strong>Hueso</strong>. Con esto la esfera se deforma al desplazar <em>arriba_control </em>y <em>abajo_control</em>.
+</p>
+<img alt="bye_08" height="390" src="bye_08.png" width="274" />
+<p>
+Para ser un personaje debe tener algún detallito más. Nosotros optamos por algo sencillo como unos pequeños ojos. Estos añadidos deben formar parte de la misma malla, así que no olvidaremos sumarlos (<strong>Objeto/Unir</strong>) a la esfera. En esta edición la esfera debe ser el último objeto seleccionado o perderemos la restricción. Al<strong> objeto resultante</strong> le denominamos<em> personaje_bola</em>.
+</p>
+<img alt="bye_09" height="338" src="bye_09.png" width="605" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id119">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta119_22_2" class="block" style="display:block;position:relative"><a href="estirar_a.swf" target="_blank"><img alt="ver_video_estirar_a" height="200" src="ver_video_estirar_a.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id103">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta103_23_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte.
+</p>
+<a href="personaje_bola_rig.blend"><img alt="descarga_personaje_bola_rig" height="48" src="descarga_personaje_bola_rig.png" width="238" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="mejoras.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="meterial_didctico_bye_bye.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

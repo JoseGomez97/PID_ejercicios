@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Renderizado | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Conceptos fundamentales (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Conceptos fundamentales (I)</a></li><li><a href="interfaz.html" class="daddy">Interfaz</a><ul class="other-section">
+<li><a href="entorno_default.html" class="no-ch">Entorno Default</a></li>
+</ul>
+</li>
+<li><a href="vista_3d.html" class="daddy">Vista 3D</a><ul class="other-section">
+<li><a href="navegacin.html" class="no-ch">Navegación</a></li>
+<li><a href="sin_teclado_numrico.html" class="no-ch">Sin teclado numérico</a></li>
+<li><a href="propiedades_y_herramientas.html" class="no-ch">Propiedades y Herramientas</a></li>
+</ul>
+</li>
+<li><a href="transformaciones.html" class="daddy">Transformaciones</a><ul class="other-section">
+<li><a href="mover.html" class="no-ch">Mover</a></li>
+<li><a href="rotar_y_escalar.html" class="no-ch">Rotar y escalar</a></li>
+<li><a href="manipulador_3d.html" class="no-ch">Manipulador 3D</a></li>
+<li><a href="borrar_y_duplicar.html" class="no-ch">Borrar y Duplicar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_batera_musical.html" class="no-ch">Material didáctico: Batería musical</a></li>
+<li id="current-page-parent"><a href="paneles.html" class="current-page-parent daddy">Paneles</a><ul>
+<li id="active"><a href="renderizado.html" class="active no-ch">Renderizado</a></li>
+<li><a href="guardar_el_render.html" class="no-ch">Guardar el render</a></li>
+<li><a href="materiales.html" class="no-ch">Materiales</a></li>
+<li><a href="mundo.html" class="no-ch">Mundo</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_crculo_cromtico.html" class="no-ch">Material didáctico: Círculo cromático</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="paneles.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="guardar_el_render.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Renderizado</h1></div>
+<div class="FreeTextIdevice" id="id11">
+<div class="iDevice emphasis0">
+<div id="ta11_1" class="block" style="display:block;position:relative"><p>
+<strong>
+¿Qué es un <em>render</em>?</strong> En esencia es <strong>la imagen final</strong> en la que se materializa un trabajo. Por ejemplo, este es el aspecto de un modelado en el editor <strong>Vista 3D</strong>...
+</p>
+<img height="463" src="render_01.png" width="633" />
+<p>
+...pero el producto final es esta otra imagen, <strong>la fotografía generada por Blender</strong> desde la cámara virtual, en la que aparece de forma evidente todo aquello que hemos decidido en temas de materiales, iluminación, entorno...
+</p>
+<img height="398" src="render_02.png" width="596" />
+<p>
+La escena por defecto de Blender incluye todo lo necesario para hacer nuestro primer <em>render</em>: objeto, luz y cámara. El camino más corto para hacerlo es el atajo de teclado <strong>&quot;F12&quot;</strong>...
+</p>
+<img height="62" src="g6621.png" width="52" />
+<p>
+...pero también es muy usado el botón <strong>Imagen</strong> de la botonera<strong> Render </strong><img height="16" src="render.png" width="18" />.
+</p>
+<img height="440" src="render_03.png" width="635" />
+<p>
+Vemos que el editor <strong>Vista 3D</strong> es sustituido por otro denominado editor <strong>UV/Imagen </strong><img height="16" src="uv.png" width="18" /> donde se muestra el resultado del <em>render</em>.
+</p>
+<p>
+Ahora es importante atender a estos dos nuevos atajos de teclado: 
+</p>
+<ul>
+	<li>Para regresar al editor <strong>Vista 3D</strong> basta con pulsar la tecla <strong>&quot;Esc&quot;</strong>.</li>
+</ul>
+<blockquote>
+	<img height="62" src="Esc.png" width="77" /> <br />
+</blockquote>
+<ul>
+	<li>Aunque hayamos regresado al editor <strong>Vista 3D</strong> siempre podemos echar un vistazo al <strong>último render</strong> con el atajo <strong>&quot;F11&quot;</strong>.</li>
+</ul>
+<blockquote>
+	<img height="62" src="g6605.png" width="52" />
+</blockquote>
+<p>
+Hay algunos parámetros para 
+conseguir los<em> renders</em> del tamaño y proporciones deseadas. Como es 
+lógico, seguimos hablando de campos editables dentro del panel <strong>Render </strong><img height="16" src="render.png" width="18" />.
+</p>
+<p>
+Sin duda una de las primeras decisiones que debemos 
+tomar es la proporción de <strong>ancho por alto</strong>. En estos parámetros Blender sólo trabaja con píxeles como unidad 
+de medida. Los campos para introducir los valores deseados son <strong>Resolución X</strong> (ancho) y <strong>Resolución Y</strong> (alto). Es muy interesante hacer esta edición desde el punto de vista de la cámara <strong>&quot;NumPad 0&quot;</strong> ya que se aprecian los cambios en tiempo real y nos ayudará a determinar la proporción adecuada para nuestro proyecto. Bajo estos campos hay un tercero llamado <strong>%</strong> (50% por defecto). Es verdaderamente útil porque permite <em>renders</em> más pequeños sin necesidad de editar los valores definidos. Por ejemplo en esta captura hemos optado por unos parámetros de <strong>800x600px</strong> pero en el <em>render</em> obtenemos una imagen de <strong>400x300px</strong> al salir al <strong>50%</strong>. 
+</p>
+<img height="465" src="dimensiones.png" width="626" />
+<p>
+Y la segunda decisión a la que atenderemos es el <strong>formato de salida</strong> de la imagen (<strong>PNG</strong> por defecto). En la parte baja de este panel hay una botonera llamada <strong>Salida</strong> de la que de momento no nos interesa nada más. 
+</p>
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="paneles.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="guardar_el_render.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

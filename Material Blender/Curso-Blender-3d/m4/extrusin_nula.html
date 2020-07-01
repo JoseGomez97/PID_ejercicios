@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Extrusión nula | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (I)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (I)</a></li><li id="current-page-parent"><a href="extrusin.html" class="current-page-parent daddy">Extrusión</a><ul>
+<li id="active"><a href="extrusin_nula.html" class="active no-ch">Extrusión nula</a></li>
+</ul>
+</li>
+<li><a href="bucles_de_bordes_y_facetas.html" class="daddy">Bucles de bordes y facetas</a><ul class="other-section">
+<li><a href="aadir_bucles.html" class="no-ch">Añadir bucles</a></li>
+<li><a href="editar_bucles.html" class="no-ch">Editar bucles</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_ensamble_con_espiga.html" class="no-ch">Material didáctico: Ensamble con espiga</a></li>
+<li><a href="adherencias.html" class="daddy">Adherencias</a><ul class="other-section">
+<li><a href="cursor_a_seleccionado.html" class="no-ch">Cursor a seleccionado</a></li>
+<li><a href="seleccin_a_cursor.html" class="no-ch">Selección a Cursor</a></li>
+</ul>
+</li>
+<li><a href="objetos_de_revolucin.html" class="daddy">Objetos de revolución</a><ul class="other-section">
+<li><a href="el_perfil.html" class="no-ch">El perfil</a></li>
+<li><a href="girar.html" class="no-ch">Girar</a></li>
+<li><a href="eliminar_duplicados.html" class="no-ch">Eliminar duplicados</a></li>
+<li><a href="recalculado_de_normales.html" class="no-ch">Recalculado de normales</a></li>
+<li><a href="modificador_solidificar.html" class="no-ch">Modificador Solidificar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cilindro_hidrulico.html" class="no-ch">Material didáctico: Cilindro hidráulico</a></li>
+<li><a href="textos.html" class="daddy">Textos</a><ul class="other-section">
+<li><a href="cambio_de_tipografa.html" class="no-ch">Cambio de tipografía</a></li>
+<li><a href="ediciones_bsicas.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="marcos.html" class="no-ch">Marcos</a></li>
+<li><a href="texto_a_malla.html" class="no-ch">Texto a malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cartel_anunciador.html" class="no-ch">Material didáctico: Cartel anunciador</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="extrusin.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="bucles_de_bordes_y_facetas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Extrusión nula</h1></div>
+<div class="FreeTextIdevice" id="id3">
+<div class="iDevice emphasis0">
+<div id="ta3_1" class="block" style="display:block;position:relative"><p>
+La extrusión <strong>&quot;E&quot;</strong> tiene mucha similitud
+con la ya estudiada <strong>duplicación</strong> (<strong>&quot;Shift_D&quot;</strong>) en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />: una vez dada la orden, es posible hacer 
+<strong>&quot;Intro&quot;</strong> o <strong>clic izquierdo</strong> para cerrar la edición sin haber desplazado la 
+cara. En tal caso, la cara separada se queda en su lugar de origen. 
+Puede dar la sensación de que esa es una cuestión sin importancia pero 
+no es así porque se produce una duplicación de los vértices. Imaginemos que
+en esta imagen la cara estuviera en su lugar de origen...
+</p>
+<img alt="extrusion_02" height="333" src="extrusion_02.png" width="380" />
+<p>
+... los vértices señalados se habrían duplicado dando lugar a <strong>un par de problemas</strong>:
+</p>
+<ul>
+	<li>Los famosos <strong>puntos dobles</strong> que hay que evitar a toda costa y de los que hablaremos más adelante.</li>
+</ul>
+<ul>
+	<li><strong>Se han creado las caras</strong> necesarias. Lo podemos comprobar en esta 
+	otra imagen en la que nos encontramos en modo de selección de caras <img alt="caras" height="16" src="caras.png" width="15" />, y 
+	donde se ve claramente el símbolo que nos dice que las nuevas facetas 
+	están, aunque de momento una de sus dimensiones es 0 (cero).</li>
+</ul>
+<blockquote>
+	<img alt="extrusion_03" height="373" src="extrusion_03.png" width="375" />
+</blockquote>
+<p>
+Sin embargo este procedimiento es muy habitual; es decir, que es muy 
+probable que queramos originar voluntariamente esa situación para 
+hacer después un <strong>escalado</strong> (<strong>&quot;S&quot;</strong>).
+</p>
+<img alt="extrusion_04" height="346" src="extrusion_04.png" width="426" /> 
+<p>
+Si ha esto le añadimos una nueva <strong>extrusión</strong> (<strong>&quot;E&quot;</strong>), pero dirigiéndola ahora hacia adentro del cubo, habremos conseguido dar la sensación de grosor a sus caras.
+</p>
+<img alt="extrusion_05" height="285" src="extrusion_05.png" width="390" /> 
+<p>
+A partir de ahora nos referiremos a este tipo de extrusión <strong>&quot;E+Intro&quot;</strong> como <strong>Extrusión nula</strong>.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id73">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta73_22_2" class="block" style="display:block;position:relative"><a href="extrusion_nula.swf" target="_blank"><img alt="ver_video_extrusion_nula" height="200" src="ver_video_extrusion_nula.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id54">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Ejercitación</h2>
+<div class="iDevice_inner">
+<div id="ta54_22_2" class="block" style="display:block;position:relative"><p>
+Modela la geometría de una <strong>mastaba egipcia</strong> poniendo en práctica la técnica que has estudiado sobre las extrusiones nulas y su posterior escalado y/o desplazamiento.
+</p>
+<p>
+Esta imagen puede servirte de inspiración y referencia.
+</p>
+<p>
+<img alt="mastaba" height="229" src="mastaba.png" width="348" />
+<br />
+<span style="color: #999999">Pirámide escalonada en El Cairo, Egipto // Autora: Ainhoa Martín / Licencia: CC BY-NC-SA 3.0</span>
+</p>
+<p>
+Este modelado también te orientará.
+</p>
+<img alt="modelado_mastaba" height="466" src="mastaba_modelado.png" width="552" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="extrusin.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="bucles_de_bordes_y_facetas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Cabecera de vídeo | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_cabecera_de_vdeo.html" class="active no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li><a href="seguir_una_trayectoria.html" class="daddy">Seguir una trayectoria</a><ul class="other-section">
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="construir.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="seguir_una_trayectoria.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Cabecera de vídeo</h1></div>
+<div class="FreeTextIdevice" id="id53">
+<div class="iDevice emphasis0">
+<div id="ta53_1" class="block" style="display:block;position:relative"><p>
+Un vídeo siempre se merece una bonita cabecera para causar buenas sensaciones nada más comenzar.
+</p>
+<p>
+Blender es un buen aliado para esos fines. En la práctica que viene a continuación hacemos una interesante cabecera con el texto <strong>&quot;Historia del Arte&quot;</strong>.
+</p>
+<p>
+Eliminamos el cubo y ponemos un texto en su lugar (<strong>Añadir/Texto</strong>). Desde <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> escribimos la cabecera en cuestión.
+</p>
+<img alt="his_01" height="328" src="historia_01.png" width="356" />
+<p>
+En su panel <img height="18" src="fuente_panel.png" width="18" /> le aplicamos una <strong>Extrusión </strong>de valor<strong> 0.100</strong> en la botonera <strong>Geometría</strong>. 
+</p>
+<img alt="his_02" height="332" src="historia_02.png" width="620" />
+<p>
+Alineamos en el centro usando la botonera <strong>Párrafo</strong>.
+</p>
+<img alt="his_03" height="169" src="historia_03.png" width="539" />
+<p>
+Es el momento de convertir, desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />, el texto en malla con <strong>Texto/Convert to/Superficie desde curva-meta-texto</strong>.
+</p>
+<p>
+Sabemos perfectamente que esto deja una topología ruinosa, que arreglamos aplicando un modificador <strong>Rehacer malla</strong> con los parámetros que se indican en esta imagen.
+</p>
+<img alt="his_04" height="200" src="historia_04.png" width="287" />
+<p>
+Tras <strong>Aplicar</strong> en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />, esta es la apariencia en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> (la topología es considerablemente mejor).
+</p>
+<img alt="his_05" height="436" src="historia_05.png" width="531" />
+<p>
+Una de las ventajas de <strong>Rehacer malla</strong> es que no hay que preocuparse de los <strong>puntos dobles</strong>.
+</p>
+<p>
+Hay que separar las tres palabras. Lo más confortable es seleccionar todos los vértices (<strong>&quot;A&quot;</strong>)  en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y separar con <strong>&quot;P&quot;/Por partes perdidas</strong> y después, en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />, seleccionar todas las letras de una palabra y hacer<strong> &quot;Control_J&quot; </strong>(<strong>Objeto/Unir</strong>). Esto nos da como resultado tres objetos finales. Antes de seguir los seleccionamos y hacemos <strong>Origen/Origen a geometría</strong> en el cuadro <strong>Herramientas</strong> (<strong>&quot;T&quot;</strong>). 
+</p>
+<p>
+Comenzamos por añadir a la palabra <strong>&quot;Historia&quot;</strong> un modificador <strong>Ola</strong> con estos parámetros.
+</p>
+<img alt="his_06" height="408" src="historia_06.png" width="625" />
+<ul>
+	<li><strong>Vida</strong>. Comienza  moverse en el fotograma <strong>1</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Amortiguación</strong>. Durante <strong>150 </strong>fotogramas después de que termine<strong> Vida </strong>el efecto va descendiendo hasta extinguirse.</li>
+</ul>
+<ul>
+	<li><strong>Posición X: -3.00</strong>. Es una cuestión estética.</li>
+</ul>
+<p>
+Ahora le añadimos un modificador <strong>Construir </strong>con estos parámetros:
+</p>
+<img alt="his_07" height="132" src="historia_07.png" width="319" />
+<ul>
+	<li><strong>Empezar juego: 75</strong>. Para que no comience a verse el efecto hasta ese fotograma. Esto hace que la palabra sea invisible hasta ese momento.</li>
+</ul>
+<ul>
+	<li><strong>Longitud</strong>. <strong>150</strong> para hacer coincidir su final con el del modificador<strong> Ola</strong>.</li>
+</ul>
+<p>
+Con esto queda acabada al edición de la palabra <strong>&quot;Historia&quot;</strong>, salvo por el <strong>Material</strong> <img height="16" src="materiales_panel.png" width="16" /> que le queramos diseñar.
+</p>
+<p>
+Para concluir debemos hacer lo mismo con las otras dos palabras con los siguientes cambios: 
+</p>
+<ul>
+	<li>Palabra<strong> &quot;del&quot;</strong>. En el modificador <strong>Ola</strong> tendrá una <strong>Vida</strong> de <strong>100 </strong>para que comience en ese fotograma. Y en el modificador <strong>Construir </strong>tendrá un <strong>Comienzo de juego: 125</strong>. Con todo esto conseguimos que el efecto comience justo antes de que termine el de la palabra <strong>&quot;Historia&quot;</strong>.</li>
+</ul>
+<ul>
+	<li>Palabra <strong>&quot;Arte&quot;</strong>. En le modificador <strong>Ola</strong> tendrá una <strong>Vida</strong> de <strong>175</strong>. Y en el modificador <strong>Construir </strong>tendrá un <strong>Comienzo de juego: 200.</strong></li>
+</ul>
+<p>
+En realidad nada nos impide escalar y desplazar los elementos para conseguir una composición más armónica.
+</p>
+<img alt="n_historia" height="384" src="n_historia.png" width="508" />
+<p>
+Por las condiciones de los modificadores esta animación debe tener al menos <strong>400 </strong>fotogramas.
+</p>
+<img alt="his_09" height="397" src="historia_09.png" width="324" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id57">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Exportación (recordatorio)</h2>
+<div class="iDevice_inner">
+<div id="ta57_33_2" class="block" style="display:block;position:relative"><p>
+Esta imagen incluye lo necesario para una buena exportación. Todo se edita en <strong>Render</strong> <img height="16" src="render.png" width="18" />.
+</p>
+<img alt="luna_11" height="393" src="luna_11.png" width="291" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id74">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Resultado final</h2>
+<div class="iDevice_inner">
+<div id="ta74_26_2" class="block" style="display:block;position:relative"><a href="historia_del_arte.swf" target="_blank"><img alt="ver_video_cabecera" height="200" src="video_cabecera.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id58">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta58_34_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="cabecera.blend"><img alt="descarga_cabecera" height="48" src="descarga_cabecera.png" width="165" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="construir.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="seguir_una_trayectoria.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

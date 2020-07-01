@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Mundo | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Conceptos fundamentales (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Conceptos fundamentales (I)</a></li><li><a href="interfaz.html" class="daddy">Interfaz</a><ul class="other-section">
+<li><a href="entorno_default.html" class="no-ch">Entorno Default</a></li>
+</ul>
+</li>
+<li><a href="vista_3d.html" class="daddy">Vista 3D</a><ul class="other-section">
+<li><a href="navegacin.html" class="no-ch">Navegación</a></li>
+<li><a href="sin_teclado_numrico.html" class="no-ch">Sin teclado numérico</a></li>
+<li><a href="propiedades_y_herramientas.html" class="no-ch">Propiedades y Herramientas</a></li>
+</ul>
+</li>
+<li><a href="transformaciones.html" class="daddy">Transformaciones</a><ul class="other-section">
+<li><a href="mover.html" class="no-ch">Mover</a></li>
+<li><a href="rotar_y_escalar.html" class="no-ch">Rotar y escalar</a></li>
+<li><a href="manipulador_3d.html" class="no-ch">Manipulador 3D</a></li>
+<li><a href="borrar_y_duplicar.html" class="no-ch">Borrar y Duplicar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_batera_musical.html" class="no-ch">Material didáctico: Batería musical</a></li>
+<li id="current-page-parent"><a href="paneles.html" class="current-page-parent daddy">Paneles</a><ul>
+<li><a href="renderizado.html" class="no-ch">Renderizado</a></li>
+<li><a href="guardar_el_render.html" class="no-ch">Guardar el render</a></li>
+<li><a href="materiales.html" class="no-ch">Materiales</a></li>
+<li id="active"><a href="mundo.html" class="active no-ch">Mundo</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_crculo_cromtico.html" class="no-ch">Material didáctico: Círculo cromático</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="materiales.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_crculo_cromtico.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Mundo</h1></div>
+<div class="FreeTextIdevice" id="id16">
+<div class="iDevice emphasis0">
+<div id="ta16_1" class="block" style="display:block;position:relative"><p>
+Nos despedimos de este primer contacto con los paneles echando un vistazo al llamado <strong>Mundo</strong> <img height="16" src="entorno.png" width="16" />. 
+</p>
+<p>
+Aquí es donde determinamos muchas de las propiedades que hacen que el <em>render</em> final adquiera cierta ambientación. Uno de los aspectos más importantes en un <em>render</em> es la iluminación y no siempre se consiguen efectos de luz usando focos. Por ejemplo, hay <strong>iluminaciones de carácter global</strong> en las que se entiende que la luz procede de todas partes como si una semiesfera, a modo de cúpula celeste, lanzara rayos luminosos hacia su centro.
+</p>
+<p>
+Otro efecto luminoso que no requiere focos es el que vamos a ver ahora para justificar nuestra aproximación a este valioso panel <strong>Mundo</strong> <img height="16" src="entorno.png" width="16" />. Se trata de la <strong>iluminación indirecta</strong>. 
+</p>
+<p>
+Creamos una escena con unos pocos objetos (<strong>Añadir/Malla...</strong>), como puede verse en la siguiente imagen, y <strong>eliminamos el punto de luz</strong> que incorpora Blender por defecto.
+</p>
+<img height="468" src="escena_luz_indirecta.png" width="552" />
+<p>
+Podemos darnos el capricho de comprobar cuál es el efecto de hacer un <em>render</em> (<strong>&quot;F12&quot;</strong>) cuando no hay ningún punto luminoso...Como la oscuridad total carece de interés nos dirigimos al panel <strong>Material </strong><img height="16" src="materiales_panel.png" width="16" /> y le asignamos uno a cada objeto para conseguir lo que se aprecia en la siguiente ilustración.
+</p>
+<img height="388" src="materiales_ind_lig.png" width="470" />
+<p>
+Al material de la <strong>esfera</strong> y al del <strong>toroide</strong> les añadimos la propiedad <strong>Emitir</strong> en la botonera <strong>Sombreado</strong> (un valor en torno a <strong>0.40</strong> puede ser aceptable para comenzar).
+</p>
+<img alt="n_emitir" height="105" src="n_emitir.png" width="329" />
+<p>
+Esto le otorga al material la propiedad de emitir luz pero un <em>render</em> es muy poco reconfortante...
+</p>
+<img height="227" src="render_emi.png" width="397" />
+<p>
+Le llega el turno al panel <strong>Mundo </strong><img height="16" src="escena_panel.png" width="16" />. Nos vamos a la botonera <strong>Iluminación indirecta</strong> y la activamos. Sin embargo algo no funciona bien porque sus opciones aparecen anuladas y la propia <strong>Iluminación indirecta</strong> queda también inutilizada. La solución la encontramos en el mensaje inferior <strong>Sólo funciona con el método de Recolección Aproximada</strong>. No tenemos que ir muy lejos porque la opción <strong>Aproximado</strong> esta justo en la botonera de abajo llamada <strong>Recolección</strong>. 
+</p>
+<img alt="n_aprox" height="228" src="n_aprox.png" width="640" />
+<p>
+Hacemos un<em> render</em> sin variar las opciones <strong>Factor</strong> y <strong>Rebotes</strong> de<strong> Iluminación indirecta.</strong>
+</p>
+<img height="223" src="render_emo_02.png" width="394" />
+<p>
+Ahora sí; los objetos emiten luz y los colindantes se ven afectados. Subamos el valor de<strong> Emitir </strong>hasta <strong>2.00</strong> (el máximo) para la esfera y el toroide. El <em>render</em> ganará una buena dosis de efecto luminoso.
+</p>
+<img height="225" src="render_emo_03.png" width="393" />
+<p>
+Y esto sólo variando dos parámetros. Si aumentamos <strong>Rebotes</strong> a <strong>4</strong>, en el resultado se aprecia que la luz emitida tiene mayor fuerza originando un bonito efecto que hace que el cubo parezca proyectar una sombra gracias al exceso de luz que hay a ambos lados. 
+</p>
+<img height="225" src="render_emo_04.png" width="393" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id118">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta118_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="iluminacion_indirecta.blend" target="_blank"><img alt="descarga_iluminacion_indirecta" height="48" src="descarga_iluminacion_indirecta.png" width="259" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="materiales.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_crculo_cromtico.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> El caso de la cámara | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li id="current-page-parent"><a href="seguir_una_trayectoria.html" class="current-page-parent daddy">Seguir una trayectoria</a><ul>
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li id="active"><a href="el_caso_de_la_cmara.html" class="active no-ch">El caso de la cámara</a></li>
+<li><a href="seguir_a.html" class="no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="configurar_el_movimiento.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="seguir_a.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">El caso de la cámara</h1></div>
+<div class="FreeTextIdevice" id="id43">
+<div class="iDevice emphasis0">
+<div id="ta43_1" class="block" style="display:block;position:relative"><p>
+Suponemos que:
+</p>
+<ul>
+	<li>Hemos añadido una trayectoria (<strong>Añadir/Curva/Bezier</strong>) y que la hemos <strong>escalado</strong> (<strong>&quot;S&quot;</strong>) al alza.</li>
+</ul>
+<ul>
+	<li>A la cámara le hemos aplicado la restricción <strong>Seguir camino</strong>.</li>
+</ul>
+<ul>
+	<li>Hemos llevado a cabo la triquiñuela 
+	explicada para conseguir los<em> keyframes</em> de 
+	animación. </li>
+</ul>
+<p>
+Esto es lo que tenemos.
+</p>
+<img alt="caso_01" height="244" src="caso_01.png" width="522" />
+<p>
+La cámara se comporta de un modo raro, alejándose de lo que debería ser su lugar de inicio en el recorrido. ¿Por qué la cámara se comporta de forma distinta a como lo hizo el cubo?
+</p>
+<p>
+Vamos poco a poco. En la escena inicial de Blender la cámara no está en el origen de coordenadas e incluso aparece girada, de modo que los ejes <strong>Locales</strong> y los <strong>Globales</strong> no coinciden. Y es eso lo que está originando un resultado incontrolado. La solución.:
+</p>
+<ul>
+	<li><strong>Eliminar el desplazamiento que ha sufrido el objeto</strong>. Para ello vamos al cuadro <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>) y en la botonera <strong>Transformar</strong> ponemos todos los valores de <strong>Location</strong> a <strong>0.000</strong> (otra forma es usar el menú<strong> Objeto/Limpiar/Posición</strong>). Con esto el origen de la cámara se sitúa al principio de la curva. No se coloca en el punto 0,0,0 del sistema <strong>Global</strong> porque tiene asignada la restricción <strong>Seguir camino</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="caso_02" height="308" src="caso_02.png" width="449" />
+</blockquote>
+<ul>
+	<li><strong>Eliminar la rotación</strong>. Podríamos usar, como antes el cuadro <strong>Propiedades </strong>(<strong>&quot;N&quot;</strong>) y poner a <strong>0.000</strong> todos los parámetros<strong> Rotation</strong>, o usar el menú <strong>Objeto/Limpiar/Rotación</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="caso_03" height="272" src="caso_03.png" width="458" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id44">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Los ejes de la cámara</h2>
+<div class="iDevice_inner">
+<div id="ta44_23_2" class="block" style="display:block;position:relative"><p>
+Debe llamarnos la atención que una de las particularidades más 
+significativas de la cámara es que su eje Z (azul) es el que queda 
+perpendicular al encuadre; de esa manera los ejes X e Y guardan 
+coherencia respecto al punto de vista de la cámara.
+</p>
+<p>
+<img alt="caso_04" height="289" src="caso_04.png" width="357" />
+<br />
+<span style="color: #808080">Imagen: Fotograma de Big Buck Bunny // Licencia: CC-BY-3.0</span>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id45">
+<div class="iDevice emphasis0">
+<div id="ta45_1" class="block" style="display:block;position:relative"><p>
+Y el tema de los ejes sigue condicionando la restricción <strong>Seguir camino</strong>. Por defecto esta restricción sabemos que orienta al objeto con:
+</p>
+<ul>
+	<li><strong>Adelante: Y</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Arriba: Z</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="caso:05" height="220" src="caso_05.png" width="383" />
+</blockquote>
+<p>
+Sin embargo esas opciones no son buenas para nosotros debido a la orientación de los ejes de la cámara. Debemos cambiar:
+</p>
+<ul>
+	<li>Activar <strong>Seguir curva</strong>.</li>
+</ul>
+<ul>
+	<li><strong>Adelante: -Z</strong> (negativo).</li>
+</ul>
+<ul>
+	<li><strong>Arriba: Y</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="caso_05" height="374" src="caso_06.png" width="562" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id46">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta46_25_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="seguir_camino_camara.blend"><img alt="descarga_seguir_camino_camara" height="48" src="descarga_seguir_camino_camara.png" width="266" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="configurar_el_movimiento.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="seguir_a.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

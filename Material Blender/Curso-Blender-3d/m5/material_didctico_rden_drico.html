@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Material didáctico: Órden dórico | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li id="active"><a href="material_didctico_rden_drico.html" class="active no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="adherir_elemento.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extensiones.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Material didáctico: Órden dórico</h1></div>
+<div class="FreeTextIdevice" id="id52">
+<div class="iDevice emphasis0">
+<div id="ta52_1" class="block" style="display:block;position:relative"><img alt="promo" height="339" src="dorica_promo.png" width="263" />
+<p>
+Comenzamos por añadir un cilindro (<strong>Añadir/Malla/Cilindro</strong>) sin los vértices de las tapas y con 24 vértices.
+</p>
+<img alt="n_snap2" height="381" src="n_snap2.png" width="482" />
+<p>
+Tras los escalados necesarios esto es lo que tenemos para comenzar a trabajar.
+</p>
+<img alt="dorica_02" height="388" src="dorica_02.png" width="304" />
+<p>
+Pasamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y <strong>añadimos un par de bucles</strong> (<strong>&quot;Control R&quot;</strong>) cerca de los extremos.
+</p>
+<img alt="dorica_03" height="461" src="dorica_03.png" width="287" />
+<p>
+Los dos bucles de arriba deben sufrir un <strong>escalado</strong> (<strong>&quot;S&quot;</strong>) para conseguir una disminución del ancho de la columna según aumenta en altura.
+</p>
+<img alt="dorica:04" height="460" src="dorica_04.png" width="245" />
+<p>
+Del bucle de facetas del medio seleccionamos las caras <img alt="caras" height="16" src="caras.png" width="15" /> de un modo alterno (quedarán seleccionadas 12 caras).
+</p>
+<img alt="dorica_05" height="334" src="dorica_05.png" width="411" />
+<p>
+Es el momento de aplicar una <strong>extrusión individual</strong> hacia el interior de la columna. Esta extrusión será muy corta. Como más adelante le aplicaremos al objeto un modificador de <strong>Subdivisión </strong>sabemos que nos viene muy bien tener bucles cerca de las esquinas, por lo tanto esta primera extrusión en realidad es para crear esos bucles.
+</p>
+<img alt="n_dori_1" height="310" src="n_dori_1.png" width="640" />
+<p>
+Repetimos la misma operación para ganar profundidad.
+</p>
+<img alt="n_dori_2" height="315" src="n_dori_2.png" width="640" />
+<p>
+Estamos listos para seguir editando con el modificador <strong>Subdivisión</strong> (con un nivel de <strong>Vista:2</strong>) así como con la opción de sombrado <strong>Suave</strong> habitual.
+</p>
+<img alt="dorica_08" height="297" src="dorica_08.png" width="418" />
+<p>
+Presenta un aspecto interesante. Pero para que mejore considerablemente necesitamos un par de bucles cercanos (<strong>Control_R&quot;</strong>) a aquellos que ya añadimos antes. Los situaremos para que el remate de la <em>estría</em> acabe en semicircunferencia (más o menos) tanto en la base de la columna como en la parte alta. 
+</p>
+<img alt="dorica_09" height="310" src="dorica_09.png" width="458" />
+<p>
+El resto de los elementos que conforman la columna no deberían suponer un problema a estas alturas. Continuamos por arriba con <strong>extrusiones nulas &quot;E+Intro&quot;</strong> y su correspondiente <strong>escalado y/o desplazamiento</strong> hacia arriba hasta completar con el <em>equino</em>.
+</p>
+<img height="427" src="dorica_10.png" width="494" />
+<p>
+El <em>ábaco</em> lo hacemos con un nuevo objeto, un simple cubo. Lo correcto sería hacerlo salir a escena en la posición adecuada usando las adherencias, por ejemplo:
+</p>
+<ul>
+	<li>Seleccionamos el último bucle tal y como muestra la imagen anterior</li>
+</ul>
+<ul>
+	<li>Hacemos <strong>Malla/Adherencia/Cursor a seleccionado</strong>. Con eso se sitúa el <strong>Cursor 3D</strong> en un buen lugar para garantizar la correcta alineación.</li>
+</ul>
+<ul>
+	<li>Sacamos a escena desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> el cubo (<strong>Añadir/Malla/Cubo</strong>) y lo <strong>escalamos</strong> (<strong>&quot;S&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="dorica_11" height="439" src="dorica_11.png" width="453" />
+</blockquote>
+<p>
+Un render de la zona del capitel tendría este aspecto.
+</p>
+<img alt="dorico_12" height="420" src="dorica_12.png" width="475" />
+<p>
+La parte de la <em>basa</em> no es en absoluto diferente; más <strong>extrusiones nulas</strong> (<strong>&quot;E+Intro&quot;</strong>) hasta completar el diseño.
+</p>
+<img alt="dirica_13" height="330" src="dorica_13.png" width="583" />
+<p>
+El <em>plinto</em> puede ser un <strong>duplicado</strong> (<strong>&quot;Shift-D&quot;</strong>) del <em>ábaco</em> con un ligero <strong>escalado</strong> (<strong>&quot;S&quot;</strong>).
+</p>
+<img alt="dorico_11" height="455" src="dorica_14.png" width="624" />
+</div></div>
+</div>
+<div class="objectivesIdevice" id="id53">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_objectives.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta53_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="columna.blend"><img alt="descarga_dorico" height="48" src="descarga_dorico.png" width="146" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="adherir_elemento.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extensiones.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

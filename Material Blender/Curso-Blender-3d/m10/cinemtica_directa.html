@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Cinemática directa | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Mecánica y cinemática
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Mecánica y cinemática</a></li><li><a href="fotogramas_clave.html" class="daddy">Fotogramas clave</a><ul class="other-section">
+<li><a href="todo_se_puede_animar.html" class="no-ch">Todo se puede animar</a></li>
+<li><a href="regla_tiempodiseo.html" class="no-ch">Regla tiempo-diseño</a></li>
+<li><a href="entorno_animation.html" class="no-ch">Entorno Animation</a></li>
+<li><a href="planilla_de_tiempos.html" class="no-ch">Planilla de tiempos</a></li>
+<li><a href="editor_de_grficas.html" class="no-ch">Editor de gráficas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_engranaje_cnico.html" class="no-ch">Material didáctico: Engranaje cónico</a></li>
+<li><a href="mecnica_restringida.html" class="daddy">Mecánica restringida</a><ul class="other-section">
+<li><a href="el_modelo.html" class="no-ch">El modelo</a></li>
+<li><a href="preparativos.html" class="no-ch">Preparativos</a></li>
+<li><a href="brazo_mvil.html" class="no-ch">Brazo móvil</a></li>
+<li><a href="el_pistn.html" class="no-ch">El pistón</a></li>
+<li><a href="un_ciclo.html" class="no-ch">Un ciclo</a></li>
+<li><a href="editor_de_vdeo.html" class="no-ch">Editor de vídeo</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="creacion_de_personajes.html" class="current-page-parent daddy">Creacion de personajes</a><ul>
+<li><a href="huesos.html" class="no-ch">Huesos</a></li>
+<li><a href="rigging.html" class="no-ch">Rigging</a></li>
+<li><a href="modo_posado.html" class="no-ch">Modo Posado</a></li>
+<li><a href="las_mallas.html" class="no-ch">Las mallas</a></li>
+<li><a href="skinning.html" class="no-ch">Skinning</a></li>
+<li id="active"><a href="cinemtica_directa.html" class="active no-ch">Cinemática directa</a></li>
+<li><a href="cinemtica_inversa.html" class="no-ch">Cinemática inversa</a></li>
+<li><a href="la_pata.html" class="no-ch">La pata</a></li>
+<li><a href="el_caso_de_la_rodilla.html" class="no-ch">El caso de la rodilla</a></li>
+<li><a href="mejoras.html" class="no-ch">Mejoras</a></li>
+<li><a href="estiramientos.html" class="no-ch">Estiramientos</a></li>
+</ul>
+</li>
+<li><a href="meterial_didctico_bye_bye.html" class="no-ch">Meterial didáctico: Bye, bye</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="autoevaluacin_mecnica_y_cinemtica.html" class="no-ch">Autoevaluación: Mecánica y cinemática</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="skinning.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="cinemtica_inversa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Cinemática directa</h1></div>
+<div class="FreeTextIdevice" id="id67">
+<div class="iDevice emphasis0">
+<div id="ta67_1" class="block" style="display:block;position:relative"><p>
+La mecánica restringida es un modo de cinemática en realidad. Si nos 
+fijamos bien en el <em>rigging</em> que hemos hecho es posible pensar que no 
+hubiera sido muy problemático hacerlo con mecánica restringida y una 
+buena organización de <strong>Orígenes</strong>.
+</p>
+<p>
+<strong>La cinemática</strong> se basa en que unos objetos se vean influidos por 
+las transformaciones de otros pero usando huesos en lugar de los objetos
+en sí. La cinemática puede darse de dos modos distintos:
+</p>
+<ul>
+	<li><strong>Directa</strong>. Para que nos entendamos rápido: es la cinemática que hemos creado para las piernas del personaje Lapintef. Cuando rotamos<em> femur.L </em>esta transformación es heredada por <em>tibia.L</em> y <em>pie.L. </em>Es como cuando agarramos el muslo de un muñeco para que simule dar una patada.</li>
+</ul>
+<ul>
+	<li><strong>Indirecta</strong>. Supongamos un muñeco con articulaciones en un 
+	brazo (hombro, codo y muñeca). Si agarramos el cuerpo del muñeco dejándolo fijo mientras que con la otra desplazamos su mano, es 
+	seguro que todo el brazo sufrirá una transformación al mismo tiempo 
+	originando una nueva pose para todo los elementos.</li>
+</ul>
+<p>
+La cinemática directa del personaje <strong>Lapintef </strong>tiene un defecto al rotar la cabeza, tal y como ya quedó dicho. Ha llegado el momento de solucionar ese problema, pero no podremos hacerlo usando sólo cinemática directa porque lo que necesitamos es que al girar el hueso cabeza, se desplace hacia abajo un hueso fémur mientras que el contrario se desplaza hacia arriba. Y todo ello mientras los pies se quedan en su sitio. 
+</p>
+<img alt="cd_01" height="379" src="cd_01.png" width="270" />
+<p>
+Pero no vamos a dejar pasar la ocasión sin mejorar un poco el <em>rigging</em>.
+</p>
+<ul>
+	<li>En <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> seleccionamos la cabeza del hueso<em> cabeza</em> para hacer <strong>Esqueleto/Adherencia/Cursor a seleccionado</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="cd_02" height="280" src="cd_02.png" width="303" />
+</blockquote>
+<ul>
+	<li><strong> Extruimos </strong>anclando el desplazamiento <strong>en Z</strong> (<strong>&quot;EZ&quot;</strong>).</li>
+</ul>
+<blockquote>
+	<img alt="cd_03" height="312" src="cd_03.png" width="303" />
+</blockquote>
+<ul>
+	<li>Lo denominamos <em>pivote </em>y nos aseguramos de corregirle posibles rotaciones en el panel <strong>Hueso</strong> <img height="17" src="hueso.png" width="17" /> aunque parezca que no las hay.</li>
+</ul>
+<p>
+Este hueso <em>pivote</em> tiene que ser padre del hueso <em>cabeza </em>y de los dos huesos <em>cadera</em>. Así que seleccionamos <em>cabeza</em>, después <em>pivote</em>, emparentamos con <strong>&quot;Control_P&quot;</strong> y del menú emergente seleccionamos <strong>Mantener desfase</strong> o de lo contrario la cola de uno tendrá que coincidir con la cabeza del otro. 
+</p>
+<img alt="cd_04" height="350" src="cd_04.png" width="409" />
+<p>
+<strong>Repetimos esto mismo</strong> para los huesos <em>cadera.L </em>y <em>cadera.R</em>.
+</p>
+<p>
+Siempre tiene que haber un hueso que sea el padre final y del que no dependan otras transformaciones. Como el hueso <em>pivote</em> será el encargado de mover toda la cadera del personaje hay que liberarle de la responsabilidad de ser el padre final.
+</p>
+<p>
+Seleccionamos todo el hueso <em>pivote </em>en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y lo <strong>duplicamos desplazándolo</strong> después <strong>en Z </strong>(<strong>&quot;Shift_D Z&quot;</strong>).
+</p>
+<img alt="cd_05" height="387" src="cd_05.png" width="216" />
+<p>
+Lo llamamos <em>posicion </em>y hacemos que <em>pivote</em> sea su hijo<strong> manteniendo el desfase</strong> según el método ya aprendido. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id101">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta101_21_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="lapintef_cinematica_directa.blend"><img alt="descarga_lapintef_cinematica_directa" height="48" src="descarga_lapintef_cinematica_directa.png" width="297" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="skinning.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="cinemtica_inversa.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

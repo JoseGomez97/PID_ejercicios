@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Booleano | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li id="current-page-parent"><a href="otros_modificadores.html" class="current-page-parent daddy">Otros modificadores</a><ul>
+<li id="active"><a href="booleano.html" class="active no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="otros_modificadores.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="rosca.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Booleano</h1></div>
+<div class="preknowledgeIdevice" id="id84">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Base teórica</h2>
+<div class="iDevice_inner">
+<div id="ta84_23_2" class="block" style="display:block;position:relative"><p>
+El término <strong>booleana</strong> hace referencia a las operaciones que se pueden realizar entre dos objetos. En diseño 3D se reducen a tres:
+</p>
+<ul>
+	<li><strong>Unión</strong></li>
+</ul>
+<ul>
+	<li><strong>Diferencia</strong></li>
+</ul>
+<ul>
+	<li><strong>Intersección</strong></li>
+</ul>
+<p>
+Cuando seleccionamos dos mallas y las juntamos con <strong>Objeto/Unir</strong>, 
+Blender no tiene en consideración cuáles son las partes comunes y no se 
+preocupa de reestructurar el resultado. Además eso es bueno que sea así 
+por las ventajas que supone poder separarlas de nuevo cuando nos 
+convenga. 
+</p>
+<p>
+En la <strong>unión booleana</strong> el resultado será un objeto en el que los 
+vértices se organicen para que el nuevo objeto sea realmente la suma de 
+los dos que lo originaron.
+</p>
+<img alt="bool_01" height="446" src="booleana_01.png" width="529" /> 
+<p>
+Antes de entrar a analizar este modificador hay que tener en cuenta tres cosas:
+</p>
+<ul>
+	<li><strong>Si podemos evitarlas, las evitaremos (regla de oro)</strong>. Las 
+	usaremos sólo cuando no haya otra alternativa. En realidad el verdadero 
+	problema está en hacerlo convivir con el modificador <strong>Subdivisión</strong>, uno de los más habituales del diseño 3D. Es por eso que debemos asociar el modificador <strong>Booleana</strong> con el modelado de piezas mecánicas y asuntos similares.</li>
+</ul>
+<ul>
+	<li><strong>La malla resultante es prácticamente seguro que carecerá de una buena topología</strong>
+	en la organización de los bucles de bordes. Lo comprobamos en la imagen
+	anterior. Este detalle hace que los objetos resultantes se lleven 
+	realmente mal con el modificador <strong>Subdivisión</strong>. Para encontrar soluciones realmente interesantes debemos usarlas en combinación con otros recursos como el modificador <strong>Rehacer malla</strong> (del que daremos un breve apunte).</li>
+</ul>
+<ul>
+	<li>Hasta hace relativamente pocas versiones de Blender esta operación 
+	no era un modificador sino una edición directa donde el resultado era 
+	similar al mostrado en la imagen anterior. Ahora <strong>aparecen como modificadores</strong>
+	y eso ha cambiado considerablemente las cosas porque Blender nos 
+	muestra el resultado de la booleana sin necesidad de generar la malla. 
+	Antiguamente en una booleana de diferencia se perdía el segundo objeto 
+	(el sustraendo, para que nos entendamos); sin embargo ahora es posible 
+	conservarlo y variarlo en cualquier momento. El truco: tener el objeto 
+	dominante (minuendo) en una capa, y el segundo (sustraendo) en otra 
+	distinta.</li>
+</ul>
+<blockquote>
+	<img alt="bool_02" height="336" src="booleana_02.png" width="425" />
+</blockquote>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id88">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta88_28_2" class="block" style="display:block;position:relative"><a href="booleano.swf" target="_blank"><img alt="ver_video_booleanas" height="200" src="ver_video_booleanas.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id20">
+<div class="iDevice emphasis0">
+<div id="ta20_1" class="block" style="display:block;position:relative"><p>
+Vamos paso a paso con un proyecto. Tenemos un modelado inicial para una flauta.
+</p>
+<img alt="flauta_01" height="297" src="booleana_03.png" width="532" />
+<br />
+<a href="flauta.blend"><img alt="descarga_flauta_sin_agujeros" height="48" src="descarga_flauta_sin_agujeros.png" width="240" /></a>
+<p>
+Añadimos un cilindro (<strong>Añadir/Malla/Cilindro</strong>) sin vértices en las tapas para originar uno de los agujeros.
+</p>
+<img alt="flauta_02" height="471" src="flauta_01.png" width="623" />
+<p>
+Ahora podríamos duplicar desde <strong>Modo Edición </strong><img height="17" src="modo_edicion.png" width="18" /> para conseguir el resto de los agujeros y ahorrarnos al final tener que juntarlos (<strong>Objeto/Unir</strong>) pero optamos por <strong>duplicar</strong> (<strong>&quot;Shift_D&quot;</strong>) en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> para manipular las copias más cómodamente.
+</p>
+<img alt="flauta_03" height="378" src="flauta_02.png" width="574" />
+<p>
+Cuando estén todos los cilindros en su sitio hacemos <strong>Objeto/Unir</strong> y aprovechamos para darle un nombre (recordamos que esto puede hacerse en la botonera <strong>Elemento</strong> del cuadro <strong>Propiedades &quot;N&quot;</strong>). Lo llamamos <em>agujeros</em>.
+</p>
+<p>
+El objeto propio de la flauta será el que contenga el modificador <strong>Booleano</strong>, así que se lo asignamos ahora. Nada ocurrirá porque Blender desconoce cuál es el objeto que tiene que operar como sustraendo. Desplegamos el campo <strong>Objeto</strong> y allí seleccionamos aquel al que llamamos <em>agujeros</em>. En el editor <strong>Vista 3D</strong> se muestran las consecuencias de la booleana <strong>Intersectar</strong> que es la que se aplica por defecto. Nosotros la cambiamos a <strong>Diferencia</strong>.
+</p>
+<img alt="flauta_04" height="343" src="flauta_03.png" width="309" />
+<p>
+Nuevamente nos encontramos con que nada parece suceder en el editor <strong>Vista 3D</strong>. La operación se está llevando a cabo, lo que ocurre es que los cilindros no nos permiten ver las consecuencias de la resta. El truco ya lo hemos mencionado: llevarlos a una capa distinta.
+</p>
+<p>
+El cambio de capa sólo puede hacerse desde <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" />:
+</p>
+<ul>
+	<li>Seleccionamos el objeto<em> agujeros</em>.</li>
+</ul>
+<ul>
+	<li>Hacemos <strong>Objeto/Mover a Capa</strong> (o tecla <strong>&quot;M&quot;</strong>) y se despliega un gráfico para que seleccionemos una de las veinte capas disponibles. Nosotros hemos escogido la segunda.</li>
+</ul>
+<blockquote>
+	<img alt="flauta_05" height="427" src="flauta_04.png" width="545" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id21">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Sobre las capas</h2>
+<div class="iDevice_inner">
+<div id="ta21_21_2" class="block" style="display:block;position:relative"><ul>
+	<li>La información visual que se nos ofrece sobre las capas solo aparece en la hilera de iconos del editor <strong>Vista 3D</strong> cuando estamos en <strong>Modo Objeto </strong><img height="16" src="modo_objeto.png" width="17" />.</li>
+</ul>
+<ul>
+	<li>Una capa que contiene un punto en su interior nos está informando de que tiene objetos en ella, de lo contrario es que está vacía.</li>
+</ul>
+<ul>
+	<li>Si el punto de su interior se muestra naranja es que hay objetos seleccionados en ella.</li>
+</ul>
+<ul>
+	<li>Un simple <strong>clic</strong> sirve para seleccionar una capa.</li>
+</ul>
+<ul>
+	<li>La tecla <strong>&quot;Shift&quot; </strong>pulsada acumula capas seleccionadas.</li>
+</ul>
+<ul>
+	<li>Seleccionar una capa es equivalente a hacerla visible tanto en el editor <strong>Vista 3D</strong> como en el <em>render</em>.</li>
+</ul>
+<ul>
+	<li>Un objeto puede estar en varias capas. Sólo tenemos que mantener pulsada la tecla <strong>&quot;Shift&quot;</strong> en el momento de hacer <strong>Objeto/Mover a capa</strong> y seleccionar las capas deseadas. Es muy habitual querer que las lámparas estén en todas las capas. </li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id22">
+<div class="iDevice emphasis0">
+<div id="ta22_1" class="block" style="display:block;position:relative"><p>
+Sabiendo todo lo que hemos aprendido sobre capas está claro que debemos hacer<strong> clic </strong>sobre la primera de ellas para que se muestre la flauta con los efectos de la booleana sin que se vean los cilindros que originan los agujeros.
+</p>
+<img alt="flauta_06" height="461" src="flauta_06.png" width="547" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id23">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Jerarquización simple</h2>
+<div class="iDevice_inner">
+<div id="ta23_23_2" class="block" style="display:block;position:relative"><ul>
+	<li>Si la flauta tiene asignado un modificador de <strong>Subdivisión</strong> debemos aplicarlo con el botón correspondiente; no conviene que conviva con el modificador<strong> Booleano</strong> durante mucho tiempo. Prácticamente todo saldrá mal si este modificador sigue activo.</li>
+</ul>
+<ul>
+	<li>Todo parece perfecto y así sería si no aplicáramos al objeto propio de 
+	la flauta ninguna transformación. Si lo movemos, por ejemplo, los 
+	agujeros no le seguirán (lógico). La solución está en aplicar una <strong>relación de parentesco sencilla </strong>(las hay más complejas).</li>
+</ul>
+<ul>
+	<ul>
+		<li>Hacemos visibles las dos capas con objetos.</li>
+	</ul>
+</ul>
+<ul>
+	<ul>
+		<li>Seleccionamos, en este orden, <strong>primero los cilindros de los agujeros y después el objeto del cuerpo de la flauta</strong>.</li>
+	</ul>
+</ul>
+<ul>
+	<ul>
+		<li>Hacemos <strong>Objeto/Padre/Establecer/Objeto</strong>.</li>
+	</ul>
+</ul>
+<p>
+¿Qué hemos hecho en realidad?
+</p>
+<p>
+Ya sabemos que el último objeto seleccionado es el que actúa como dominante. En la jerarquización <strong>el objeto dominante quedará como padre</strong> y el resto como hijos (en este caso el objeto <strong>agujeros</strong>). 
+</p>
+<p>
+Si volvemos a dejar el objeto <strong>agujeros</strong> como no visible podremos seleccionar el cuerpo de la flauta y transformarlo a nuestro gusto porque los agujeros permanecerán en su sitio. 
+</p>
+<p>
+Aquí pueden comenzar problemas en el redibujado de las malla. Pensemos que Blender nos muestra los agujeros virtualmente ya que el modificador <strong>Booleano</strong> está actuando pero no ha sido aplicado. Cuando no había relación de parentesco el proceso de redibujado era sencillo (por ponerle un nombre) pero ahora Blender debe atender al modificador guardando la relación de parentesco mientras redibuja constantemente el objeto en el editor <strong>Vista 3D</strong>; eso a nosotros puede que no nos parezca una tarea compleja pero lo es, y mucho. Es por eso que en determinadas circunstancias no se redibujen los agujeros pero eso no significa que no aparezcan en el render. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id26">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta26_26_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="flauta_boolena.blend"><img alt="descarga_flauta_booleana" height="48" src="descarga_flauta_booleana.png" width="218" /></a>
+<p>
+Este .blend incluye unas pequeñas bolitas para determinar los agujeros tapados. Cada bolita está en una capa distinta por lo que es muy fácil componer una nota musical.
+</p>
+<img height="463" src="flauta_07.png" width="223" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="otros_modificadores.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="rosca.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

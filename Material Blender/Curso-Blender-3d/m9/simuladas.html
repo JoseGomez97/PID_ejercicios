@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Simuladas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="sombras.html" class="current-page-parent daddy">Sombras</a><ul>
+<li><a href="prediseadas.html" class="no-ch">Prediseñadas</a></li>
+<li id="active"><a href="simuladas.html" class="active no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="prediseadas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="sombreado_glsl.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Simuladas</h1></div>
+<div class="FreeTextIdevice" id="id22">
+<div class="iDevice emphasis0">
+<div id="ta22_1" class="block" style="display:block;position:relative"><p>
+Mucho más interesante que hacer nosotros los gráficos para las sombras es aprovecharse de los recursos que incorpora Blender para crear texturas que se mapean automáticamente tras un renderizado. 
+</p>
+<p>
+Lo vemos en un ejemplo sencillo en el que partimos de una escena de un cubo sobre un plano.
+</p>
+<img alt="sombras_06" height="329" src="sombras_06.png" width="496" />
+<p>
+Aquí no es tan importante si el plano tiene o no asignado un material. En el caso de tenerlo, lo único de lo que nos preocupamos ahora es de que <strong>no</strong> tenga activada <strong>Textura en caras</strong> en la botonera <strong>Opciones</strong>. 
+</p>
+<img alt="sombras_07" height="340" src="sombras_07.png" width="449" />
+<p>
+Sería fantástico conseguir un efecto de sombra arrojada como esa, e incluso que se conservara ese tono de oclusión ambiental. ¿Se puede?. Sí, y además con muy poco trabajo. Vamos por orden:
+</p>
+<ul>
+	<li>Nos vamos al entorno <strong>UV Editing</strong>.</li>
+</ul>
+<ul>
+	<li>En el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> creamos una imagen (no la cargamos tal y como estamos acostumbrados) pulsando el botón <strong>Nuevo</strong>. En el cuadro que se nos muestra le damos un<strong> Nombre</strong> (<em>suelo</em> es una buena opción) pulsamos <strong>Ok</strong>. Con esto se crea una imagen de 1024x1024 completamente negra (si nos fijamos ese es el color por defecto).</li>
+</ul>
+<blockquote>
+	<img alt="sombra_08" height="273" src="sombras_08.png" width="409" />
+</blockquote>
+<ul>
+	<li>Como es habitual, le asignamos la imagen desde el editor <strong>Vista 3D</strong> con <strong>Malla/Desplegar UVs/Desenvolver</strong>. El resultado con sombreado <strong>Textura</strong> debe ser algo así.</li>
+</ul>
+<blockquote>
+	<img alt="sombras_09" height="396" src="sombras_09.png" width="474" />
+</blockquote>
+<ul>
+	<li>Regresamos al entorno de trabajo <strong>Default </strong>y nos vamos directos al panel <strong>Render</strong> <img alt="render" height="16" src="render.png" width="18" />, buscamos la botonera <strong>Simular</strong> y pulsamos el botón del mismo nombre. El resultado no es instantáneo porque Blender necesita un tiempo para hacer el<em> render </em>y asignárselo al plano. Este proceso se muestra en la parte alta de la interfaz</li>
+</ul>
+<blockquote>
+	<img alt="sombras_10" height="117" src="sombras_10.png" width="418" />
+</blockquote>
+<p>
+Al final del proceso la textura se asigna al plano de modo automático (no olvidemos estar en sombreado <strong>Textura</strong> para verlo en tiempo real).
+</p>
+<img alt="sombras_11" height="327" src="sombras_11.png" width="508" />
+<p>
+Si cambiamos al entorno <strong>UV Editing</strong> confirmamos que la imagen negra se ha sustituido por la textura simulada. Y ese aspecto, a la hora del poner en marcha el motor de juegos, es muy volumétrico (para esta imagen se han añadido más lámparas para evitar caras completamente negras)
+</p>
+<img alt="sombras_12" height="418" src="sombras_12.png" width="471" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id81">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta81_21_2" class="block" style="display:block;position:relative"><a href="texturas_simuladas.swf" target="_blank"><img alt="ver_video_texturas_simuladas" height="200" src="ver_video_texturas_simuladas.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id29">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Asignar material al plano</h2>
+<div class="iDevice_inner">
+<div id="ta29_33_2" class="block" style="display:block;position:relative"><p>
+Si el plano no tiene asignado un material Blender se ocupa de todo para el texturizado, pero si le asignamos un material para editar colores, especularidad... debemos recordar:
+</p>
+<ul>
+	<li>Activar la opción <strong>Textura en caras</strong> en la botonera <strong>Opciones</strong> del material o a textura no saldrá en la simulación (<strong>&quot;P&quot;</strong>).</li>
+</ul>
+<ul>
+	<li>Si queremos repetir la simulación de la textura, la opción<strong> Textura en caras </strong>tiene que estar desactivada.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id30">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Empaquetar textura simulada</h2>
+<div class="iDevice_inner">
+<div id="ta30_34_2" class="block" style="display:block;position:relative"><p>
+Como la textura no ha sido cargada desde el exterior sino que se ha creado desde dentro de Blender, la conocida opción <strong>Archivo/Dato externo/Empaquetar en fichero .blend</strong> no funciona y Blender nos envía un mensaje avisando.
+</p>
+<p>
+La opción correcta es crear el PNG desde el<strong> Editor UV</strong> con <strong>Imagen*/Empaquetar como PNG</strong>. Tras aceptar el mensaje de confirmación el PNG se crea y queda integrado dentro del<em> .blend</em>. Blender nos está avisando, mediante un asterisco en la palabra<strong> Imagen</strong> del menú, de que hay imágenes sin crear.
+</p>
+<img alt="sombras_21" height="294" src="sombras_21.png" width="182" />
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="prediseadas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="sombreado_glsl.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

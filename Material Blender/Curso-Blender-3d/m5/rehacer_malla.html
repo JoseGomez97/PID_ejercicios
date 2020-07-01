@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Rehacer malla | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="curvas.html" class="current-page-parent daddy">Curvas</a><ul>
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li id="active"><a href="rehacer_malla.html" class="active no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li><a href="utilidades.html" class="daddy">Utilidades</a><ul class="other-section">
+<li><a href="subdividir.html" class="no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="importar_svg.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_grficas_estadsticas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Rehacer malla</h1></div>
+<div class="FreeTextIdevice" id="id73">
+<div class="iDevice emphasis0">
+<div id="ta73_1" class="block" style="display:block;position:relative"><p>
+Este es un buen momento para hablar de las posibilidades que brinda el modificador <strong>Rehacer malla</strong> ya que esta relacionado tanto con los destrozos topológicos originados por el modificador <strong>Booleano </strong>como con los que surgen al convertir un texto, o cualquier otra curva, en una malla.
+</p>
+<p>
+Recordamos que al final del trabajo con un texto o con una curva es muy habitual convertirla en una malla formada por facetas, usando <strong>Objeto/Convert to/Superfice desde curva-meta-texto</strong>. Tras esta operación es rigurosamente necesario seleccionar todos los vértices (<strong>&quot;A&quot;</strong>) y eliminar los puntos dobles (<strong>Malla/vértices/Eliminar duplicados</strong>).
+</p>
+<p>
+Supongamos que este es nuestro texto resultante (<strong>Remesh</strong> es el nombre original del modificador <strong>Rehacer malla</strong>), donde vemos la mala distribución topológica de los lados. 
+</p>
+<img alt="remesh_01" height="340" src="n_remesh_01.png" width="513" />
+<p>
+Le aplicamos el modificado<strong> Rehacer malla</strong>.
+</p>
+<img alt="remesh_02" height="196" src="n_remesh_02.png" width="354" />
+<p>
+Absolutamente nada se altera en el editor vista 3D siempre que estemos en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />; en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> puede que haya alteraciones drásticas que se solucionarán con dos detalles:
+</p>
+<ul>
+	<li>Desactivando la opción <strong>Remover Piezas Desconectadas</strong>. Eso hace que se muestren todos los conjuntos de vértices independiente (es decir, todas las letras).</li>
+</ul>
+<ul>
+	<li><strong>Aumentando profundidad de octree</strong> hasta que los caracteres se vean con normalidad.</li>
+</ul>
+<p>
+El modificador parece no estar actuando pero no es cierto. La 
+modificación está en segundo plano y no lo podemos ver en esas 
+condiciones. Si ya hemos conseguido que se vea bien el texto en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> aplicamos el modificador y regresamos a <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> para ver cómo ha cambiado la malla.
+</p>
+<img alt="remesh_03" height="302" src="n_remesh_03.png" width="518" />
+<p>
+Impresionante, sin duda.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id74">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">No trabajar a ciegas</h2>
+<div class="iDevice_inner">
+<div id="ta74_22_2" class="block" style="display:block;position:relative"><p>
+¿Como podemos alterar parámetros sin tener que llega a<strong> Aplicar</strong> sin saber las características de la nueva topología?
+</p>
+<p>
+Este es el truco. Con el objeto seleccionado nos vamos al panel <strong>Objeto</strong> <img height="16" src="objeto_panel.png" width="15" /> (no confundir por el icono con <strong>Modo Objeto</strong>)...
+</p>
+<img alt="remesh_04" height="31" src="n_remesh_04.png" width="292" />
+<p>
+... y en la botonera <strong>Mostrar </strong>activamos la opción <strong>Estructura</strong>.
+</p>
+<img alt="remesh_05" height="428" src="n_remesh_05.png" width="585" />
+<p>
+Esto hace visible la malla interna mientras estamos en <strong>Modo Objeto</strong> <img height="16" src="modo_objeto.png" width="17" /> y nos permite jugar con los parámetros del modificador rehacer malla y ver sus consecuencias antes de <strong>Aplicar</strong>. 
+</p>
+<p>
+No olvidaremos desactivar la opción <strong>Estructura</strong> cuando llegue el momento. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id90">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta90_30_2" class="block" style="display:block;position:relative"><a href="rehacer_malla.swf" target="_blank"><img alt="ver_video_rehacer_malla" height="200" src="ver_video_rehacer_malla.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="importar_svg.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_grficas_estadsticas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

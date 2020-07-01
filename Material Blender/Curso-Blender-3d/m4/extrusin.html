@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Extrusión | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (I)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (I)</a></li><li id="active"><a href="extrusin.html" class="active daddy">Extrusión</a><ul>
+<li><a href="extrusin_nula.html" class="no-ch">Extrusión nula</a></li>
+</ul>
+</li>
+<li><a href="bucles_de_bordes_y_facetas.html" class="daddy">Bucles de bordes y facetas</a><ul class="other-section">
+<li><a href="aadir_bucles.html" class="no-ch">Añadir bucles</a></li>
+<li><a href="editar_bucles.html" class="no-ch">Editar bucles</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_ensamble_con_espiga.html" class="no-ch">Material didáctico: Ensamble con espiga</a></li>
+<li><a href="adherencias.html" class="daddy">Adherencias</a><ul class="other-section">
+<li><a href="cursor_a_seleccionado.html" class="no-ch">Cursor a seleccionado</a></li>
+<li><a href="seleccin_a_cursor.html" class="no-ch">Selección a Cursor</a></li>
+</ul>
+</li>
+<li><a href="objetos_de_revolucin.html" class="daddy">Objetos de revolución</a><ul class="other-section">
+<li><a href="el_perfil.html" class="no-ch">El perfil</a></li>
+<li><a href="girar.html" class="no-ch">Girar</a></li>
+<li><a href="eliminar_duplicados.html" class="no-ch">Eliminar duplicados</a></li>
+<li><a href="recalculado_de_normales.html" class="no-ch">Recalculado de normales</a></li>
+<li><a href="modificador_solidificar.html" class="no-ch">Modificador Solidificar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cilindro_hidrulico.html" class="no-ch">Material didáctico: Cilindro hidráulico</a></li>
+<li><a href="textos.html" class="daddy">Textos</a><ul class="other-section">
+<li><a href="cambio_de_tipografa.html" class="no-ch">Cambio de tipografía</a></li>
+<li><a href="ediciones_bsicas.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="marcos.html" class="no-ch">Marcos</a></li>
+<li><a href="texto_a_malla.html" class="no-ch">Texto a malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cartel_anunciador.html" class="no-ch">Material didáctico: Cartel anunciador</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="index.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extrusin_nula.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Extrusión</h1></div>
+<div class="FreeTextIdevice" id="id1">
+<div class="iDevice emphasis0">
+<div id="ta1_1" class="block" style="display:block;position:relative"><p>
+Sin la extrusión, las técnicas de modelado 3D quedarían en un estado de verdadera precariedad. Sin duda <strong>esta técnica es la más poderosa</strong> con la que vamos a contar. Para el recién llegado la realización de la primera extrusión es un momento casi mágico, así que no lo estropearemos. Vamos de lleno a realizarla.
+</p>
+<p>
+Partimos del supuesto de encontrarnos con el cubo por defecto, en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" /> y con una cara seleccionada <img alt="cara" height="16" src="caras.png" width="15" />. Colocamos el puntero del ratón cerca de esa cara y pulsamos la tecla <strong>&quot;E&quot;</strong>; acto seguido <strong>desplazamos el ratón</strong>.
+</p>
+<img alt="extrusion_01" height="464" src="extrusion_01.png" width="547" />
+<p>
+Como siempre, podemos concluir la edición con <strong>clic izquierdo</strong> o <strong>&quot;Intro&quot;</strong>.
+</p>
+<p>
+¿Qué ha ocurrido?. Blender ha conseguido, en una sola edición:
+</p>
+<ul>
+	<li>Separar de la malla la cara seleccionada.</li>
+</ul>
+<ul>
+	<li>Desplazarla.</li>
+</ul>
+<ul>
+	<li>Construir las caras necesarias para dejar la malla cerrada.</li>
+</ul>
+<p>
+En realidad el término <strong>extrusión </strong>se utiliza en determinados procesos de <strong>fabricación de elementos metálicos, cerámicos...</strong> y cuyo ejemplo más cotidiano sería una máquina de hacer churros. Al pasar un material por un orificio con determinada forma, obtenemos un sólido definido por ese perfil. 
+</p>
+<img alt="extrusion_06" height="304" src="extrusion_06.png" width="556" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id5">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Extrusión por menú</h2>
+<div class="iDevice_inner">
+<div id="ta5_24_2" class="block" style="display:block;position:relative"><p>
+Como en el resto de las ediciones existe la posibilidad de ordenar la extrusión por menú (editor <strong>Vista 3D</strong> en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />). En esta ocasión es <strong>Malla/Extruir región</strong>; sin embargo <strong>no es nada recomendable</strong> debido a que es muy probable que el puntero del ratón se encuentre en un lugar muy poco apropiado al dar la orden.
+</p>
+<img alt="extruir_7" height="448" src="extrusion_07.png" width="246" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id7">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Ejercitación</h2>
+<div class="iDevice_inner">
+<div id="ta7_26_2" class="block" style="display:block;position:relative"><p>
+Hay un grupo de alumnos, 1ºE,  para el que vamos a preparar una plantilla destinada a alguna actividad. Nos proponemos una cabecera con una estética 3D.
+</p>
+<p>
+Realiza el modelado del número &quot;1&quot; partiendo de un cubo (señalado en naranja) usando <strong>extrusiones</strong> (<strong>&quot;E&quot;</strong>) (nosotros hemos mantenido pulsada la tecla <strong>&quot;Control&quot;</strong> durante el desplazamiento para conseguir unidades iguales). 
+</p>
+<img alt="extrusion_8" height="456" src="extrusion_08.png" width="397" />
+<p>
+Ahora <strong>añade un nuevo cubo</strong> a la escena y realiza del mismo modo una letra <strong>&quot;E&quot;</strong>.
+</p>
+<img alt="extrusion_09" height="444" src="extrusion_09.png" width="388" />
+<p>
+Una composición final podría ser esta.
+</p>
+<img alt="extrusion_11" height="243" src="extrusion_11.png" width="563" />
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id8">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta8_27_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="primero_e.blend"><img alt="descarga_primero_e" height="48" src="descarga_blend_1.png" width="169" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="index.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="extrusin_nula.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

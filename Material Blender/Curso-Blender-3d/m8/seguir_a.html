@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Seguir a | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Interactividad y animaciones directas</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Interactividad y animaciones directas</a></li><li><a href="3dnp.html" class="daddy">3DNP</a><ul class="other-section">
+<li><a href="descarga_y_contenido_del_zip.html" class="no-ch">Descarga y contenido del ZIP</a></li>
+<li><a href="entorno_de_trabajo.html" class="no-ch">Entorno de trabajo</a></li>
+<li><a href="el_artilugio.html" class="no-ch">El artilugio</a></li>
+<li><a href="importar_objetos.html" class="no-ch">Importar objetos</a></li>
+<li><a href="exportar_las_mgenes.html" class="no-ch">Exportar las mágenes</a></li>
+<li><a href="la_configuracin_del_javascript.html" class="no-ch">La configuración del javascript</a></li>
+<li><a href="interactividad_en_web.html" class="no-ch">Interactividad en web</a></li>
+</ul>
+</li>
+<li><a href="animaciones_con_modificadores.html" class="daddy">Animaciones con modificadores</a><ul class="other-section">
+<li><a href="ola.html" class="no-ch">Ola</a></li>
+<li><a href="construir.html" class="no-ch">Construir</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cabecera_de_vdeo.html" class="no-ch">Material didáctico: Cabecera de vídeo</a></li>
+<li id="current-page-parent"><a href="seguir_una_trayectoria.html" class="current-page-parent daddy">Seguir una trayectoria</a><ul>
+<li><a href="la_restriccin.html" class="no-ch">La restricción</a></li>
+<li><a href="una_triquiuela.html" class="no-ch">Una triquiñuela</a></li>
+<li><a href="configurar_el_movimiento.html" class="no-ch">Configurar el movimiento</a></li>
+<li><a href="el_caso_de_la_cmara.html" class="no-ch">El caso de la cámara</a></li>
+<li id="active"><a href="seguir_a.html" class="active no-ch">Seguir a</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_fases_de_la_luna.html" class="no-ch">Material didáctico: Fases de la luna</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="el_caso_de_la_cmara.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_fases_de_la_luna.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Seguir a</h1></div>
+<div class="FreeTextIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_1" class="block" style="display:block;position:relative"><p>
+En el caso de la cámara puede que la opción <strong>Seguir curva</strong> se adapte a nuestras necesidades pero lo más habitual es una situación como la de 3DNP; es decir, que mientras la cámara se desplaza, ésta mira siempre a un punto concreto de la escena.
+</p>
+<p>
+En ese caso echamos mano de una segunda restricción y, por norma general, de un objeto vacío (<strong>Añadir/Vacío</strong>) que hace las veces de punto de enfoque.
+</p>
+<img alt="caso_07" height="393" src="caso_07.png" width="616" />
+<p>
+La idea aquí es que la cámara siempre mire a ese nuevo objeto que, en realidad, podría ser una lámpara o cualquier otro objeto de la escena; el hecho de añadir un <strong>Vacío</strong> es interesante para no involucrar a ninguno de esos objetos en esta edición. 
+</p>
+<p>
+¿Qué debemos cambiar en la configuración del apartado anterior? 
+</p>
+<p>
+A la cámara le asignamos una segunda restricción <img alt="restricciones" height="16" src="restricciones_panel.png" width="18" /> de tipo <strong>Seguir a</strong> donde le escogemos como<strong> Objetivo: Empty </strong>(este es el nombre que Blender le ha dado al objeto <strong>Vacío</strong>, pero lo ideal es que nosotros le hubiéramos puesto un nombre apropiado como <em>enfoque</em>). Inmediatamente la cámara se disloca y aparece una línea azul punteada que representa la relación entre la cámara y <strong>Vacío</strong>.
+</p>
+<img alt="caso_08" height="428" src="caso_08.png" width="611" />
+<p>
+A raíz de aplicar la restricción <strong>Seguir a</strong> resulta que la orientación de los ejes marcada en la otra restricción <strong>Seguir camino</strong> ha dejado de funcionar; es razonable que la cámara no pueda mirar a la dirección de la trayectoria mientras mira también al objeto <strong>Vacío</strong>. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id47">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Importante</h2>
+<div class="iDevice_inner">
+<div id="ta47_26_2" class="block" style="display:block;position:relative"><p>
+Esto que ha ocurrido respecto a que los ejes elegidos en <strong>Seguir camino</strong> dejen de funcionar es consecuencia de que la restricción <strong>Seguir a </strong>(<em>track to</em>) está debajo y por lo tanto es la última que se tiene en consideración.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id48">
+<div class="iDevice emphasis0">
+<div id="ta48_1" class="block" style="display:block;position:relative"><p>
+Así que no queda otra que volver a definir los ejes en la restricción <strong>Seguir a</strong> (<em>Track to</em>).
+</p>
+<img alt="caso_09" height="198" src="caso_09.png" width="313" />
+<p>
+Al activar la animación, la cámara se verá obligada a mirar a <strong>Vacío</strong> sea cual sea la posición que ocupe en la trayectoria.
+</p>
+<img alt="caso_10" height="282" src="caso_10.png" width="434" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id82">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Ayuda visual</h2>
+<div class="iDevice_inner">
+<div id="ta82_26_2" class="block" style="display:block;position:relative"><a href="seguir_a.swf" target="_blank"><img alt="ver_video_seguir_a" height="200" src="ver_video_seguir_a.png" width="288" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id72">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta72_25_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="camara_seguir_a.blend"><img alt="descarga_camara_seguir_a" height="48" src="descarga_camara_seguir_a.png" width="223" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="el_caso_de_la_cmara.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="material_didctico_fases_de_la_luna.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

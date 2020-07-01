@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Añadir bucles | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (I)
+</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (I)</a></li><li><a href="extrusin.html" class="daddy">Extrusión</a><ul class="other-section">
+<li><a href="extrusin_nula.html" class="no-ch">Extrusión nula</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="bucles_de_bordes_y_facetas.html" class="current-page-parent daddy">Bucles de bordes y facetas</a><ul>
+<li id="active"><a href="aadir_bucles.html" class="active no-ch">Añadir bucles</a></li>
+<li><a href="editar_bucles.html" class="no-ch">Editar bucles</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_ensamble_con_espiga.html" class="no-ch">Material didáctico: Ensamble con espiga</a></li>
+<li><a href="adherencias.html" class="daddy">Adherencias</a><ul class="other-section">
+<li><a href="cursor_a_seleccionado.html" class="no-ch">Cursor a seleccionado</a></li>
+<li><a href="seleccin_a_cursor.html" class="no-ch">Selección a Cursor</a></li>
+</ul>
+</li>
+<li><a href="objetos_de_revolucin.html" class="daddy">Objetos de revolución</a><ul class="other-section">
+<li><a href="el_perfil.html" class="no-ch">El perfil</a></li>
+<li><a href="girar.html" class="no-ch">Girar</a></li>
+<li><a href="eliminar_duplicados.html" class="no-ch">Eliminar duplicados</a></li>
+<li><a href="recalculado_de_normales.html" class="no-ch">Recalculado de normales</a></li>
+<li><a href="modificador_solidificar.html" class="no-ch">Modificador Solidificar</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cilindro_hidrulico.html" class="no-ch">Material didáctico: Cilindro hidráulico</a></li>
+<li><a href="textos.html" class="daddy">Textos</a><ul class="other-section">
+<li><a href="cambio_de_tipografa.html" class="no-ch">Cambio de tipografía</a></li>
+<li><a href="ediciones_bsicas.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="marcos.html" class="no-ch">Marcos</a></li>
+<li><a href="texto_a_malla.html" class="no-ch">Texto a malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_cartel_anunciador.html" class="no-ch">Material didáctico: Cartel anunciador</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="bucles_de_bordes_y_facetas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="editar_bucles.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Añadir bucles</h1></div>
+<div class="FreeTextIdevice" id="id6">
+<div class="iDevice emphasis0">
+<div id="ta6_1" class="block" style="display:block;position:relative"><p>
+Las primitivas vienen con una serie de vértices definidos y la extrusión nos permite generar nuevas caras y comenzar a modelar en el sentido 3D del término. Pero es seguro que en ese proceso de modelado necesitemos <strong>añadir un nuevo bucle de bordes</strong>.
+</p>
+<p>
+La edición requiere <strong>tres decisiones</strong>:
+</p>
+<ul>
+	<li><strong>Activarla</strong> (obvio).</li>
+</ul>
+<ul>
+	<li><strong>Escoger el bucle</strong> de facetas que se va a dividir.</li>
+</ul>
+<ul>
+	<li><strong>Escoger la localización</strong> del nuevo bucle de bordes dentro del bucle de facetas.</li>
+</ul>
+<p>
+Lo anterior puede que haya sido excesivamente abstracto por lo que vamos a verlo en el terreno:
+</p>
+<ul>
+	<li><strong>Activar la edición</strong>. Como ya es costumbre en Blender lo mejor es usar el atajo de teclado con <strong>&quot;Control_R&quot;</strong> (debemos estar en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />). Aparentemente no habrá ocurrido nada pero no es cierto. Es algo similar a la orden de <strong>extrusión </strong>(<strong>&quot;E&quot;</strong>) o la de<strong> duplicado</strong> (<strong>&quot;Shift_D&quot;</strong>): la orden está dada y Blender se mantiene a la espera de nuevas órdenes.</li>
+</ul>
+<blockquote>
+	<img alt="bucles_04" height="354" src="bucles_04.png" width="437" />
+</blockquote>
+<ul>
+	<li><strong>Escoger el bucle de facetas que se va a dividir</strong>. Debemos colocar el puntero del ratón sobre uno de los lados que cruza el bucle de facetas al que le queremos añadir un nuevo bucle. Aparece uno virtual de color fucsia. Cuando decidimos el bucle de facetas a dividir hacemos <strong>clic izquierdo</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="n_bucle" height="413" src="n_bucle.png" width="516" />
+</blockquote>
+<ul>
+	<li><strong>Escoger la localización del nuevo bucle de bordes dentro del bucle de facetas</strong>. Al hacer el<strong> clic izquierdo</strong> anterior el bucle se vuelve amarillo y se nos permite desplazarlo para definir su localización definitiva. Cuando la decidamos terminamos con <strong>clic izquierdo</strong>.</li>
+</ul>
+<blockquote>
+	<img alt="n_bucle2" height="400" src="n_bucle2.png" width="508" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id10">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Múltiples bucles de bordes</h2>
+<div class="iDevice_inner">
+<div id="ta10_29_2" class="block" style="display:block;position:relative"><p>
+Cuando nos encontramos en el segundo paso, mientras Blender nos ofrece bucles en fucsia podemos girar la rueda del ratón y aumentar así el número de bucles a añadir. 
+</p>
+<img alt="n_bucle3" height="391" src="n_bucle3.png" width="432" />
+<p>
+Una de las particularidades de esta modalidad es que al hacer clic izquierdo se termina la edición debido a que no se nos permitirá el tercer paso de desplazarlos; Blender los distribuirá proporcionalmente. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="ReflectionIdevice" id="id12">
+<div class="iDevice emphasis1">
+<img alt="iDevice icon" class="iDevice_icon"  src="icon_reflection.gif"/>
+<span class="iDeviceTitle"><strong>Reflexión</strong></span>
+<script type="text/javascript" src="common.js"></script>
+<div class="iDevice_inner">
+<div id="ta12_8" class="block" style="display:block;position:relative"><p>
+¿Recuerdas la actividad en la que creaste la letra &quot;E&quot; con extrusiones? ¿Se te ocurre cómo usar lo aprendido en esta lección para hacer el mástil vertical de la letra garantizando que las cinco divisiones sean iguales?
+</p>
+<img alt="ejemplo_e" height="243" src="extrusion_11.png" width="563" />
+</div><div id="view12" style="display:block;"><input type="button" name="btnshow12" value="Click here" class="feedbackbutton" onclick="showAnswer('12',1)"/>
+</div>
+<div id="hide12" style="display:none;"><input type="button" name="btnshow12" value="Hide" class="feedbackbutton" onclick="showAnswer('12',0)"/>
+</div>
+<div id="s12" class="feedback" style=" display: none;"><div id="ta12_9" class="block" style="display:block;position:relative"><p>
+Prueba a escalar un cubo en el eje Z y después añádele cuatro bucles de una sola vez. Obtendrás esto.
+</p>
+<img alt="bucles_08" height="496" src="bucles_08.png" width="159" />
+<p>
+A partir de ahí continúa con extrusiones (<strong>&quot;E&quot;</strong>). 
+</p>
+</div></div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="bucles_de_bordes_y_facetas.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="editar_bucles.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

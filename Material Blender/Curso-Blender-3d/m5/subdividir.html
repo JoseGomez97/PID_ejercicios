@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Subdividir | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Técnicas de modelado (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas de modelado (II)</a></li><li><a href="objetos_vinculados.html" class="daddy">Objetos vinculados</a><ul class="other-section">
+<li><a href="duplicados.html" class="no-ch">Duplicados</a></li>
+<li><a href="simtricos.html" class="no-ch">Simétricos</a></li>
+<li><a href="serie.html" class="no-ch">Serie</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_baco.html" class="no-ch">Material didáctico: Ábaco</a></li>
+<li><a href="otros_modificadores.html" class="daddy">Otros modificadores</a><ul class="other-section">
+<li><a href="booleano.html" class="no-ch">Booleano</a></li>
+<li><a href="rosca.html" class="no-ch">Rosca</a></li>
+</ul>
+</li>
+<li><a href="curvas.html" class="daddy">Curvas</a><ul class="other-section">
+<li><a href="extrusin_en_curvas.html" class="no-ch">Extrusión en curvas</a></li>
+<li><a href="importar_svg.html" class="no-ch">Importar SVG</a></li>
+<li><a href="rehacer_malla.html" class="no-ch">Rehacer malla</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_grficas_estadsticas.html" class="no-ch">Material didáctico: Gráficas estadísticas</a></li>
+<li id="current-page-parent"><a href="utilidades.html" class="current-page-parent daddy">Utilidades</a><ul>
+<li id="active"><a href="subdividir.html" class="active no-ch">Subdividir</a></li>
+<li><a href="deformacin_proporcional.html" class="no-ch">Deformación proporcional</a></li>
+<li><a href="extruir_individual.html" class="no-ch">Extruir individual</a></li>
+<li><a href="simetra_no_interactiva.html" class="no-ch">Simetría no interactiva</a></li>
+<li><a href="adherir_elemento.html" class="no-ch">Adherir elemento</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_rden_drico.html" class="no-ch">Material didáctico: Órden dórico</a></li>
+<li><a href="extensiones.html" class="daddy">Extensiones</a><ul class="other-section">
+<li><a href="implementadas.html" class="no-ch">Implementadas</a></li>
+<li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+<li><a href="add_mesh.html" class="no-ch">Add Mesh</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacn.html" class="no-ch">Test de autoevaluacón</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="utilidades.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="deformacin_proporcional.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Subdividir</h1></div>
+<div class="FreeTextIdevice" id="id50">
+<div class="iDevice emphasis0">
+<div id="ta50_1" class="block" style="display:block;position:relative">
+<p>
+Hemos visto que en una <b>curva bézier</b> es fácil añadir un nuevo nodo entre dos ya existentes. Dividir una malla es igual de fácil. Lo habitual es una subdivisión masiva de todas los lados de la malla. Tras pulsar el botón <b>Subdividir </b>en el cuadro <b>Herramientas</b> (<b>&quot;T&quot;</b>) disponemos de varias opciones. 
+</p>
+<img src="sub_01.png" alt="sub_01" height="388" width="626" /> 
+<ul>
+	<li><b>Cantidad de cortes</b>. No requiere explicación.</li>
+</ul>
+<ul>
+	<li><b>Suavizado</b>. Trata de crear una unión con curva suave entre los dos vértices del lado dividido. En esta edición los vértices seleccionados siempre permanecen en su sitio.</li>
+</ul>
+<blockquote>
+	<img src="sub_02.png" alt="sub_02" height="264" width="579" />
+</blockquote>
+<ul>
+	<li><b>Fractal</b>. Los vértices resultantes se distribuyen de manera aleatoria según las condiciones marcadas por las fórmulas del campo <b>Patrón del corte de esquina</b> situado justo debajo. Nuevamente los vértices originales no se desplazan en esta edición.</li>
+</ul>
+<blockquote>
+	<img src="sub_03.png" alt="sub_03" height="257" width="573" />
+</blockquote>
+<p>
+Esta subdivisión automática tiene como limitación que la separación entre las partes es igual. Si queremos añadir vértices en lugares concretos de la malla, como puede ser el indicado en la siguiente imagen...
+</p>
+<img src="sub_04.png" alt="sub_04" height="350" width="485" />
+<p>
+… tenemos que usar la herramienta <b>Cuchillo </b>(<i>Knife cut</i>) que activamos (en <b>Modo Edición </b><img src="modo_edicion.png" height="17" width="18" />) pulsando la tecla <b>&quot;K&quot;</b>; después dibujamos con el <b>botón izquierdo del ratón pulsado</b>.<br />
+</p>
+<img src="bmesh_01.png" alt="b_mesh_01" height="423" width="308" />
+<p>
+En ese proceso de dibujo se nos representan en tiempo real, y de color verde, los nodos que se van a crear. Cuando decidimos su posición <b>concluimos la edición con un clic</b>. Sin embargo Blender no abandona la edición y se mantiene con la herramienta <b>cuchillo</b> activa por si queremos hacer algún corte más. Ahora:
+</p>
+<ul>
+	<li><b>&quot;Intro&quot;</b>. Concluye la edición materializando los cortes.</li>
+</ul>
+<p>
+<img src="bmesh_02.png" alt="b_mesh_02" height="300" width="454" />
+</p>
+<ul>
+	<li><b>&quot;Esc&quot;</b>. Cierra la edición sin materializar los cortes. </li>
+</ul>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id92">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">BMesh</h2>
+<div class="iDevice_inner">
+<div id="ta92_21_2" class="block" style="display:block;position:relative">La edición que hemos llevado a cabo puede parecer &quot;natural&quot;, pero no lo es en modo alguno porque la tecnología utilizada para ello no tiene nada que ver con lo que hemos estudiado hasta ahora.
+<p>
+Siempre hemos trabajado con triángulos y <i>quads</i> (entidades poligonales de cuatro vértices que pueden no ser coplanares) pero si nos fijamos en la última imagen vemos que hay un polígono de cinco lados. La tecnología de triángulos y <i>quads</i> está basada en<i> F-gons</i> (entidades poligonales de tres o cuatro vértices) mientras que esto que estamos viendo se fundamenta en <i>N-gons</i> (entidades de más de cuatro vértices). Blender tuvo que esperar a la versión 2.63 para ver hecho realidad el sueño de los <i>N-gons</i> bajo el nombre de modelado<i> BMesh</i>.
+</p>
+<p>
+Estas son las ediciones fundamentales del modelado BMesh.
+</p>
+<h4>CORTE</h4>
+<p>
+Lo acabamos de ver; sin embargo debemos tener en cuenta:
+</p>
+<ul>
+	<li>Es necesario cortar al menos dos lados para que la técnica funcione.</li>
+</ul>
+<p>
+<img src="bmesh_03.png" alt="b_mesh_03" height="318" width="383" />
+</p>
+<ul>
+	<li>Si no cortamos ningún lado se crea un agujero.</li>
+</ul>
+<img src="bmesh_04.png" alt="b_mesh_04" height="469" width="330" />
+<p>&nbsp;
+
+</p>
+<h4>BISEL</h4>
+<p>
+Gracias a BMesh se consiguen biseles muy fácilmente en lados independientes. Seleccionamos el lado en cuestión y hacemos <b>Malla/Aristas/Biselado </b>(o <b>&quot;W&quot;/Biselado</b>). En el panel de <b>Herramientas</b> (<b>&quot;T&quot;</b>) aparece la opción<b> Porcentaje</b> para determinar el tamaño. En las versiones de desarrollo para Blender 2.63 se pudo disfrutar de una segunda opción que determinaba el contorno redondeado del bisel. Sin embargo en la versión definitiva se suprimió a la espera de mejores resultados con lo que su inclusión en alguna versión posterior está asegurada.
+</p>
+<img src="bmesh_05.png" alt="b_mesh_05" height="383" width="464" /><br />
+<br />
+<h4>CREAR N-GONS</h4>
+<ul>
+	<li>
+	Seleccionamos las caras deseadas y usamos <b>Malla/Disolver</b>. </li>
+</ul>
+<p>
+<img src="bmesh_08.png" alt="b_mesh_08" height="353" width="485" />
+</p>
+<ul>
+	<li>En el caso de un agujero, seleccionamos los lados deseados y pulsamos <b>&quot;F&quot;</b>. </li>
+</ul>
+<h4>EXTRUSIÓN</h4>
+<p>
+Los N-gons se extruyen como cualquier otra cara pero destacamos una extrusión muy peculiar. 
+</p>
+<p>
+Frente a una <b>extrusión nula </b>(<b>&quot;E+Intro&quot;</b>) con un <b>escalado </b>(<b>&quot;S&quot;</b>) en la que la distancia entre lados paralelos puede no ser igual...
+</p>
+<p>
+<img src="bmesh_06.png" alt="b_mesh_06" />
+</p>
+<p>
+...podemos hacer <b>Malla/Caras/Inset Faces</b> y editar sus opciones en el cuadro <b>Herramientas </b>(<b>&quot;T&quot;</b>).
+</p>
+<p>
+<img src="bmesh_07.png" alt="b_mesh_07" height="444" width="594" />
+</p>
+<p>
+Vemos cómo se produce una dilatación/contracción que garantiza la distancia entre las paralelas. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="utilidades.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="deformacin_proporcional.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

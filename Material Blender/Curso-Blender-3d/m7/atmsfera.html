@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Atmósfera | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (II)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (II)</a></li><li><a href="materiales.html" class="daddy">Materiales</a><ul class="other-section">
+<li><a href="transparencias.html" class="no-ch">Transparencias</a></li>
+<li><a href="slo_sombra.html" class="no-ch">Sólo sombra</a></li>
+<li><a href="enmascara.html" class="no-ch">Enmascara</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_propiedades_pticas.html" class="no-ch">Material didáctico: Propiedades ópticas</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="editor_uv.html" class="no-ch">Editor UV</a></li>
+<li><a href="mapeado_en_un_plano.html" class="no-ch">Mapeado en un plano</a></li>
+<li><a href="mapeado_de_una_caja.html" class="no-ch">Mapeado de una caja</a></li>
+<li><a href="multimaterial_con_alfa.html" class="no-ch">Multi-material con alfa</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="iluminacin.html" class="current-page-parent daddy">Iluminación</a><ul>
+<li id="active"><a href="atmsfera.html" class="active no-ch">Atmósfera</a></li>
+<li><a href="estrellas.html" class="no-ch">Estrellas</a></li>
+<li><a href="halo_y_destello.html" class="no-ch">Halo y Destello</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_osa_mayor.html" class="no-ch">Material didáctico: Osa mayor</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="iluminacin.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="estrellas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Atmósfera</h1></div>
+<div class="FreeTextIdevice" id="id1">
+<div class="iDevice emphasis0">
+<div id="ta1_1" class="block" style="display:block;position:relative"><p>
+Contamos con determinados efectos atmosféricos como complemento a los efectos que se consiguen al activar la opción <strong>Cielo </strong>en la botonera <strong>Cielo y Atmósfera</strong> de una lámpara de tipo <strong>Sol</strong> <img alt="sol" height="18" src="icono_sol.png" width="18" />. No nos estamos refiriendo aquí a lluvia o niebla, sino a lo que en pintura se conoce como <em>perspectiva aérea</em> o <em>perspectiva del color</em> y que siempre debe relacionase con Leonardo da Vinci, que dice:
+</p>
+<p>
+&quot;Parecerá más azul aquella cosa tenebrosa que tenga interpuesto entre sí y el ojo un mayor volumen de aire, tal como por el color del cielo demostrar se puede&quot;.
+</p>
+<p>
+<img alt="toscana_paisaje" height="444" src="toscana_paisaje.png" width="593" />
+<br />
+<span style="color: #999999">Toscana (paisaje) // Autor: Lorena // Licencia: CC-BY-SA-2.0 (Creative Commons)</span>
+</p>
+<p>
+Este no es el lugar para desarrollar la teoría de la <em>perspectiva aérea</em> de Leonardo pero es interesante entender, como ya hizo él, que el aire interpuesto entre el observador y el objeto observado no es del todo transparente y esto hace que los objetos se muestren más gris-azulados cuanto más alejados están.
+</p>
+<p>
+Comenzamos nuestro trabajo a partir de un modelado con un paisaje de un desierto con un cielo de fondo, cuyo resultado es este.
+</p>
+<img alt="atmos_00" height="319" src="atmosfera_00.png" width="572" /> 
+<br />
+<a href="cielo_2.blend"><img alt="descarga_cielo_2" height="48" src="descarga_cielo_2.png" width="151" /></a>
+<p>
+Le decimos a Blender que ponga en marcha la teoría leonardesca activando la opción<strong> Atmósfera </strong>de la botonera <strong>Cielo y atmósfera</strong> (por supuesto debe estar seleccionada la lámpara de tipo<strong> Sol</strong> <img alt="sol" height="18" src="icono_sol.png" width="18" />).
+</p>
+<img height="349" src="atmosfera_01.png" width="356" />
+<p>
+La consecuencia es que todo se oscurece bastante.
+</p>
+<img alt="atmos_02" height="319" src="atmosfera_02.png" width="572" /> 
+<p>
+Lo primero de lo que nos vamos a ocupar es de que la<strong> Energía</strong> de la lámpara compense esa pérdida de luminosidad. Subimos su valor a<strong> 10</strong> y le cambiamos el color de<strong> FF9000</strong> a <strong>FFDECC</strong> para contrarestar el exceso de azul. 
+</p>
+<img alt="atmos_03" height="475" src="atmosfera_03.png" width="603" />
+<p>
+En la escena también aparece una lámpara <strong>Semiesférica</strong> <img alt="semi" height="18" src="icono_semi.png" width="18" /> que debe aumentar su energía si queremos que llene de luz y no quedar anulada por completo por la atmósfera. Nosotros aumentamos su <strong>Energía</strong> de <strong>0.200</strong> a <strong>0.500</strong>.
+</p>
+<img alt="atmos_04" height="319" src="atmosfera_04.png" width="571" />
+<p>
+Regresamos a la lámpara <strong>Sol</strong> <img alt="sol" height="18" src="icono_sol.png" width="18" /> porque llega el momento de determinar el grado de influencia de la <em>perspectiva aérea</em>. 
+</p>
+<img alt="atmos_05" height="99" src="atmosfera_05.png" width="354" />
+<ul>
+	<li><strong>Sol</strong>. En realidad sería más apropiado decir <strong>Cantidad de aire</strong>. Aumentamos considerablemente hasta <strong>8.000</strong> para que el efecto de perspectiva aérea sea muy evidente.</li>
+</ul>
+<ul>
+	<li><strong>Distancia</strong>. Muy importante. Mientras estaba a <strong>0.000</strong> no había azul del aire. Determinamos un valor en el que la zona alejada se tiña de azul mientras que la cercana quede lo más nítida posible. En nuestro caso un valor de <strong>1.600 </strong>funciona muy bien. El resultado lo vemos en este <em>render</em>.</li>
+</ul>
+<blockquote>
+	<img alt="atmos_06" height="320" src="atmosfera_06.png" width="572" />
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id2">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Profundidad de campo</h2>
+<div class="iDevice_inner">
+<div id="ta2_23_2" class="block" style="display:block;position:relative"><p>
+La <em>perspectiva del color</em> de Leonardo sólo alcanza su esplendor si se acompaña del llamado <em>sfumato</em>. Se trata de una de las mayores glorias de la pintura por la cual los objetos más alejados se presentan con los contornos más difusos. 
+</p>
+<p>
+Ese efecto lleva por nombre <em>profundidad de campo</em> en el mundo de la fotografía y, por supuesto, de la infografía. 
+</p>
+<p>
+En nuestro ejemplo no es pictóricamente correcto que las dunas alejadas se contorneen con una silueta tan limpia y cortante. Pero para conseguir ese efecto en Blender hay que recurrir al <strong>Editor de Nodos</strong> <img height="18" src="nodos.png" width="18" /> y no lo vamos a desarrollar aquí. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id3">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta3_24_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="atmosfera.1.blend"><img alt="descargar_atmosfera" height="48" src="descarga_atmosfera.png" width="171" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="iluminacin.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="estrellas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

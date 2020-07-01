@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Reflectividad | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Materiales, texturas e iluminación (I)</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Materiales, texturas e iluminación (I)</a></li><li id="current-page-parent"><a href="materiales.html" class="current-page-parent daddy">Materiales</a><ul>
+<li><a href="ediciones_bsicas1.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="difuso_y_especular.html" class="no-ch">Difuso y Especular</a></li>
+<li id="active"><a href="reflectividad.html" class="active no-ch">Reflectividad</a></li>
+<li><a href="entorno_virtual.html" class="no-ch">Entorno virtual</a></li>
+<li><a href="materiales_vinculados.html" class="no-ch">Materiales vinculados</a></li>
+<li><a href="malla_multimaterial.html" class="no-ch">Malla multi-material</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_perfil_del_suelo.html" class="no-ch">Material didáctico: Perfil del suelo</a></li>
+<li><a href="texturas.html" class="daddy">Texturas</a><ul class="other-section">
+<li><a href="ediciones_bsicas2.html" class="no-ch">Ediciones básicas</a></li>
+<li><a href="madera.html" class="no-ch">Madera</a></li>
+<li><a href="ruido.html" class="no-ch">Ruido</a></li>
+<li><a href="otras_texturas.html" class="no-ch">Otras texturas</a></li>
+<li><a href="bump_mapping.html" class="no-ch">Bump mapping</a></li>
+<li><a href="importar_texturas.html" class="no-ch">Importar texturas</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_a_soga_y_tizn.html" class="no-ch">Material didáctico: A soga y tizón</a></li>
+<li><a href="iluminacin.html" class="daddy">Iluminación</a><ul class="other-section">
+<li><a href="lmparas.html" class="no-ch">Lámparas</a></li>
+<li><a href="energa_y_color.html" class="no-ch">Energía y color</a></li>
+<li><a href="slo_iluminar.html" class="no-ch">Sólo iluminar</a></li>
+<li><a href="cielo_y_sol.html" class="no-ch">Cielo y sol</a></li>
+<li><a href="tres_luces.html" class="no-ch">Tres luces</a></li>
+</ul>
+</li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de Autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="difuso_y_especular.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="entorno_virtual.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Reflectividad</h1></div>
+<div class="FreeTextIdevice" id="id4">
+<div class="iDevice emphasis0">
+<div id="ta4_1" class="block" style="display:block;position:relative"><p>
+Además de la capacidad de reflejar luz (<strong>Especular</strong>) el material puede tener la propiedad de reflejar el entorno. El caso más fácil de comprender es un espejo que refleja el 100%.
+</p>
+<p>
+Lo primero que debemos hacer es decirle a Blender que queremos otorgarle esa propiedad al material activando la opción en la botonera<strong> Espejo</strong>.
+</p>
+<img alt="espejo_01" height="193" src="espejo_01.png" width="295" /> 
+<p>
+Esto permite tener definidas estas propiedades y activarlas o desactivarlas en momentos puntuales. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id5">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Antes de seguir...</h2>
+<div class="iDevice_inner">
+<div id="ta5_22_2" class="block" style="display:block;position:relative"><p>
+Debemos tener en cuenta un par de detalles importantes:
+</p>
+<ul>
+	<li>La propiedad de reflejar el entorno no se hará evidente en el 
+	editor <strong>Vista 3D</strong> sino que sus consecuencias las veremos directamente en 
+	el <em>render</em>.</li>
+</ul>
+<ul>
+	<li>Este tipo de propiedades, como la transparencia, consumen muchos 
+	recursos porque los cálculos internos del programa son muy complejos. 
+	Esto se traduce en un aumento considerable de los tiempos de <em>render</em>.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id6">
+<div class="iDevice emphasis0">
+<div id="ta6_1" class="block" style="display:block;position:relative"><p>
+El hecho de haber activado la propiedad <strong>Espejo</strong> no supone  nada de momento porque el parámetro <strong>Reflectividad </strong>está a cero. Si aumentamos a un valor como puede ser <strong>0.100</strong> esta es la consecuencia en el <em>render</em> (el modelado incluye un plano a modo de suelo para que haya algo en el entorno que pueda ser reflejado).
+</p>
+<img alt="espejo_02" height="462" src="espejo_02.png" width="616" />
+<p>
+Vemos que nuevamente disponemos de la posibilidad de <strong>editar el color</strong> del que se tiñe toda esa reflectividad. En nuestro ejemplo, ya que no es un espejo que refleje un 100%, lo normal será que lo reflejado adquiera un color cercano al del color <strong>Difuso</strong>. 
+</p>
+<img alt="espejo_03" height="468" src="espejo_03.png" width="621" />
+<p>
+Sin embargo la realidad es muy distinta. Salvo en espejos y superficies similares, como los cromados, lo habitual es que se produzca un efecto denominado <strong>Fresnel </strong>y que hace que la cantidad de <strong>Reflectividad</strong> no sea homogénea en una superficie sino que dependa del ángulo entre ésta y el observador. En esencia el efecto <strong>Fresnel</strong> dice que <strong>a mayor ángulo</strong>, <strong>mayor reflectividad</strong>. 
+</p>
+<img alt="espejo_04" height="470" src="espejo_04.png" width="633" />
+</div></div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="difuso_y_especular.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="entorno_virtual.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>

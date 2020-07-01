@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<script type="text/javascript" src="../js/toggle.js"></script>
+<title> Prediseñadas | Blender: 3D en la educación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>Blender: 3D en la Educación</h1><h2>
+Simulaciones físicas y paseos virtuales</h2>
+<div id="volver"><a target="_self" href="../indice.htm">Volver al índice</a></div>
+</div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Simulaciones físicas y paseos virtuales</a></li><li><a href="el_motor_de_juegos.html" class="daddy">El motor de juegos</a><ul class="other-section">
+<li><a href="blender_game.html" class="no-ch">Blender Game</a></li>
+<li><a href="fsicas_y_cuerpo_rgido.html" class="no-ch">Físicas y Cuerpo rígido</a></li>
+<li><a href="parmetros_importantes.html" class="no-ch">Parámetros importantes</a></li>
+<li><a href="de_simulacin_a_animacin.html" class="no-ch">De simulación a animación</a></li>
+</ul>
+</li>
+<li><a href="material_didctico_galileo_en_pisa.html" class="no-ch">Material didáctico: Galileo en Pisa</a></li>
+<li><a href="cmara_interactiva.html" class="daddy">Cámara interactiva</a><ul class="other-section">
+<li><a href="camerafps.html" class="no-ch">CameraFPS</a></li>
+<li><a href="aadir_la_cmara_interactiva.html" class="no-ch">Añadir la cámara interactiva</a></li>
+</ul>
+</li>
+<li><a href="ms_mapeados.html" class="daddy">Más mapeados</a><ul class="other-section">
+<li><a href="proyectar_desde_la_vista.html" class="no-ch">Proyectar desde la vista</a></li>
+<li><a href="alfa_por_las_dos_caras.html" class="no-ch">Alfa por las dos caras</a></li>
+</ul>
+</li>
+<li id="current-page-parent"><a href="sombras.html" class="current-page-parent daddy">Sombras</a><ul>
+<li id="active"><a href="prediseadas.html" class="active no-ch">Prediseñadas</a></li>
+<li><a href="simuladas.html" class="no-ch">Simuladas</a></li>
+<li><a href="sombreado_glsl.html" class="no-ch">Sombreado GLSL</a></li>
+</ul>
+</li>
+<li><a href="autoejecutable.html" class="no-ch">Autoejecutable</a></li>
+<li><a href="material_didctico_cpula_estrellada.html" class="no-ch">Material didáctico: Cúpula estrellada</a></li>
+<li><a href="actividades.html" class="no-ch">Actividades</a></li>
+<li><a href="test_de_autoevaluacin.html" class="no-ch">Test de autoevaluación</a></li>
+</ul>
+</div>
+<div id='topPagination'><div class="pagination noprt"><a href="sombras.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="simuladas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="main">
+<div id="nodeDecoration"><h1 id="nodeTitle">Prediseñadas</h1></div>
+<div class="FreeTextIdevice" id="id16">
+<div class="iDevice emphasis0">
+<div id="ta16_1" class="block" style="display:block;position:relative"><p>
+Está claro que si se mapea una textura de una pared, es posible que lleve incorporada alguna sombra y prediseñar esa pared con el efecto incluido. Un ejemplo es la siguiente imagen: si mapeamos la textura de arriba, después el cuadro da la sensación de proyectar una sombra. 
+</p>
+<img alt="sombras_01" height="464" src="fisicas_20.png" width="464" />
+<p>
+Este es el método más elemental y se fundamenta en el tipo de mapeado UV que ya sabemos hacer. Tiene el inconveniente de que no es fácil alterar la localización de la sombra aunque con una buena planificación se consiguen bonitos resultados.
+</p>
+<p>
+Para este tipo de efecto es mucho mejor hacer el mapeado de la sombra en un plano independiente situado entre el cuadro y la pared. Vamos a partir de una escena con una pared y un cuadro que tiene ya mapeada la pintura y el marco.
+</p>
+<img alt="sombras_01" height="441" src="sombras_01.png" width="587" />
+<p>
+Añadimos un plano (<strong>Añadir/Malla/Plano</strong>) a la escena. Lo escalamos, rotamos y colocamos tal y como indica la imagen siguiente (lo mejor es usar el modo de sombreado <strong>Alambre</strong> y estar en un punto de vista ortográfico lateral para que el plano se coloque lo más cerca posible de la pared pero sin llegar a tocarla.
+</p>
+<img alt="sombra_02" height="434" src="sombras_02.png" width="501" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id17">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Dos asuntos importantes</h2>
+<div class="iDevice_inner">
+<div id="ta17_21_2" class="block" style="display:block;position:relative"><ul>
+	<li>No aplicamos material alguno a ese plano. De lo contrario ya sabemos que correrá de nuestra cuenta seleccionar <strong>Mezcla alfa: Ordenar alfa</strong> en <strong>Opciones de juego</strong>, además de activar <strong>Textura en caras</strong> en la botonera <strong>Opciones</strong>.</li>
+</ul>
+<ul>
+	<li>Comprobamos que la <strong>Normal</strong> del plano apunte hacia el lado correcto para el mapeado. Activamos la visibilidad de las <strong>Normales</strong> en el cuadro <strong>Propiedades</strong> (<strong>&quot;N&quot;</strong>) en la botonera <strong>Visualización de malla</strong> mientras estamos en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />.</li>
+</ul>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id18">
+<div class="iDevice emphasis0">
+<div id="ta18_1" class="block" style="display:block;position:relative"><p>
+En ese plano vamos a mapear una imagen con la sombra. Su principal característica es que se trata de un PNG con transparencia pensado precisamente para que en los lugares adecuados deje ver la pared de atrás.
+</p>
+</div></div>
+</div>
+<div class="GalleryIdevice" id="id19">
+<div class="iDevice emphasis1" 
+    >
+    <img alt="IDevice Icon" 
+         class="iDevice_icon" 
+    src="icon_gallery.gif" /><h2 class="iDeviceTitle">
+    Sombra con transparencia
+    </h2>
+    <div class="gallery_popup" value="galleryPopup.html"></div>
+    <table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:4px; border-style:groove;">
+      <tbody>
+        <tr>
+          <td width="134px">
+            <a 
+             href="sombra.png" title="Show  Image" target="_blank"
+               style="cursor: pointer; align:center top;">
+              <img class="gallery" alt="Show  Image"
+                   src="sombraThumbnail.png"/>
+            </a>
+             <div class="gallery_image" value="sombra.png"></div>
+            <div class="caption" style="align:center;width=100%">
+              &nbsp;
+            </div>
+          </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+      </tbody>
+    </table>
+    </div></div>
+<div class="FreeTextIdevice" id="id20">
+<div class="iDevice emphasis0">
+<div id="ta20_1" class="block" style="display:block;position:relative"><p>
+Hacemos el mapeado según lo aprendido hasta ahora. Mostramos un esquema del proceso:
+</p>
+<ul>
+	<li>Pasamos al entorno de trabajo <strong>UV Editing</strong>.</li>
+</ul>
+<ul>
+	<li>En el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" /> cargamos la imagen de la sombra que hemos guardado en nuestro disco duro. El contorno difuminado de la sombra no es interpretado de ese modo por el <strong>Editor UV</strong> <img height="16" src="uv.png" width="18" />, pero eso no es un problema para trabajar.</li>
+</ul>
+<blockquote>
+	<img alt="sombras_03" height="305" src="sombras_03.png" width="413" />
+</blockquote>
+<ul>
+	<li>En el editor <strong>Vista 3D</strong>,en <strong>Modo Edición</strong> <img height="17" src="modo_edicion.png" width="18" />, seleccionamos la cara <img alt="caras" height="16" src="caras.png" width="15" /> del plano y hacemos <strong>Malla/Desplegar UV/Desenvolver</strong>.</li>
+</ul>
+<ul>
+	<li>Ajustamos, aprovechando el sombreado <strong>Textura</strong>, para adaptar la sombra. Estos ajustes los hacemos tanto editando el mapeado UV como escalando el propio plano. </li>
+</ul>
+<blockquote>
+	<img alt="sombras_04" height="396" src="sombras_04.png" width="517" />
+</blockquote>
+<p>
+La ventaja de este método es que ahora es posible seleccionar el cuadro con la sombra y desplazarlos sin preocuparnos de nada más. 
+</p>
+<p>
+Cuando no tengamos seleccionado el plano para editarlo, la sombra se mostrará sin grados de transparencia, pero eso no significa nada porque al ejecutar la simulación (<strong>&quot;P&quot;</strong>) no hay ningún problema.
+</p>
+<img alt="sombras_05" height="423" src="sombras_05.png" width="596" />
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id21">
+<div class="iDevice emphasis1">
+<img alt="IDevice Icon"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Analiza y estudia el archivo .blend</h2>
+<div class="iDevice_inner">
+<div id="ta21_25_2" class="block" style="display:block;position:relative"><p>
+Usa este .blend para compararlo con tu resultado una vez que hayas realizado toda la práctica. Te servirá de referencia para autoevaluarte. 
+</p>
+<a href="sombra_png.blend"><img alt="descarga_sombra_png" height="48" src="descarga_sombra_png.png" width="191" /></a>
+</div><br/>
+</div>
+</div>
+</div>
+<div id='bottomPagination'><div class="pagination noprt"><a href="sombras.html" class="prev"><span>&laquo; </span>Previous</a> | <a href="simuladas.html" class="next"> Next<span> &raquo;</span></a></div>
+</div><div id="footer">
+<p align="center"><a href="http://www.educacion.es/" title="Ministerio de Educaci&oacute;n, Cultura y Deporte " target="#">Ministerio de Educaci&oacute;n, Cultura y Deporte</a>&nbsp;|&nbsp;<a href="http://www.ite.educacion.es/" title="Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado" target="#">Instituto Nacional de Tecnolog&iacute;as Educativas y de Formación del Profesorado</a></p>
+<p align="center">Esta obra est&aacute; bajo una <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-CompartirIgual 3.0 Espa&ntilde;a (CC BY-SA 3.0)</a></p>
+
+</div>
+</div>
+</body></html>
